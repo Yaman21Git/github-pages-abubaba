@@ -1,15 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-    font-family: 'PT Sans', sans-serif;
+    padding:0;
+  }
+
+  h1{
+    font-family: 'Tangerine', cursive;
+  }
+
+  p{
+    font-family: 'Montserrat', sans-serif;
   }
   
   .home,
   .services,
   .sign-up,
   .about-us,
-  .blogs {
+  . {
     display: flex;
     height: 90vh;
     align-items: center;
@@ -17,125 +27,201 @@
     font-size: 3rem;
   }
 
+  .clientTest{
+    width: 100%;
+    height:45vw;
+    padding-top: 2%;
+    background-color: #F6EFE5;
+  }
+
+  .shopNowbtn{
+    background-color: black;
+    color: white;
+    border-radius:25px;
+    padding: 3.2% 10% 3.2% 10%;
+    font-family: 'Montserrat', sans-serif;
+    font-size:1vw;
+    margin-top: 20%;
+    margin-left: 0%;
+}
+
+.shopNowbtn1{
+  background-color:#FAFBF6;
+  color: black;
+  border-radius:25px;
+  padding: 3.2% 10% 3.2% 10%;
+  font-family: 'Montserrat', sans-serif;
+  font-size:0.8vw;
+  margin-top: 0;
+  margin-left: 0%;
+}
+
+.homeFact-container{
+  width:100%;
+  padding-top: 5%;
+  background: #F6EFE5;
+}
+
 .homeFacts{
-  background-color: white;
   width:80%;
-  height:100vh;
+  height:84%;
   margin-left: auto;
   margin-right: auto;
+  margin-top:auto;
+  margin-bottom:auto;
   text-align: center;
 }
 
-@media screen and (max-width:1000px) {
-  .homeFacts{
-    width: 80%;
-    height: 70vh;
+@media screen and (max-width:1500px) {
+  .homeFact-container{
+    width: 100%;
+    height: 60vh;
+    background-size: 100% auto;
+  }
+}
+
+@media screen and (max-width:1100px) {
+  .homeFact-container{
+    width: 100%;
+    height: 40vh;
     background-size: 100% auto;
   }
 }
 
 @media screen and (max-width:800px) {
-  .homeFacts{
-    width: 80%;
-    height: 50vh;
+  .homeFact-container{
+    width: 100%;
+    height: 30vh;
     background-size: 100% auto;
   }
 }
 
 .homeFacts .fact1{ 
-  width:23%;
-  height:38%;
-  background-image: url('./images2/india\ \(2\).jpg');
-  background-size: 80% 80%;
+  width:20%;
+  height:55%;
+  background-image: url('./images2/Beige\ \(4\).JPG');
+  background-size: 70% 80%;
   background-repeat: no-repeat;
-  margin-right: auto;
-  margin-left: auto;  
+  background-position-x: 50%;
   float:left;
   border-right:3px solid black;
 }
 
 .homeFacts .fact1 >h2{
-  margin-top:250px;
-  margin-right: 80px;
+  margin-top:58%;
+  margin-right:30%;
+  width:100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2vw;
 }
 
 .homeFacts .fact1 >button{
-  margin:auto;
+  margin-top:auto;
+  margin-bottom: auto;
+  margin-right:10%;
+  background-color: white;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 0.85vw;
 }
 
 .homeFacts .fact2{ 
-  width:23%;
-  height:38%;
-  background-image: url('./images2/noun_certified_2464533.jpg');
-  background-size: 80% 80%;
+  width:27%;
+  height:60%;
+  background-image: url('./images2/Beige\ \(1\).JPG');
+  background-size: 66% 80%;
   background-repeat: no-repeat;
-  margin-right: auto;
-  margin-left: 30px;  
+  background-position-x: 50%;
   float:left;
   border-right:3px solid black;
 }
 
 .homeFacts .fact2 >h2{
-  margin-top:250px;
-  margin-right: 80px;
+  margin-top:43%;
+  margin-right:30%;
+  width:100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2vw;
 }
 
 .homeFacts .fact2 >button{
-  margin-right: auto;
+  margin:auto;
+  background-color: white;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 0.85vw;
 }
 
 .homeFacts .fact3{ 
   width:23%;
-  height:38%;
-  background-image: url('./images2/gift\ \(1\).jpg');
-  background-size: 80% 80%;
+  height:60%;
+  background-image: url('./images2/Beige\ \(2\).JPG');
+  background-size: 70% 80%;
   background-repeat: no-repeat;
-  margin-right: auto;
-  margin-left: 30px;  
+  background-position-x: 50%;
   float:left;
   border-right:3px solid black;
 }
 
 .homeFacts .fact3 >h2{
-  margin-top:250px;
-  margin-right: 80px;
+  margin-top:50%;
+  margin-right:30%;
+  width:100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2vw;
 }
 
 .homeFacts .fact3 >button{
-  margin-right: auto;
+  margin:auto;
+  background-color: white;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 0.85vw;
 }
 
 .homeFacts .fact4{ 
   width:23%;
-  height:38%;
-  background-image: url('./images2/mission.jpg');
-  background-size: 80% 80%;
+  height:60%;
+  background-image: url('./images2/Beige\ \(3\).JPG');
+  background-size: 65% 70%;
   background-repeat: no-repeat;
-  margin-right: auto;
-  margin-left: 2%;  
+  background-position-x: 50%;
   float:left;
 }
 
 .homeFacts .fact4 >h2{
-  margin-top:250px;
-  margin-right:80px;
+  margin-top:50%;
+  margin-right:30%;
+  width:100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2vw;
 }
 
 .homeFacts .fact4 >button{
-  margin-right: auto;
+  margin:auto;
+  background-color: white;
+  padding: 0;
+  border: none;
+  background: none;
+  font-size: 0.85vw;
 }
 
 .home-certification{
   background-color: black;
   color: white;
-  height:417px;
+  height:28vw;
+  padding-top:3%;
 }
 
 .home-certification .img1{
-  width: 15%;
-  height: 250px;
-  margin-top: 50px;
-  margin-right: 100px;
+  width: 10%;
+  height: 40%;
+  margin-top: 2.7%;
+  margin-right: 7%;
+  margin-left: 3%;
   background-image: url('https://i0.wp.com/www.govindmilk.com/wp-content/uploads/2020/10/India-Organic.png?fit=573%2C573&ssl=1');
   /* background-image: url('./images2/image\ 9.jpg'); */
   background-size: 100% 100%;
@@ -145,10 +231,11 @@
 }
 
 .home-certification .img2{
-  width: 15%;
-  height: 250px;
-  margin-top: 50px;
-  margin-right: 100px;
+  width: 10%;
+  height: 40%;
+  margin-top: 2.7%;
+  margin-right: 7%;
+  margin-left: 3%;
   background-image: url('https://www.winterparkhoney.com/wp-content/uploads/2016/09/usda-organic-logo-800x800.gif');
   background-size: 100% 100%;
   background-position:left;
@@ -157,10 +244,11 @@
 }
 
 .home-certification .img3{
-  width: 15%;
-  height: 150px;
-  margin-top: 100px;
-  margin-right: 100px;
+  width: 12%;
+  height: 26%;
+  margin-top: 4%;
+  margin-right: 7%;
+  margin-left: 3%;
   background-image: url('https://www.pngkit.com/png/full/827-8276796_whole-foods-logo-png-fssai-logo-white-png.png');
   background-size: 100% 100%;
   background-position:left;
@@ -169,10 +257,11 @@
 }
 
 .home-certification .img4{
-  width: 15%;
-  height: 250px;
-  margin-top: 50px;
-  margin-right: 100px;
+  width: 10%;
+  height: 38%;
+  margin-top: 2.7%;
+  margin-right: 7%;
+  margin-left: 3%;
   background-image: url('data:image/png;base64,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');
   background-size: 100% 100%;
   background-position:left;
@@ -181,63 +270,89 @@
 }
 
 .home-certification .img5{
-  width: 15%;
-  height: 250px;
-  margin-top: 50px;
+  width: 12%;
+  height: 36%;
+  margin-top: 2.7%;
+  margin-left: 2%;
   background-image: url('https://seeklogo.com/images/E/ecocert-logo-FED3EB218B-seeklogo.com.png');
   background-size: 100% 100%;
   background-position:left;
   background-repeat: no-repeat;
-  float: right;
+  float: left;
+}
+
+@media screen and (max-width:658px) {
+  .home-certification{
+    width: 100%;
+    height: auto;
+    background-size: 100% auto;
+  }
 }
 
 .home-subscribe {
-   background-color: white;
+   background-color:#F6EFE5;
    width:100%;
-   height:600px;
+   height:37vw;
    color: black;
    text-align: center;
 }
 
 .home-subscribe .pickles{
   float:left;
-  margin: auto;
-  width:50%;
+  margin-left: auto;
+  width:53%;
   height:100%;
-  background-image: url("./images2/Group\ 3.jpg");
+  background-image: url("./images2/Slide1\ \(1\).JPG");
   background-repeat: no-repeat;
-  background-size: 90% 70%;
-  background-position:center;
-  margin-left: 50px;
+  background-size: cover;
+  background-position-x:0;
+  margin-left: 0;
+  margin-top: 0;
   display: flex;
 }
 
 .home-subscribe .subscribe{
   float:left;
   width:40%;
+  height: 100%;
 }
 
+.home-subscribe .subscribe .logo{
+  margin-top:0;
+  height:34%;
+  width: 100%;
+  border-bottom:2px solid black;
+  background-image: url('./images2/ABUBABA\ LOGO+.png');
+  background-repeat: no-repeat;
+  background-size: 50% 120%;
+  background-position-x:50%;
+}
 .home-subscribe .subscribe >h1{
-  margin-top: 80px;
+  margin-top: 5%;
+  font-size: 2.4vw;
 }
 
 .home-subscribe .subscribe >p{
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 5%;
+  margin-bottom: 3%;
+  font-family: 'Montserrat';
+  font-size: 0.9vw;
 }
 
 .home-subscribe .subscribe .email{
-  padding: 5px 10px 5px 10px;
+  padding: 1% 0 1% 1%;
   width:50%;
-  margin-left:30px;
+  margin-left:7%;
+  font-size: 0.96vw;
 }
 
 .home-subscribe .subscribe .submit{
-  padding: 5px 10px 5px 10px;
+  padding: 1% 0 1% 0;
   width:20%;
   background-color: black;
   color:white;
   border-color: black;
+  font-size: 0.96vw;
 }
 .about-container{
     background-image: url("./images2/contactus.png");
@@ -245,36 +360,43 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
-    font-size: 100px;
 }
 
 .abubaba_org-container {
-  background-color:white;
+  background-color:#F6EFE5;
   height:80vh;
-  border: 1px solid #ccc;  
   width: 100%;
   display: block;
   position: relative;
+  padding-top: 3%;
   }
 
 .oldage  {
   background-color:#FAFBF6;
   border: 1px solid #FAFBF6;
   box-shadow: 6px 6px 5px grey;
-  height: 60vh;
-  position: aboslute;
-  margin-top: 10vh;
-  margin-left: 10vw;
-  margin-right: 10vw;
+  height: 65vh;
+  position: absolute;
+  width:84%;
+  margin-left:8%;
+  align-items: center;
+  }
+
+  .borderBlack{
+    border:2px solid black;
+    height: 94%;
+    width:96%;
+    margin:auto;
+    margin-top: 1%;
   }
 
 .imgAbu{
   width:30%;
   float:left;
-  height:80%;
-  margin-top: 6vh;
-  margin-left: 5vw;
-  background: #F9C112 url(./images2/abubaba_organic.PNG) no-repeat center top ;
+  height:90%;
+  margin-top: 1.8%;
+  margin-left: 2vw;
+  background: #FAFBF6 url(./images2/abubaba_organic.PNG) no-repeat center top ;
   background-size:100% 100%;
 }
 
@@ -282,7 +404,7 @@
   width:15%;
   float:left;
   height:50%;
-  margin-top: 15vh;
+  margin-top: 10%;
   border-right: 3px solid black;
 }
 .matter{
@@ -292,17 +414,26 @@
   width:30%;
   float:right;
   font-size: 1vw;
+  font-family: 'Montserrat';
 }
 
 .matter >div{
-  margin-bottom: 15%;
+  margin-bottom: 5%;
+  font-family: 'Montserrat';
+  text-align: left;
+}
+
+.matter .sec{
+  margin-bottom: 10%;
+  text-align: left;
 }
 
 .matter >p{
-  margin-bottom: 10%;
+  text-align: left;
+  font-size: 0.9vw;
 }
 
-@media screen and (max-width:1000px){
+@media screen and (max-width:1100px){
   .abubaba_org-container {
     width:100%;
     height:60vh;
@@ -314,55 +445,115 @@
     height:40vh;
     background-size: 100% auto;
   }
+
+  .matter {
+    margin-bottom: 5%;
+    font-family: 'Montserrat';
+    text-align: left;
+    margin-top: 7%;
+  }
 }
 
+@media screen and (max-width:800px){
+  .abubaba_org-container {
+    width:100%;
+    height:40vh;
+    background-size: 100% auto;
+  }
+
+  .oldage{
+    width:80%;
+    height:30vh;
+    background-size: 100% auto;
+  }
+
+  .dividing{
+    border-right:2px solid black; 
+  }
+
+  .matter {
+    margin-bottom: 5%;
+    font-family: 'Montserrat';
+    text-align: left;
+    margin-top: 8%;
+  }
+}
+
+.blogContainer{
+  height: 62vw;
+  background-color: #F6EFE5;
+  padding-bottom: 5%;
+}
+
+@media screen and (max-width:800px){
+  .blogContainer{
+    height: 75vw;
+  }
+}
 .blogContainer>a{
-  margin-left: 170px;
+  margin-left: 5%;
+  font-family: 'Montserrat';
+  font-size: 0.9vw;
   color: black;
 }
 
 .blogtop .subBlog{
-  margin-left: 300px;
-  font-size: 20px;
-  margin-top: 20px;
+  margin-left: 17%;
+  width:100%;
+  font-size: 1.5vw;
+  margin-top: 2%;
 }
 
 
 .blogtop ul{
   overflow-x:hidden;
   white-space:nowrap; 
-  height: 3em;
-  width: 100%;
+  height: 2vw;
+  width: 70%;
+  margin-left: 5%;
 }
 
 .blogtop li{
   display:inline;
 }
 
+.likes{
+  margin-right:4%;
+}
+
 .blogtop ul li a{
-  margin-right: 70px;
-  font-size: 40px;
+  margin-right: 10%;
+  font-size: 1.2vw;
+  color: black;
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 500;
 }
 
 .blogPost{
-  margin-top: 10px;
-  width:1350px;
-  height:450px;
-  margin-bottom: 150px;
-  margin-left: 170px;
+  margin-top: 0.5%;
+  width:90%;
+  height:30vw;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   
 }
 
 .blogPost>h2{
-  margin-bottom: 10px;
+  margin-bottom: 0.5%;
+  font-family: 'Montserrat';
+  font-size: 1.5vw;
 }
 
 .blogPost>a{
-  margin-right: 20px;
+  margin-right: 2%;
+  font-family: 'Montserrat';
+  font-size: 0.8vw;
+  color: black;
 }
  .Fblog{
    height:100%;
-   width: 684px;
+   width: 50%;
    float:left;
    background: #F9C112 url(./images2/pexels.jpg) no-repeat center top ;
    background-size:100% 100%;
@@ -370,22 +561,31 @@
 
  .Fblogmatter{
    background-color: black;
-   width:658px;
+   width:50%;
    height:100%;
-   margin-bottom: 20px;
+   margin-bottom: 1.2%;
    float:left;
  }
 
  .Blogmatter{
    color:blanchedalmond;
-   margin-top: 70px;
-   margin-left: 100px;
+   margin-top: 15%;
+   margin-left: 15%;
    max-width: 60%;
+   text-align: left;
+ }
+
+ .readmorebtn{
+   margin-top:12%;
+   margin-left: -70%;
+   margin-right: 18%;
  }
 
  .map{
-   height:80vh;
-   width:100%;
+   height:30vw;
+   width:96%;
+   margin-left: auto;
+   margin-right: auto;
  }
 
 .about-container2{
@@ -406,80 +606,111 @@
   width:65%;
   margin-left: 5%;
   margin-right: auto;
+  margin-top: 3%;
 }
 .contactDetails{
-  width:30%;
+  width:20%;
+  margin-top: 7%;
   float:left;
   text-align: left;
 }
 
 .contactDetails >h1{
-  margin-top: 15%;
+  margin-top: 10%;
+  font-size: 2vw;
   text-align: left;
 }
 
-.signup-container{
-  height:600px;
+.contactDetails >p{
+  font-size: 0.9vw;
 }
 
-.signup-container >h1{
-  margin-top: 20px;
+.signup-container{
+  height:38vw;
+  background-color: #F6EFE5;
+  padding-top: 2%;
 }
 
 .mainForm{
-  margin-top: 100px;
+  margin-top: 6.5%;
   align-content: center;
   text-align:center;
+  height: 100%;
 }
 
 .signup{
   width:50%;
   float:left;
-  margin-bottom: 20px;
-  margin-top: 30px;
+  margin-bottom: 1%;
+  margin-top: 1.8%;
 }
 
 .sRight{
-  width:27%;
+  width:35%;
   float:right;
+  font-family: 'Montserrat';
+  font-size:1.4vw;
+  padding-top: 0.5%;
   border: 2px solid black;
   text-align: center;
   background-color: black;
-  height: 40px;
+  height: 2.7vw;
   border-radius: 20px 0 0 20px;
 }
 
 .sLeft{
-  width:27%;
+  width:35%;
   float:left;
   border: 2px solid black;
   text-align: center;
-  height: 40px;
+  font-family: 'Montserrat';
+  padding-top: 0.5%;
+  font-size:1.4vw;
+  height: 2.7vw;
   border-radius: 0 20px 20px 0;
 }
 
 .signin{
   width:50%;
   float:right;
-  margin-bottom: 20px;
-  margin-top: 30px;
+  margin-bottom: 1%;
+  margin-top: 1.8%;
 }
 
 .mainForm >p{
-  margin-bottom: 10px;
-}
-
-.mainForm>label{
-  margin-left: 3px;
+  font-family:'Montserrat';
+  margin-bottom: 0.7%;
+  font-size: 0.95vw;
 }
 .mainForm .p1 >input{
-  padding: 12px 12px 12px 12px;
-  width:450px;
+  padding: 0.8% 0.8% 0.8% 0.8%;
+  width:35%;
+  font-size: 0.7vw;
   border-radius:15px;
+  background-color: #F6EFE5;
 }
 
-.mainForm .p2{
-  margin-right: 100px;
+.signup-container .mainForm .p2{
+  margin-left:-13%;
+}
+
+.mainForm .signupBtn{
+  background-color: black;
+  text-decoration:none;
+  border: black;
+  padding :0.5% 0.5% 0.5% 0.5%;
+  width:6%;
+  height:6%;
+  font-size:1vw;
+  color:whitesmoke;
+}
+
+@media screen and (max-width:1500px){
+  .blogtop{
+      width:100%;
+      height:auto;
+      background-size: 100% auto;
+    }
 }
 
 .search {
@@ -490,49 +721,52 @@
 
 .searchTerm {
   width: 100%;
-  border: 3px solid #00B4CC;
+  border: 2px solid black;
   border-right: none;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px 0 0 5px;
+  font-size: 1vw;
+  padding: 2%;
+  height: 2.5vw;
+  border-radius: 15px 0 0 15px;
   outline: none;
   color: #9DBFAF;
+  background-color: #F6EFE5;
 }
 
 .searchTerm:focus{
-  color: #00B4CC;
+  color:black;
 }
 
 .searchButton {
-  width: 40px;
-  height: 36px;
-  border: 1px solid #00B4CC;
-  background: #00B4CC;
+  width: 10%;
+  height: 2.5vw;
+  border: 2px solid black;
+  border-left: 2px solid white; 
+  background:#F6EFE5;
   text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
+  color:black;
+  border-radius: 0 15px 15px 0;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 1.5vw;
 }
 
 /*Resize the wrap to see the search bar change!*/
 .wrap{
   width: 30%;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  margin-top: 6%;
+  margin-left: 60%;
   transform: translate(-50%, -50%);
 }
 
 .aboutus-header{
-  height: 600px;
+  height: 35vw;
   background-image: url("./images2/aboutus.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  font-size: 100px;
   text-align: center;
+  padding-top: 15%;
 }
 
 .aboutus-container .weRbest{
@@ -540,25 +774,26 @@
   max-width: 60%;
   margin-left:auto ;
   margin-right: auto;
-  margin-top: 30px;
-  margin-bottom: 70px;
+  margin-top: 3%;
+  margin-bottom: 4%;
 }
 
 .aboutus-container .weRbest >p{
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 2%;
+  font-family: 'Montserrat';
+  font-size: 1vw;
 }
 
 .aboutus-container .aboutus-img .aboutusImg{
-  height: 730px;
-  width: 1369px;
+  height: 96%;
+  width: 90%;
   background-image: url("./images2/image\ 21.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
-  font-size: 100px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -566,20 +801,20 @@
 }
 
 .aboutusFacts{
-  height: 1000px;
+  height: 58vw;
   width:60%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .aboutusFacts .Row1{
-  height:45%;
+  height:48%;
   width:100%;
-  margin-bottom: 60px;
+  margin-bottom: 5%;
 }
 .aboutusFacts .Row2{
-  margin-top: 60px;
-  height:45%;
+  margin-top: 5%;
+  height:48%;
   width:100%;
 }
 .aboutusFacts .row1{
@@ -606,13 +841,11 @@
 .aboutusFacts .Row1 .row1 .indiaImg{
     margin-left :auto ;
     margin-right: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-image: url("./images2/india\ \(2\).jpg");
-    height:50%;
-    width:44%;
-    background-position: center;
-    background-size: cover;
+    margin-top: 7%;
+    background-image: url("./images2/Slide4.JPG");
+    height:40%;
+    width:50%;
+    background-size:100% 100%;
     background-repeat: no-repeat;
     color: #DFF2D4;
 }
@@ -620,13 +853,12 @@
 .aboutusFacts .Row1 .row2 .indiaImg{
   margin-left :auto ;
   margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-image: url("./images2/certified\ \(1\).jpg");
-  height:50%;
+  margin-top: 8%;
+  margin-bottom: 0;
+  background-image: url("./images2/Slide1.JPG");
+  height:40%;
   width:50%;
-  background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   color: #DFF2D4;
 }
@@ -634,13 +866,11 @@
 .aboutusFacts .Row2 .row1 .indiaImg{
   margin-left :auto ;
   margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-image: url("./images2/gift\ \(1\).jpg");
-  height:55%;
-  width:50%;
-  background-position: center;
-  background-size: cover;
+  margin-top: 5%;
+  background-image: url("./images2/Slide2.JPG");
+  height:50%;
+  width:62%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   color: #DFF2D4;
 }
@@ -648,24 +878,34 @@
 .aboutusFacts .Row2 .row2 .indiaImg{
   margin-left :auto ;
   margin-right: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-image: url("./images2/mission.jpg");
-  height:55%;
-  width:50%;
-  background-position: center;
-  background-size: cover;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  background-image: url("./images2/Slide3.JPG");
+  height:40%;
+  width:56%;
+  background-size:100% 100%;
   background-repeat: no-repeat;
   color: #DFF2D4;
 }
 
+.h2{
+  font-family: 'Montserrat';
+  font-size: 1.5vw;
+}
+
+.aboutusFacts .pClass{
+  font-size: 0.8vw;
+  width:75%;
+  text-align: left;
+  margin: auto;
+}
 .aboutus-container .healthFacts-container{
   width:80%;
   margin-left:auto;
   margin-right: auto;
-  height:500px;
+  height:30vw;
   background-color: #DFF2D4;
-  margin-bottom: 30px;
+  margin-bottom: 2%;
 }
 .aboutus-container .healthFacts-container .pureNatural{
   width:35%;
@@ -685,35 +925,105 @@
   background-color:#F6EFE5;
 }
 
+.aboutus-container .healthFacts-container .health >h1{
+  font-family: 'Montserrat';
+  font-size: 0.9vw;
+  margin-top: 1.6%;
+  text-align: left;
+  font-weight: 800;
+  margin-left: 5%;
+}
+
+.aboutus-container .healthFacts-container .health >p{
+  width:90%;
+  margin-left: 5%;
+  margin-bottom: 1.4%;
+  font-size: 0.9vw;
+}
+
+.service-container{
+  background-color: #F6EFE5;
+}
+
+.pageno{
+  margin-left: 23%;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 1.2vw;
+  margin-bottom: 6%;
+}
+
+.shopnow_dot {
+  height: 20px;
+  width: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 6%;
+  font-family: 'Monserrat', sans-serif;
+}
+
+.shopdot_first{
+  margin-left: 14%;
+}
+
+.show{
+  margin-left: 2%;
+  font-family: 'Monserrat', sans-serif;
+  margin-bottom: 6%;
+}
+
+.nextpage{
+  margin-left: 13%;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 1.2vw;
+  margin-bottom: 6%;
+}
+
+.shopnow_dot1 {
+  height: 20px;
+  width: 20px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: left;
+  padding-bottom: 2%;
+}
+
 .service-container .shopNow{
-  height:90vh;
+  height:40vw;
   width:100%;
   background-image: url("./images2/image\ 16.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-color:#F6EFE5;
+  /* background-color:#F6EFE5; */
   text-align: center;
   color: #F6EFE5;
-  font-size: 4.5vw;
+  padding-top: 20%;
 }
 
 .service-container .shopNow .jugaad{
   margin-left:auto;
   margin-right: auto;
-  height:12vh;
+  height:5.6vw;
   background-color:#FFFBF4;
   width:65%;
-  margin-top: 54.8vh;
+  margin-top: 8.5%;
   border-radius: 30px 30px 0 0;
+}
+
+.service-container .shopNow .shadow{
+  background-color: black;
+  opacity: 0.5;
+  height:100%;
+  width:100%;
 }
 
 @media screen and (max-width:1500px){
   .service-container .shopNow{
     width:100%;
     height:auto;
-    margin-top: -17vh;
-    margin-bottom: -13vh;
     background-size: 100% auto !important;
   }
 }
@@ -722,35 +1032,45 @@
 .service-container .jugaadComplete{
   margin-left:auto;
   margin-right: auto;
-  height: 3000px;
+  height: 154vw;
   background-color:#FFFBF4;
   width:65%;
   border-radius: 0 0 30px 30px;
-  box-shadow: 6px 6px 6px gainsboro;
-  margin-bottom: 5vh;
+  box-shadow: 0 0 15px 0px gainsboro;
+  clip-path: inset(0px -15px 0px -15px);
+  /* box-shadow: -6px 6px 6px gainsboro;
+  box-shadow: 6px 6px 6px gainsboro; */
+  margin-bottom: 3vh;
   text-align: center;
 }
 
 .service-container .jugaadComplete >p{
   margin:auto;
-  width:35%;
+  width:40%;
   text-align: left;
-  margin-bottom: 4vh;
+  margin-bottom: 3vw;
+  font-family: 'Montserrat';
+  font-size: 0.9vw;
+  font-weight: 400;
+}
+
+.service-container .jugaadComplete >h1{
+  font-size: 5vw;
 }
 
 .service-container .jugaadComplete .Row1{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  height: 740px;
-  width:1000px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 36vw;
+  width:90%;
   margin-left:auto;
   margin-right: auto;
   color: white;
 }
 
 .service-container .jugaadComplete .Row1 .r1c1{
-  height: 569px;
-  width: 454px;
+  height: 77%;
+  width: 46.1%;
   margin: auto;
   float:left;
   background-image: url("./images2/187\ ghee-gir\ 1.jpg");
@@ -761,8 +1081,8 @@
 }
 
 .service-container .jugaadComplete .Row1 .r1c2{
-  height: 569px;
-  width: 454px;
+  height: 77%;
+  width: 46.1%;
   margin: auto;
   float:right;
   background-image: url("./images2/170-Mustard-Oil\ 1.jpg");
@@ -774,31 +1094,31 @@
 
 .service-container .jugaadComplete .Row1 .r2c1{
   background-color: black;
-  height: 170px;
-  width:454px;
+  height: 23%;
+  width:46.1%;
   float: left;
 }
 
 .service-container .jugaadComplete .Row1 .r2c2{
   background-color: black;
-  height: 170px;
-  width:454px;
+  height: 23%;
+  width:46.1%;
   float: right;
 }
 
 .service-container .jugaadComplete .Row2{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  height: 740px;
-  width:1000px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 36vw;
+  width:90%;
   margin-left:auto;
   margin-right: auto;
   color: white;
 }
 
 .service-container .jugaadComplete .Row2 .r1c1{
-  height: 569px;
-  width: 454px;
+  height: 77%;
+  width: 46.1%;
   margin: auto;
   float:left;
   background-image: url("./images2/182-Lakadong-Turmeric-Amended\ 1.jpg");
@@ -809,8 +1129,8 @@
 }
 
 .service-container .jugaadComplete .Row2 .r1c2{
-  height: 569px;
-  width: 454px;
+  height: 77%;
+  width: 46.1%;
   margin: auto;
   float:right;
   background-image: url("./images2/183\ Kashmiri-Red-Chilli\ 1\ \(1\).jpg");
@@ -822,31 +1142,31 @@
 
 .service-container .jugaadComplete .Row2 .r2c1{
   background-color: black;
-  height: 170px;
-  width:454px;
+  height: 23%;
+  width:46.1%;
   float: left;
 }
 
 .service-container .jugaadComplete .Row2 .r2c2{
   background-color: black;
-  height: 170px;
-  width:454px;
+  height: 23%;
+  width:46.1%;
   float: right;
 }
 
 .service-container .jugaadComplete .Row3{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  height: 740px;
-  width:1000px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 36vw;
+  width:90%;
   margin-left:auto;
   margin-right: auto;
   color: white;
 }
 
 .service-container .jugaadComplete .Row3 .r1c1{
-  height: 569px;
-  width: 454px;
+  height: 77%;
+  width: 46.1%;
   margin: auto;
   float:left;
   background-image: url("./images2/kesar.jpg");
@@ -857,8 +1177,8 @@
 }
 
 .service-container .jugaadComplete .Row3 .r1c2{
-  height: 569px;
-  width: 454px;
+  height: 77%;
+  width: 46.1%;
   margin: auto;
   float:right;
   background-image: url("./images2/pexels-tirachard-kumtanom-347140\ 1.jpg");
@@ -870,14 +1190,19 @@
 
 .service-container .jugaadComplete .Row3 .r2c1{
   background-color: black;
-  height: 170px;
-  width:454px;
+  height: 23%;
+  width:46.1%;
   float: left;
 }
 
 .service-container .jugaadComplete .Row3 .r2c2{
   background-color: black;
-  height: 170px;
-  width:454px;
+  height: 23%;
+  width:46.1%;
   float: right;
+}
+
+.classh2{
+  font-family: 'Montserrat';
+  font-size: 1.4vw;
 }

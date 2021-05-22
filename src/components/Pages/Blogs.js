@@ -1,22 +1,24 @@
 import React from 'react'
 import '../../App.css'
 import {Button} from '../button'
+import {Link} from 'react-router-dom';
 
 export default function Blogs(){
     return (
         <>
           <div className="blogContainer">
-              <div className="blogtop" style={{height:"400px"}}>
-                 <h1 style={{fontSize:"80px"}}>BLOGS</h1>
+              <div className="blogtop" style={{height:"38%", paddingTop:"2.7%"}}>
+                 <h1 style={{fontSize:"5.3vw"}}>Blogs</h1>
                  <div className="subBlog">
                     <ul>
-                        <li><a style={{textDecoration:"none"}} href="/">⚫ Blogger</a></li>
-                        <li><a style={{textDecoration:"none"}} href="/">⚫ Blogs</a></li>
-                        <li><a style={{textDecoration:"none"}} href="/">⚫ Cooking</a></li>
-                        <li><a style={{textDecoration:"none"}} href="/">⚫ Food</a></li>
-                        <li><a style={{textDecoration:"none"}} href="/">⚫ Health</a></li>
+                        <li><a style={{textDecoration:"none"}} href="/blogs">⚫ Blogger</a></li>
+                        <li><a style={{textDecoration:"none"}} href="/blogs">⚫ Blogs</a></li>
+                        <li><a style={{textDecoration:"none"}} href="/blogs">⚫ Cooking</a></li>
+                        <li><a style={{textDecoration:"none"}} href="/blogs">⚫ Food</a></li>
+                        <li><a style={{textDecoration:"none"}} href="/blogs">⚫ Health</a></li>
                     </ul>
                  </div>
+                 <div className="dateCalender" style={{float:"left",width:"50%", marginLeft:"30%", marginTop:"4.5%", fontSize:"1vw"}}><h2>16-03-2021</h2><h3>View Calender ^</h3></div>
                  <div class="wrap">
                     <div class="search">
                         <input type="text" class="searchTerm" placeholder="What are you looking for?"></input>
@@ -26,17 +28,18 @@ export default function Blogs(){
                     </div>
                 </div>
               </div>
-              <a href="/">Recent post ></a>
-              <div className="blogPost">
+            <a href="/blogs">Recent post ></a>
+            <div className="blogPost">
                 <div className="Fblog"></div>
                 <div className="Fblogmatter">
                     <div className="Blogmatter">
-                        <h1 style={{color:"white"}}>
+                        <h1 style={{color:"white",fontSize:"2.3vw", marginBottom:"7%",textAlign:"left"}}>
                         What is Organic farming in India | Benefits and Methods
                         </h1>
-                        <p>here comes the like, comments, views icons</p>
-                        <p>Organic farming is one the most ancient agriculture method in which the farmer use  ecologically based pest controls and biological fertilizers. The increasing population of the world is the biggest problem today.</p>
-                        <Button buttonStyle='btn--outline'>Read More></Button>
+                        <p style={{marginBottom:"7%",fontSize:"0.6vw"}}><span className="likes"><i class="fal fa-eye" ></i> 403 views </span> <span className="likes"><i class="far fa-thumbs-up"></i> 403 likes</span>  <span className="likes"><i class="far fa-comment-alt"></i> 403 comments</span></p>
+                        <p style={{fontSize:"0.7vw"}}>Organic farming is one the most ancient agriculture method in which the farmer use  ecologically based pest controls and biological fertilizers. The increasing population of the world is the biggest problem today.</p>
+                        {/* <div className="readmorebtn"><Button buttonStyle='btn--round-whitebor'>Read More > </Button></div> */}
+                        <Link to="/Blog_read/Blog1"><button style={{border:"1px solid white", marginBottom:"5%"}} className="shopNowbtn" type="submit">Read More ></button></Link>
                     </div>
                     
                 </div>

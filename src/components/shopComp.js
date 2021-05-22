@@ -1,5 +1,6 @@
 import React from 'react';
 import './shopComp.css';
+import '../App.css';
 import ShopItem from './shopItems';
 
 function ShopComp() {

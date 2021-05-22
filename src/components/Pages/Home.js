@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../../App.css';
 //import Cards from '../Cards';
 import HeroSection from '../HeroSection';
@@ -6,24 +6,84 @@ import Cards from '../Cards';
 import HomeBlog from '../homeBlog'
 import AbubabaOrg from '../AbubabaOrg';
 import Trending from '../Trending'
+import { Link } from 'react-router-dom';
+import ClientsItem from '../ClientsItem'
+import img0 from '../../images2/Ellipse 1.png'
+import img1 from '../../images2/Ellipse 2.png'
+import img2 from '../../images2/Ellipse 3.png'
+import star from '../../images2/4 start.png'
 //import Footer from '../Footer';
 
-function Home() {
+const index0=[0,1,2];
+
+class Home extends Component{
+
+  constructor(props){
+    super(props);
+    this.state = {
+        src:[img0,img1,img2],
+        name:['Sharon Grover', 'Shubham Verma', 'Shalini Kaur'],
+        // stars:['<i class="fas fa-star"></i>','<i class="fas fa-star"></i>','<i class="fas fa-star"></i>'],
+        description:['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa eget in congue a odio diam tortor feugiat massa. Fringilla tempor eu arcu in ullamcorper aliquam.','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa eget in congue a odio diam tortor feugiat massa. Fringilla tempor eu arcu in ullamcorper aliquam.','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa eget in congue a odio diam tortor feugiat massa. Fringilla tempor eu arcu in ullamcorper aliquam.'],
+        showMessage0:false,
+        showMessage1:false,
+        showMessage2:false,
+        showMessage3:false
+      };
+  }
+  
+  onButtonClickHandler0 = () => {
+    this.setState({ showMessage0: !this.state.showMessage0});
+  };
+  onButtonClickHandler1 = () => {
+    this.setState({ showMessage1: !this.state.showMessage1});
+  };
+  onButtonClickHandler2 = () => {
+    this.setState({ showMessage2: !this.state.showMessage2});
+  };
+  onButtonClickHandler3 = () => {
+    this.setState({ showMessage3: !this.state.showMessage3});
+  };
+
+  render(){
   return (
     <>
       <HeroSection />
+      <div className="homeFact-container">
       <div className="homeFacts">
-        <h1>It Matters</h1>
-         <div className="fact1"><h2>ORIGIN OF PRODUCT</h2><button style={{borderColor:"white"}}>Read More ˅</button></div>
-         <div className="fact2"><h2>CERTIFIED ORGANIC</h2><button style={{borderColor:"white"}}>Read More ˅</button></div>
-         <div className="fact3"><h2>ARTISANAL PROCESS</h2><button style={{borderColor:"white"}}>Read More ˅</button></div>
-         <div className="fact4"><h2>RESLUT MATTERS</h2><button style={{borderColor:"white"}}>Read More ˅</button></div>
-      </div>
+        <h1 style={{fontSize:"6vw", marginBottom:"3%"}}>It Matters</h1>
+         <div className="fact1">
+           <h2>ORIGIN OF PRODUCT</h2>
+             <button style={{borderColor:"white"}} onClick={this.onButtonClickHandler0}>Read More ˅</button>
+             {this.state.showMessage0 && <p style={{fontFamily:"'Monserrat', sans-serif",fontSize:"0.8vw"}}>Our focus is not to choose the product but to let the product choose us. We believe in mother nature and it’s idea of deciding the optimal origin of the product which leads us to the best quality.</p>}
+        </div>
+         <div className="fact2">
+           <h2>CERTIFIED ORGANIC</h2>
+           <button style={{borderColor:"white"}} onClick={this.onButtonClickHandler1}>Read More ˅</button>
+             {this.state.showMessage1 && <p style={{fontFamily:"'Monserrat', sans-serif",fontSize:"0.8vw"}}>We are a certified organic brand and our philosophy is to work and produce the optimal quality and high standard products for our customer. Our products are all natural and free from any artificial ingredients.</p>}
+        </div>
+         <div className="fact3">
+           <h2>ARTISANAL PROCESS</h2>
+           <button style={{borderColor:"white"}} onClick={this.onButtonClickHandler2}>Read More ˅</button>
+             {this.state.showMessage2 && <p style={{fontFamily:"'Monserrat', sans-serif",fontSize:"0.8vw"}}>All our products are handmade and handcrafted with love by our food artisans. With close attention to personal touch, we strive to retain the traditional methods of production to achieve the best quality.</p>}
+         </div>
+         <div className="fact4">
+           <h2>RESULT MATTERS</h2>
+           <button style={{borderColor:"white"}} onClick={this.onButtonClickHandler3}>Read More ˅</button>
+             {this.state.showMessage3 && <p style={{fontFamily:"'Monserrat', sans-serif",fontSize:"0.8vw"}}>The benefits that the organic food provides are conclusive and we love to see the satisfaction reflecting in the smiles of our customers when they see the difference. In the end, you matter to us.</p>}
+         </div>
+      </div></div>
       <Cards />
       <AbubabaOrg/>
       <Trending/>
-      <h1>Latest Blogs</h1>
       <HomeBlog/>
+      <div className="clientTest">
+          <h1 style={{fontSize:"6vw"}}>Client Testimonials</h1>
+          <p style={{textAlign:"center", fontFamily:"'Monserrat',sans-serif",fontSize:"1.2vw",marginBottom:"1%"}}>What our Customers say about us?</p>
+          {index0.map(i => {
+                return <ClientsItem src={this.state.src[i]} name={this.state.name[i]} description={this.state.description[i]}/>
+                })}
+      </div>
       <div className="home-certification">
         <h1>Certification</h1>
         <div class="img1"></div>
@@ -35,19 +95,18 @@ function Home() {
       <div className="home-subscribe">
        <div className="pickles"></div>
        <div className="subscribe">
-         <h1>ABUBABA</h1>
-         <h2>ORGANIC</h2>
-         <hr></hr>
+         <div className="logo"></div>
          <h1>SUBSCRIBE</h1>
          <p>Sign in for the latest updates and offers on our products.</p>
          <form>
-           <input className="email" type="text" placeholder="enter email address" ></input>
-           <input className="submit" type="submit" placeholder="SUBMIT"></input>
+           <input className="email" type="text" placeholder="Enter email address" ></input>
+           <Link to="/"><input className="submit" type="submit" placeholder="SUBMIT"></input></Link>
          </form>
        </div>
       </div>
     </>
   );
+  }
 }
 
 export default Home;

@@ -1,10 +1,11 @@
 .cards {
     padding: 4rem;
-    background: #F1E9E7;
+    background: #F6EFE5;
   }
   
   h1 {
     text-align: center;
+    font-size: 6vw;
   }
   
   .cards__container {
@@ -24,16 +25,17 @@
   }
   
   .cards__items {
-    margin-bottom: 24px;
+    margin-bottom: 1%;
     width:100%;
   }
   
   .cards__item {
     display: flex;
     flex: 1;
-    margin: 0 1rem;
+    margin: 0 0.5rem;
     width: 100%;
-    border-radius: 10px;
+    height: 30vw;
+    border-radius: 15px;
   }
   
   .cards__item__link {
@@ -51,7 +53,7 @@
   .cards__item__pic-wrap {
     position: relative;
     width: 100%;
-    height: 480px;
+    height: 100%;
     padding-top: 67%;
     overflow: hidden;
   }
@@ -84,7 +86,6 @@
   }
   
   .cards__item__info {
-    padding: 10px 10px 10px 10px;
     width:100%;
   }
   
@@ -92,12 +93,27 @@
     background-color: black;
     text-align: center;
     color:whitesmoke;
-    font-size: 18px;
-    margin-top: 100px;
-    height: 60px;
+    margin-top: 25%;
+    height: 160px;
+    font-size: 1.4vw;
+    font-weight: 400;
+    font-family: 'Montserrat';
     width: 100%;
     opacity: 0.7;
-    line-height: 24px;
+    line-height: 3.5rem;
+  }
+
+  .expmore{
+    padding:2% 4% 2% 4%;
+    border-radius:15px;
+    font-family: 'Monserrat', sans-serif;
+    font-size: 1.2vw;
+  }
+
+  .cards__item__text:hover{
+    margin-top: 0;
+    transition-timing-function: ease-in;
+    transition-duration: 0.5s;
   }
   
   @media only screen and (min-width: 1200px) {
@@ -115,5 +131,9 @@
   @media only screen and (max-width: 1024px) {
     .cards__item {
       margin-bottom: 2rem;
+      display:flex;
+      width:50%;
+      margin-left: 25%;
+      float:left;
     }
   }

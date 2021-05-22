@@ -1,6 +1,6 @@
 .trends {
     padding: 4rem;
-    background:white;
+    background:#F6EFE5;
   }
   
 h1 {
@@ -24,7 +24,7 @@ h1 {
   }
   
   .trends_items {
-    margin-bottom: 80px;
+    margin-bottom: 5%;
     width:100%;
   }
   
@@ -54,22 +54,22 @@ h1 {
   .trending_item_pic-wrap {
     position: relative;
     width: 100%;
-    height: 480px;
+    height: 27vw;
     overflow: hidden;
   }
-  .trending_item_pic-wrap::after {
+  /* .trending_item_pic-wrap::after { */
     /* content: attr(data-category); */
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
     margin-left: 10px;
     padding: 6px 8px;
     max-width: calc((100%) - 60px);
     font-size: 12px;
     font-weight: 700;
-    color: #fff;
+    color: #fff; */
     /* background-color: #1f98f4; */
-    box-sizing: border-box;
-  }
+    /* box-sizing: border-box;
+  } */
   
   .trending_item_img {
     position: absolute;
@@ -88,25 +88,33 @@ h1 {
   
   .trending_item_info {
     width:100%;
-    height: 180px;
+    height: 10.5vw;
     text-decoration: none;
     color:black;
     text-align: center;
   }
 
   .trending_item_info >h2{
-     margin-top: 30px;
+     margin-top: 10%;
+     font-family: 'Montserrat';
+     font-size: 1.5vw;
   }
+
+  .trending_item_info >h3{
+    font-family: 'Montserrat';
+    font-size: 1.5vw;
+    margin-bottom: -5%;
+ }
   
   .trending_item_text {
     background-color: black;
     text-align: center;
     color:whitesmoke;
-    font-size: 18px;
-    margin-top: 30px;
-    height: 60px;
+    font-size: 1.1vw;
+    margin-top: 7%;
+    height: 80%;
     width: 100%;
-    line-height: 24px;
+    line-height: 50px;
   }
   
   @media only screen and (min-width: 1024px) {
@@ -118,5 +126,17 @@ h1 {
   @media only screen and (max-width: 1024px) {
     .trending_item {
       margin-bottom: 2rem;
+      width: 60%;
+    }
+
+    .trending_item_pic-wrap {
+      position: relative;
+      width: 100%;
+      height: 40vw;
+      overflow: hidden;
+    }
+
+    .trending_item_text {
+      line-height: 20px;
     }
   }

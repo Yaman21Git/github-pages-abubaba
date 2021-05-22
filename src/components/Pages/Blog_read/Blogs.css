@@ -1,0 +1,102 @@
+.blogBack{
+    width:100%;
+    height: 60vw;
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 1.6%;
+}
+
+.blogBack >img{
+    width: 100%;
+    height: 90%;
+}
+
+.centered {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Tangerine';
+    font-size: 8vw;
+    font-weight: 300;
+}
+
+.blogBack .blackhead{
+    background-color: black;
+    color: white;
+    width: 62%;
+    height: 14%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Tangerine';
+    font-size: 3.6vw;
+    font-weight: 300;
+    padding-top: 2.4%;
+}
+
+.content{
+    width: 62%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.firstp{
+    margin-bottom: 3%;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1vw;
+    text-align: left;
+}
+
+.greenery{
+    margin-top:6%;
+    margin-bottom:10%;
+    width: 96%;
+    height: 36vw;
+}
+
+.centerhead{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4vw;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.secondp{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1vw;
+    text-align: left;
+}
+
+.otherhead{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2vw;
+    font-weight: 600;
+    text-align: left;
+    margin-bottom: 5%;
+    margin-top: 4%;
+}
+
+ul >li{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1vw;
+}
+
+.lastp{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1vw;
+    text-align: left;
+    margin-top: 7%;
+    margin-bottom: 14%;
+}
+
+.share{
+    margin-left: 48%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1vw;
+    margin-bottom: 1%;
+}

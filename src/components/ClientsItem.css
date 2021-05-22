@@ -1,0 +1,36 @@
+.client_item{
+    float:left;
+    margin-left: 4.6%;
+    margin-right: 2%;
+    width:26%;
+    height: 50%;
+    margin-top:7%;
+    background-color:white;
+    border-radius: 14px;
+    box-shadow: 5px 5px 6px grey;
+}
+
+.imgfig{
+    margin-top: -22%;
+    margin-left: 27%;
+    margin-bottom: 4%;
+    height:52%;
+    width: 44%;
+}
+
+.name{
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 1.4vw;
+    font-weight: 700;
+    margin-bottom: 3%;
+}
+
+.des{
+    width:64%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 0.8vw;
+}

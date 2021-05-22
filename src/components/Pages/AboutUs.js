@@ -2,24 +2,25 @@ import React from 'react'
 import '../../App.css'
 import { Button } from '../button'
 import '../Footer.css'
+import {Link} from 'react-router-dom';
 
 export default function ContactUs(){
     return (
        <>
          <div>
-             <div className="about-container" style={{height:"500px"}}>
-                <h1 style={{color:"white", fontSize:"100px", paddingTop:"350px"}}>Contact Us</h1>
+             <div className="about-container" style={{height:"30vw"}}>
+                <h1 style={{color:"white", fontSize:"8vw", paddingTop:"22%"}}>Contact Us</h1>
              </div>
              <div className="signup-container">
                  <div className="contactForm">
-                 <h1 style={{marginRight:"68%"}}>Hello !</h1>
-                 <p style={{marginLeft:"12%"}}>For any Queries or leave us a Feedback</p>
+                 <h1 style={{marginLeft:"-65%",fontSize:"4vw"}}>Hello !</h1>
+                 <p style={{marginLeft:"12%",fontSize:"1vw"}}>For any Queries or leave us a Feedback</p>
                  <form className="mainForm" style={{width:"80%", marginTop:"5%"}}>
-                    <p className="p1"><input className="input-form" type="text" placeholder="Full Name" style={{width:"70%"}}></input></p>
-                    <p className="p1"><input className="input-form" type="email" placeholder="Username / Email-Address" style={{width:"70%"}}></input></p>
-                    <p className="p1"><textarea rows="10" cols="83" name="comment" placeholder=" Message" style={{borderRadius:"10px",border:"2px solid black"}}></textarea></p>
-                    <p className="p2"><input type="checkbox" style={{marginLeft:"-12%"}}></input><label>I agree that my submitted data is being collected and stored.</label></p>
-                    <div style={{background:"black", margin:"0 auto", width:"11%"}}><Button buttonStyle="btn--outline">SUBMIT</Button></div>
+                    <p className="p1"><input className="input-form" type="text" placeholder="Full Name" style={{width:"70%",marginBottom:"3%"}}></input></p>
+                    <p className="p1"><input className="input-form" type="email" placeholder="Username / Email-Address" style={{width:"70%",marginBottom:"3%"}}></input></p>
+                    <p className="p1"><textarea name="comment" placeholder=" Message" style={{borderRadius:"10px",border:"2px solid black",height:"6vw",width:"70%",backgroundColor:"#F6EFE5"}}></textarea></p>
+                    <p className="p2"><input type="checkbox" style={{marginLeft:"-11%"}}></input><label style={{fontSize:"0.7vw"}}>I agree that my submitted data is being collected and stored.</label></p>
+                    <Button buttonStyle="btn--rounded">SUBMIT</Button>
                  </form></div>
                  <div className="contactDetails">
                    <h1><i class="fas fa-map-marker-alt"></i>  Address</h1>
@@ -47,8 +48,9 @@ export default function ContactUs(){
                  </section>
                 </div> */}
              {/* </div> */}
-             <div className="map"><a href="https://abubabaorganic.com/contact/"><div className="about-container2" style={{height:"600px"}}></div></a>
-             </div>
+             <div style={{height:"34vw", width:"100%",backgroundColor:"#F6EFE5"}}>
+             <div className="map"><a href="https://abubabaorganic.com/contact/"><div className="about-container2" style={{height:"100%",width:"90%"}}></div></a>
+             </div></div>
          </div>
        </>
     );

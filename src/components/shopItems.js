@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {Button} from './button'
+import '../App.css';
 
 function ShopItem(props) {
   return (
