@@ -16,6 +16,7 @@
     max-height: 100%;
     display: block; 
 }
+
 .pdtImages .images .small{
     width: 27%;
     margin-top: 2%;
@@ -62,6 +63,30 @@
 
 .pdtImages .pdtMatter >p{
     margin-left: 10%;
+}
+
+/* #zoomed{
+    border:1px solid black;
+    height:25vw;
+    margin-top: -25%;
+} */
+
+.hover1{
+    background-image: url('../../../images2/187 ghee-gir.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.hover2{
+    background-image: url('../../../images2/55 a gir.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.hover3{
+    background-image: url('../../../images2/55 b gir.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .productDes{

@@ -18,6 +18,12 @@ import SignUp from './components/Pages/SignUp'
 import SignIn from './components/Pages/SignIn'
 import ContactUs from './components/Pages/ContactUs';
 import Footer from './components/Footer';
+import Riceflour from './components/Pages/OurCollection/rice&flour'
+import Spices from './components/Pages/OurCollection/spices'
+import Pickles from './components/Pages/OurCollection/pickles&chutneys'
+import Pulses from './components/Pages/OurCollection/pulses'
+import Honey from './components/Pages/OurCollection/honey'
+import Breakfast from './components/Pages/OurCollection/breakfast'
 import GirGhee from './components/Pages/Products/GirGhee'
 //import Cards from './components/Cards';
 
@@ -44,6 +50,12 @@ class App extends React.Component{
              <Route path='/signup' component={SignUp}/>
              <Route path='/signin' component={SignIn}/>
              <Route path='/Products/GirGhee' component={GirGhee}/>
+             <Route path='/OurCollection/rice&flour' component={Riceflour}/>
+             <Route path='/OurCollection/spices' component={Spices}/>
+             <Route path='/OurCollection/pickles&chutneys' component={Pickles}/>
+             <Route path='/OurCollection/pulses' component={Pulses}/>
+             <Route path='/OurCollection/honey' component={Honey}/>
+             <Route path='/OurCollection/breakfast' component={Breakfast}/>
            </Switch>
            <Footer/>
          </Router>

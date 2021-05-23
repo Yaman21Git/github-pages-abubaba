@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import '../../../App.css'
 import './Products.css'
 import {Link} from 'react-router-dom';
@@ -37,24 +37,66 @@ const reviews=[
                }
             ];
 
-export default function GirGhee(){
+
+class GirGhee extends Component{
+    constructor(props){
+      super(props);
+      this.state={
+        hovered1:false,
+        hovered2:false,
+        hovered3:false
+      };
+    }
+
+    onMousehover1 = e => {
+      this.setState({ hovered1: true });
+    };
+    onMouseout1 = e => {
+      this.setState({ hovered1: false });
+    };
+
+    onMousehover2 = e => {
+      this.setState({ hovered2: true });
+    };
+    onMouseout2 = e => {
+      this.setState({ hovered2: false });
+    };
+
+    onMousehover3 = e => {
+      this.setState({ hovered3: true });
+    };
+    onMouseout3 = e => {
+      this.setState({ hovered3: false });
+    };
+
+    render(){
+      const { hovered1 } = this.state;
+      const { hovered2 } = this.state;
+      const { hovered3 } = this.state;
+      const style1 = hovered1 ? { height:"25vw", marginTop:"-25%"} : {display:"none"};
+      const style2 = hovered2 ? { height:"25vw", marginTop:"-25%"} : {display:"none"};
+      const style3 = hovered3 ? { height:"25vw", marginTop:"-25%"} : {display:"none"};
+
     return (
              <>
              <div>
              <div className="pdtImages">
                  <div className="images">
                    <img className="full" src={img0}/>
-  
-                   <img src={img1} className="small"/>
-                   <img className="small" src={img2}/>
-                   <img className="small" src={img3}/>
+                   <img className="small" src={img1} onMouseOver={this.onMousehover1} onMouseOut={this.onMouseout1}/>
+                   <img className="small" src={img2} onMouseOver={this.onMousehover2} onMouseOut={this.onMouseout2}/>
+                   <img className="small" src={img3} onMouseOver={this.onMousehover3} onMouseOut={this.onMouseout3}/>
                  </div>
                  <div className="pdtMatter">
+                  {hovered1&&<div className="hover1" style={style1}> </div>}
+                  {hovered2&&<div className="hover2" style={style2}> </div>}
+                  {hovered3&&<div className="hover3" style={style3}> </div>}
                    <h1>{name}</h1>
                    <h2>{price}</h2>
                    <Link to="/signup"><button className="spnbtn1">Add to Cart +</button></Link>
                    <p><span><button className="wishlist"><i class="far fa-heart"></i> Wishlist</button></span>
                    <span><button className="wishlist"><i class="fas fa-share-alt"></i> Share</button></span></p>
+                   
                  </div>
              </div>
              <div className="productDes">
@@ -120,4 +162,7 @@ export default function GirGhee(){
              </div>
              </>
         );
+    }
 }
+
+export default GirGhee;
