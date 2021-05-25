@@ -17,7 +17,7 @@ const index2=[6];
 const imgSrc=[img0,img1,img2,img3,img4,img5,img6];
 const text=['Mango Chutney', 'Mango Pickle', 'Lemon Pickle','Lemon Black Pickle','Green Chilli Pickle', 'Garlic Pickle','Lemon Chutney'];
 const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
-const path=['/cart','/cart','/cart','/cart','/cart','/cart','/cart'];
+const path=['/products/60aa6b933f3ca14f407dc623','/products/60aa6cbe3f3ca14f407dc624','/products/60aa6e353f3ca14f407dc625','/products/60aa90202e79914b043dc0ad','/products/60aa6f803f3ca14f407dc626','/products/60aa703d3f3ca14f407dc627','/products/60aa71303f3ca14f407dc628'];
 
 export default function Pickles(){
      return(

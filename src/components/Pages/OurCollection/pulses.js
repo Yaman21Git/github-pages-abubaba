@@ -15,7 +15,7 @@ const index1=[3,4,5];
 const imgSrc=[img0,img1,img2,img3,img4,img5];
 const text=['Organic Arhar Dal', 'Organic Chana Dal', 'Chitra Kidney Beans','Red Kidney Beans','Organic Urad Dal', 'White Chick Pea'];
 const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
-const path=['/cart','/cart','/cart','/cart','/cart','/cart'];
+const path=['/products/60ab737b57cf811148043aa7','/products/60aa77933f3ca14f407dc629','/products/60aa79363f3ca14f407dc62a','/products/60aa79bb3f3ca14f407dc62b','/products/60aa7a753f3ca14f407dc62c','/products/60aa978f2e79914b043dc0ae'];
 
 export default function Pulses(){
      return(

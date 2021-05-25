@@ -33,9 +33,9 @@ const index5=[15,16,17];
 const index6=[18,19];
 
 const imgSrc=[img0,img1,img2,img3,img4,img5,img6,img7,img8,img9,img10,img11,img12,img13,img14,img15,img16,img17,img18,img19];
-const text=['Black Pepper Powder', 'Black Pepper Whole', 'Green Cardamom','Chaat Masala','Chana Masala', 'Coriander Powder','Cumin Powder','Dal makhni Masala','Garam Masala','Pav Bhaji Masala','Rajmah Masala','Red Chilli Powder','Sambhar Masala','Shahi Paneer Masala','Turmeric Powder','Lakadong Turmeric','Kashmiri Red Chilli','Lemon Lime Salt','Kitchen King','Peri Peri'];
+const text=['Black Pepper Powder', 'Black Pepper Whole', 'Green Cardamom','Chaat Masala','Chana Masala', 'Coriander Powder','Cumin Powder','Dal makhni Masala','Garam Masala','Pav Bhaji Masala','Rajma Masala','Red Chilli Powder','Sambhar Masala','Shahi Paneer Masala','Turmeric Powder','Lakadong Turmeric','Kashmiri Red Chilli','Lemon Lime Salt','Kitchen King','Peri Peri'];
 const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
-const path=['/cart','/cart','/cart','/cart','/cart','/cart','/cart','/cart','/cart','/cart','/cart','/cart','/cart','/cart','/cart','/cart','/cart','/cart','/cart','/cart'];
+const path=['/products/60aaa63a2e79914b043dc0bc','/products/60aaa6ea2e79914b043dc0bd','/products/60aaa8382e79914b043dc0be','/products/60aaa8b32e79914b043dc0bf','/products/60abcf5d7b07ce47e470394b','/products/60aaa9442e79914b043dc0c0','/products/60aaa9db2e79914b043dc0c1','/products/60aaaa672e79914b043dc0c2','/products/60aaab422e79914b043dc0c3','/products/60aaabfa2e79914b043dc0c4','/products/60aaaca02e79914b043dc0c5','/products/60aaad322e79914b043dc0c6','/products/60aaadf42e79914b043dc0c7','/products/60aaae9b2e79914b043dc0c8','/products/60aaaf1e2e79914b043dc0c9','/products/60aaafc02e79914b043dc0ca','/products/60aab0902e79914b043dc0cb','/products/60abd1697b07ce47e470394c','/products/60aab16b2e79914b043dc0cc','/products/60abd2397b07ce47e470394d'];
 
 export default function Spices(){
      return(
