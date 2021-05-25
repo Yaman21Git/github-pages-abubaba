@@ -25,7 +25,7 @@ const index2=[6,7,8];
 const imgSrc=[img0,img1,img2,img3,img4,img5,img6,img7,img8];
 const text=['White Rice Basmati', 'Organic Bajra', 'Organic Poha','Organic Garam Masala','Pav Bhaji Masala','Black Pepper Whole','Rajmah Masala','Sambhar Masala','Shahi Paneer Masala'];
 const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
-const path=['/services','/services','/services','/services','/services','/services',,'/services','/services','/services'];
+const path=['/products/60aa655fa823f64adc11d6df','/products/60ab6ee957cf811148043aa3','/products/60aa66aba823f64adc11d6e0','/products/60aaab422e79914b043dc0c3','/products/60aaabfa2e79914b043dc0c4','/products/60aaa6ea2e79914b043dc0bd','/products/60aaaca02e79914b043dc0c5','/products/60aaadf42e79914b043dc0c7','/products/60aaae9b2e79914b043dc0c8'];
 
 export default function Services5(){
     return (
