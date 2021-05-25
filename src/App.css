@@ -147,24 +147,71 @@
   }
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:680px) {
   .homeFact-container{
     width: 100%;
-    height: 30vh;
+    height: 50vh;
     background-size: 100% auto;
+  }
+
+  .homeFacts{
+    width:80%;
+    height:90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    text-align: center;
+  }
+
+  .homeFacts .fact1{
+    min-width:48%;
+    max-height:50%;
+    margin-left: 0;
+    margin-bottom: 2%;
+    float:left;
+  }
+
+  .homeFacts .fact2{
+    min-width:48%;
+    max-height:50%;
+    margin-left: -3%;
+    margin-bottom: 2%;
+    float:left;
+    border-right: 3px solid #F6EFE5;
+  }
+
+  .homeFacts .fact2 >h2{
+    margin-top: 50%;
+  }
+
+  .homeFacts .fact3{
+    min-width:48%;
+    max-height:50%;
+    margin-left: 3%;
+    margin-top: 2%;
+    float:left;
+  }
+
+  .homeFacts .fact4{
+    min-width:45%;
+    max-height:50%;
+    margin-left: 0;
+    margin-top: 2%;
+    float:left;
   }
 }
 
 .homeFacts .fact1{ 
   width:20%;
-  height:55%;
+  height:60%;
   margin-left: 3%;
   background-image: url('./images2/Beige\ \(4\).JPG');
-  background-size: 70% 80%;
+  background-size: 72% 76%;
   background-repeat: no-repeat;
   background-position-x: 50%;
   float:left;
-  border-right:3px solid black;
+  border-right:0.25vw solid black;
 }
 
 .homeFacts .fact1 >h2{
@@ -172,7 +219,7 @@
   margin-right:30%;
   width:100%;
   font-family: 'Montserrat', sans-serif;
-  font-size: 1.2vw;
+  font-size: 1.16vw;
 }
 
 .homeFacts .fact1 >button{
@@ -194,7 +241,7 @@
   background-repeat: no-repeat;
   background-position-x: 50%;
   float:left;
-  border-right:3px solid black;
+  border-right:0.25vw solid black;
 }
 
 .homeFacts .fact2 >h2{
@@ -222,7 +269,7 @@
   background-repeat: no-repeat;
   background-position-x: 50%;
   float:left;
-  border-right:3px solid black;
+  border-right:0.25vw solid black;
 }
 
 .homeFacts .fact3 >h2{

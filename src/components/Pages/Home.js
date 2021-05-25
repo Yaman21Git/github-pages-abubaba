@@ -54,7 +54,7 @@ class Home extends Component{
       <div className="homeFacts">
         <h1 style={{fontSize:"6vw", marginBottom:"3%"}}>It Matters</h1>
          <div className="fact1">
-           <h2>ORIGIN OF PRODUCT</h2>
+           <h2>ORIGIN OF THE PRODUCT</h2>
              <button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler0}>Read More ˅</button>
              {this.state.showMessage0 && <p style={{fontFamily:"'Monserrat', sans-serif",fontSize:"0.7vw",width:"80%", marginLeft:"auto",marginRight:"auto"}}>Our focus is not to choose the product but to let the product choose us. We believe in mother nature and it’s idea of deciding the optimal origin of the product which leads us to the best quality.</p>}
         </div>

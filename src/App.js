@@ -62,6 +62,7 @@ class App extends React.Component{
              <Route path='/OurCollection/breakfast' component={Breakfast}/>
              <Route path='/cart' component={Cart}/>
              <Route path='/search' component={Search}/>
+             <Route path='/products/:productId' component={GirGhee}></Route>
            </Switch>
            <Footer/>
          </Router>
