@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import '../../App.css'
 import {Button} from '../button'
 import {Link, Redirect} from 'react-router-dom'
-import { signup , authenticate, isAuthenticated} from '../api/auth'
+import { signup , authenticate, isAuthenticated} from './auth'
 
 
 class SignUp extends Component {
