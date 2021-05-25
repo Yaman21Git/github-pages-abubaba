@@ -98,7 +98,7 @@ function Navbar() {
               <circle cx="10" cy="10" r="7"/>
               <line x1="21" y1="21" x2="15" y2="15" />
             </svg></Link>
-            <Link to='/cart'><img src="https://i1.wp.com/afriwestmedia.com/wp-content/uploads/2017/03/white-shopping-cart-icon.png?fit=300%2C300" style={{height:"96%",width:"20%",marginLeft:"5%"}}/></Link>
+            <Link to='/cart'><img src="https://i1.wp.com/afriwestmedia.com/wp-content/uploads/2017/03/white-shopping-cart-icon.png?fit=300%2C300" className="cart-icon"/></Link>
           </div>
         </div>
       </nav>

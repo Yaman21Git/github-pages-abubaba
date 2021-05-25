@@ -20,6 +20,17 @@
     padding-top:0;
   }
 
+  @media screen and (max-width:680px){
+    .hero-container {
+      background: url('../images2/172-Black-Sesame-Rectified.jpg') center center/cover no-repeat;
+      min-height: 100vh;
+      width: 100%;
+      background-size: 80% 80%;
+      padding-bottom: 0;
+      padding-top:0;
+    }
+  }
+
   .hero-btns {
     margin-right:15%;
     margin-left:auto;

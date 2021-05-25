@@ -146,7 +146,7 @@
   .icons{
     width:33%;
     height:100%;
-    padding-right: 2%;
+    padding-right:2%;
   }
 }
 
@@ -259,5 +259,12 @@
     background: #fff;
     color: #242424;
     transition: 250ms;
+  }
+
+  .icons .cart-icon{
+    height:2vw;
+    width:2vw;
+    margin-left:5%;
+    margin-bottom: 2%;
   }
 }
