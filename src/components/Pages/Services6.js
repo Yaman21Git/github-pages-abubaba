@@ -25,7 +25,7 @@ const index2=[6,7,8];
 const imgSrc=[img0,img1,img2,img3,img4,img5,img6,img7,img8];
 const text=['Lakadong Turmeric', 'Kashmiri Red Chilli', 'Lemon Lime Salt','Kitchen King Masala','Peri Peri Mix','Lemon Chutney','Green Chilli Pickle','Garlic Pickle','Mango Chutney'];
 const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
-const path=['/services','/services','/services','/services','/services','/services',,'/services','/services','/services'];
+const path=['/products/60aaafc02e79914b043dc0ca','/products/60aab0902e79914b043dc0cb','/products/60abd1697b07ce47e470394c','/products/60aab16b2e79914b043dc0cc','/products/60abd2397b07ce47e470394d','/products/60aa71303f3ca14f407dc628','/products/60aa6f803f3ca14f407dc626','/products/60aa703d3f3ca14f407dc627','/products/60aa6b933f3ca14f407dc623'];
 
 export default function Services6(){
     return (
