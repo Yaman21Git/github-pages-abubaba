@@ -19,7 +19,6 @@
   height: 3.5vw;
   width:100%;
   margin-right: auto;
-  
 }
 
 .navbar-logo {
@@ -99,6 +98,56 @@
   width:33%;
   height:60%;
   padding-left: 9%;
+}
+
+@media screen and (max-width:680px) {
+  .navbar {
+    background: black;
+    height: 8vw;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-family: 'Monserrat', sans-serif;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vw;
+    width:100%;
+    margin-right: auto;
+  }
+
+  .menu-icon {
+    height:80%;
+    width:5%;
+    float: left;
+    margin-right: 82%;
+    margin-top: -4%;
+  }
+
+  .abubabaLogo{
+    background-image: url('../images2/ABUBABA\ LOGO.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 5vw;
+    width: 60%;
+    background-position-y:56%;
+    margin-left: -10%;
+    margin-right: 10%;
+  }
+
+  .icons{
+    width:33%;
+    height:100%;
+    padding-right: 2%;
+  }
 }
 
 @media screen and (max-width:800px){
