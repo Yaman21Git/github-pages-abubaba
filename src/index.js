@@ -7,4 +7,4 @@ import App from './App';
 // import './fonts/TangerineRegular-7JAD.ttf'
 
 
-ReactDOM.render(<App />,document.getElementById('root'));
+ReactDOM.render( <App />,document.getElementById('root'));

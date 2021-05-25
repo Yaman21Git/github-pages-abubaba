@@ -11,11 +11,11 @@ export default function Blogs(){
                  <h1 style={{fontSize:"5.3vw"}}>Blogs</h1>
                  <div className="subBlog">
                     <ul>
-                        <li><a style={{textDecoration:"none"}} href="/blogs">⚫ Blogger</a></li>
-                        <li><a style={{textDecoration:"none"}} href="/blogs">⚫ Blogs</a></li>
-                        <li><a style={{textDecoration:"none"}} href="/blogs">⚫ Cooking</a></li>
-                        <li><a style={{textDecoration:"none"}} href="/blogs">⚫ Food</a></li>
-                        <li><a style={{textDecoration:"none"}} href="/blogs">⚫ Health</a></li>
+                        <li><Link to="/blogs" className="heads" style={{textDecoration:"none"}} >⚫ Blogger</Link></li>
+                        <li><Link to="/blogs" className="heads" style={{textDecoration:"none"}} >⚫ Blogs</Link></li>
+                        <li><Link to="/blogs" className="heads" style={{textDecoration:"none"}} >⚫ Cooking</Link></li>
+                        <li><Link to="/blogs" className="heads" style={{textDecoration:"none"}} >⚫ Food</Link></li>
+                        <li><Link to="/blogs" className="heads" style={{textDecoration:"none"}} >⚫ Health</Link></li>
                     </ul>
                  </div>
                  <div className="dateCalender" style={{float:"left",width:"50%", marginLeft:"30%", marginTop:"4.5%", fontSize:"1vw"}}><h2>16-03-2021</h2><h3>View Calender ^</h3></div>
@@ -28,7 +28,7 @@ export default function Blogs(){
                     </div>
                 </div>
               </div>
-            <a href="/blogs">Recent post ></a>
+            <Link to="/blogs"><a href="/blogs">Recent post ></a></Link>
             <div className="blogPost">
                 <div className="Fblog"></div>
                 <div className="Fblogmatter">

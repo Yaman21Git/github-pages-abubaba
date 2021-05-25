@@ -94,7 +94,7 @@ All our products are of high quality with unique uses of being grown, cultivated
                 </div>
                <div className="r2c2">
                    <span style={{color:"yellow", fontSize:"1.5vw"}}>★★★★★</span>
-                   <h2 className="classh2">Kashmiri Saffron</h2>
+                   <h2 className="classh2">24k Gold Honey</h2>
                    <h2 className="classh2">₹ 00.00</h2>
                    {/* <Button buttonStyle="btn--outline">Add to Cart +</Button> */}
                    <div style={{border:"1px solid white",paddingTop:"1%",paddingBottom:"1%",width:"34%",marginLeft:"33%"}}><Link to="/signup" style={{fontSize:"0.9vw",textDecoration:"none",color:"white"}}>Add to Cart +</Link></div>
@@ -127,7 +127,7 @@ All our products are of high quality with unique uses of being grown, cultivated
         </div>
         </div> 
         <span class="pageno" style={{marginLeft:"10%",marginRight:"3%"}}>Page 7 of 8</span>
-        <span class="shopnow_dot1" style={{marginRight:"-13%",textAlign:"right"}}><Link to="/services6" style={{textDecoration:"none",color:"black"}}><p>⇽</p></Link></span>
+        <span class="shopnow_dot1" style={{marginRight:"-13%",textAlign:"right"}}><Link to="/services6" style={{textDecoration:"none",color:"black"}}><p>←</p></Link></span>
         <span class="nextpage">——— Previous</span>
         <span class="shopdot_first"><Link to="/services" style={{textDecoration:"none",color:"black"}}>1</Link></span>
         <span class="show"><Link to="/services2" style={{textDecoration:"none",color:"black"}}>2</Link></span>
@@ -138,7 +138,7 @@ All our products are of high quality with unique uses of being grown, cultivated
         <span class="shopnow_dot show"><Link to="/services7" style={{textDecoration:"none",color:"black"}}>7</Link></span>
         <span class="show"><Link to="/services8" style={{textDecoration:"none",color:"black"}}>8</Link></span>
         <span class="nextpage">Next ———</span>
-        <span class="shopnow_dot1"><Link to="/services8" style={{textDecoration:"none",color:"black"}}><p>￫</p></Link></span>
+        <span class="shopnow_dot1"><Link to="/services8" style={{textDecoration:"none",color:"black"}}><p>→</p></Link></span>
        </div>
        </>
     );

@@ -26,6 +26,9 @@ import Honey from './components/Pages/OurCollection/honey'
 import Breakfast from './components/Pages/OurCollection/breakfast'
 import GirGhee from './components/Pages/Products/GirGhee'
 //import Cards from './components/Cards';
+import ScrollToTop from './components/scrollToTop'
+import Cart from './components/Pages/Carts'
+import Search from './components/Pages/Search'
 
 class App extends React.Component{
   render(){
@@ -33,6 +36,7 @@ class App extends React.Component{
         <>
          <Router>
            <Navbar/>
+           <ScrollToTop />
            <Switch>
              <Route path='/' exact component={Home}/>
              <Route path='/blogs' component={Blogs}/>
@@ -56,6 +60,8 @@ class App extends React.Component{
              <Route path='/OurCollection/pulses' component={Pulses}/>
              <Route path='/OurCollection/honey' component={Honey}/>
              <Route path='/OurCollection/breakfast' component={Breakfast}/>
+             <Route path='/cart' component={Cart}/>
+             <Route path='/search' component={Search}/>
            </Switch>
            <Footer/>
          </Router>

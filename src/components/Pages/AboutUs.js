@@ -24,9 +24,9 @@ export default function ContactUs(){
                  </form></div>
                  <div className="contactDetails">
                    <h1><i class="fas fa-map-marker-alt"></i>  Address</h1>
-                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                   <p>A-1/128, Rohini Sector 11, New Delhi, India</p>
                    <h1><i class="fas fa-phone-square-alt"></i>  Phone Number</h1>
-                   <p>(+880) 123 456 7898, (+880) 123 456 7898</p>
+                   <p>+91 8595136293</p>
                    <h1><i class="fas fa-map-marker-alt"></i>  Email Us</h1>
                    <p>info@yoursite.com, info@abubabaorganics.com</p>
                  </div>

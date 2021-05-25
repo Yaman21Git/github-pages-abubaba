@@ -13,6 +13,7 @@ import img1 from '../../images2/Ellipse 2.png'
 import img2 from '../../images2/Ellipse 3.png'
 import star from '../../images2/4 start.png'
 //import Footer from '../Footer';
+import pickles from '../../images2/picklesNew.png'
 
 const index0=[0,1,2];
 
@@ -54,23 +55,23 @@ class Home extends Component{
         <h1 style={{fontSize:"6vw", marginBottom:"3%"}}>It Matters</h1>
          <div className="fact1">
            <h2>ORIGIN OF PRODUCT</h2>
-             <button style={{borderColor:"white"}} onClick={this.onButtonClickHandler0}>Read More ˅</button>
-             {this.state.showMessage0 && <p style={{fontFamily:"'Monserrat', sans-serif",fontSize:"0.8vw"}}>Our focus is not to choose the product but to let the product choose us. We believe in mother nature and it’s idea of deciding the optimal origin of the product which leads us to the best quality.</p>}
+             <button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler0}>Read More ˅</button>
+             {this.state.showMessage0 && <p style={{fontFamily:"'Monserrat', sans-serif",fontSize:"0.7vw",width:"80%", marginLeft:"auto",marginRight:"auto"}}>Our focus is not to choose the product but to let the product choose us. We believe in mother nature and it’s idea of deciding the optimal origin of the product which leads us to the best quality.</p>}
         </div>
          <div className="fact2">
            <h2>CERTIFIED ORGANIC</h2>
-           <button style={{borderColor:"white"}} onClick={this.onButtonClickHandler1}>Read More ˅</button>
-             {this.state.showMessage1 && <p style={{fontFamily:"'Monserrat', sans-serif",fontSize:"0.8vw"}}>We are a certified organic brand and our philosophy is to work and produce the optimal quality and high standard products for our customer. Our products are all natural and free from any artificial ingredients.</p>}
+           <button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler1}>Read More ˅</button>
+             {this.state.showMessage1 && <p style={{fontFamily:"'Monserrat', sans-serif",fontSize:"0.7vw",width:"80%", marginLeft:"auto",marginRight:"auto"}}>We are a certified organic brand and our philosophy is to work and produce the optimal quality and high standard products for our customer. Our products are all natural and free from any artificial ingredients.</p>}
         </div>
          <div className="fact3">
            <h2>ARTISANAL PROCESS</h2>
-           <button style={{borderColor:"white"}} onClick={this.onButtonClickHandler2}>Read More ˅</button>
-             {this.state.showMessage2 && <p style={{fontFamily:"'Monserrat', sans-serif",fontSize:"0.8vw"}}>All our products are handmade and handcrafted with love by our food artisans. With close attention to personal touch, we strive to retain the traditional methods of production to achieve the best quality.</p>}
+           <button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler2}>Read More ˅</button>
+             {this.state.showMessage2 && <p style={{fontFamily:"'Monserrat', sans-serif",fontSize:"0.7vw",width:"80%", marginLeft:"auto",marginRight:"auto"}}>All our products are handmade and handcrafted with love by our food artisans. With close attention to personal touch, we strive to retain the traditional methods of production to achieve the best quality.</p>}
          </div>
          <div className="fact4">
            <h2>RESULT MATTERS</h2>
-           <button style={{borderColor:"white"}} onClick={this.onButtonClickHandler3}>Read More ˅</button>
-             {this.state.showMessage3 && <p style={{fontFamily:"'Monserrat', sans-serif",fontSize:"0.8vw"}}>The benefits that the organic food provides are conclusive and we love to see the satisfaction reflecting in the smiles of our customers when they see the difference. In the end, you matter to us.</p>}
+           <button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler3}>Read More ˅</button>
+             {this.state.showMessage3 && <p style={{fontFamily:"'Monserrat', sans-serif",fontSize:"0.7vw",width:"80%", marginLeft:"auto",marginRight:"auto"}}>The benefits that the organic food provides are conclusive and we love to see the satisfaction reflecting in the smiles of our customers when they see the difference. In the end, you matter to us.</p>}
          </div>
       </div></div>
       <Cards />
@@ -93,7 +94,7 @@ class Home extends Component{
         <div class="img5"></div>
       </div>
       <div className="home-subscribe">
-       <div className="pickles"></div>
+       <div className="pickles"><img src={pickles} alt="pickles" style={{maxWidth:"90%", maxHeight:"80%",marginTop:"10%",marginLeft:"10%"}}/></div>
        <div className="subscribe">
          <div className="logo"></div>
          <h1>SUBSCRIBE</h1>

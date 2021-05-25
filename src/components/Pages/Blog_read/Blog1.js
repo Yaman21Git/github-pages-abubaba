@@ -56,7 +56,7 @@ export default function Blog1(){
 
                 <p className="lastp"><b>TAGS:</b> organic farming, organic farming advantages, organic farming and its benefits, organic farming and organic food, organic farming definition, organic farming in delhi, organic farming in india</p>
                 <h3 className="share">Share</h3>
-                <span class="shopnow_dot1" style={{marginLeft:"13%",textAlign:"right"}}><Link to="/blogs" style={{textDecoration:"none",color:"black"}}><p>⇽</p></Link></span>
+                <span class="shopnow_dot1" style={{marginLeft:"13%",textAlign:"right"}}><Link to="/blogs" style={{textDecoration:"none",color:"black"}}><p>←</p></Link></span>
                 <span class="nextpage" style={{marginLeft:"0"}}>——— Previous</span>
                 <span class="shopdot_first">
                     <Link to="/Blog_read/Blog1" style={{textDecoration:"none",color:"black"}}>
@@ -68,7 +68,7 @@ export default function Blog1(){
                     </Link>
                 </span>
                 <span class="nextpage">Next ———</span>
-                <span class="shopnow_dot1"><Link to="/blogs" style={{textDecoration:"none",color:"black"}}><p>￫</p></Link></span>
+                <span class="shopnow_dot1"><Link to="/blogs" style={{textDecoration:"none",color:"black"}}><p>→</p></Link></span>
           </div>
         </>
     );

@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import './homeBlog.css'
 import '../App.css';
 import HomeBlogItem from './homeBlogItem'
+import { Link } from 'react-router-dom';
 
 import img0 from '../images2/pexels.jpg'
 import img1 from '../images2/pexels-pixabay-219794 1.jpg'
