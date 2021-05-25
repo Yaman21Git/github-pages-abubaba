@@ -20,7 +20,7 @@ class Trending extends Component{
         text: ['Organic Amla juice', 'Organic Tulsi Honey', 'Fruit-n-nut Granola','Cold Pressed Groundnut Oil','Homemade Garlic Pickle','Red Kidney Bean Pulses'],
         price:['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'],
         // label: ['Grain','Grain','Grain','Grain','Grain'],
-        path: ['/services','/services','/services','/services','/services','/services']
+        path: ['/products/60acbcc4444bd63a3835cf4a','/products/60aa9e252e79914b043dc0b3','/products/60aaa43e2e79914b043dc0bb','/products/60acbdef444bd63a3835cf4c','/products/60aa703d3f3ca14f407dc627','/products/60aa79bb3f3ca14f407dc62b']
     }
   }
   render(){
