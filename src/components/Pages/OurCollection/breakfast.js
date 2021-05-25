@@ -18,7 +18,7 @@ const index2=[6,7];
 const imgSrc=[img0,img1,img2,img3,img4,img5,img6,img7];
 const text=['Choco Nutty', 'Museli Munch', 'Chia Seeds','Flax Seeds','Muskmelon Seeds','Dried Blueberries','Peanut Butter','Fruit-n-nut Granola'];
 const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
-const path=['/cart','/cart','/cart','/cart','/cart','/cart','/cart','/cart'];
+const path=['/products/60aa9f242e79914b043dc0b4','/products/60aa9ff82e79914b043dc0b5','/products/60aaa08e2e79914b043dc0b6','/products/60aaa1342e79914b043dc0b7','/products/60aaa1e02e79914b043dc0b8','/products/60aaa2852e79914b043dc0b9','/products/60aaa3532e79914b043dc0ba','/products/60aaa43e2e79914b043dc0bb'];
 
 export default function Breakfast(){
      return(
