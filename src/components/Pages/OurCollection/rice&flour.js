@@ -15,7 +15,7 @@ const index1=[3,4,5];
 const imgSrc=[img0,img1,img2,img3,img4,img5];
 const text=['Organic Wheat Flour', 'Organic Bajra Flour', 'Organic Brown rice','White Rice Basmati','Organic Bajra', 'Organic Poha'];
 const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
-const path=['/cart','/cart','/cart','/cart','/cart','/cart'];
+const path=['/products/60aa2bb368aee53db07ae16c','/products/60ab714757cf811148043aa5','/products/60aa62f8a823f64adc11d6de','/products/60aa655fa823f64adc11d6df','/products/60ab6ee957cf811148043aa3','/products/60aa66aba823f64adc11d6e0'];
 
 export default function Riceflour(){
      return(
