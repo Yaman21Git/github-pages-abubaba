@@ -88,9 +88,9 @@ class GirGhee extends Component{
                    <img className="small" src={img3} onMouseOver={this.onMousehover3} onMouseOut={this.onMouseout3}/>
                  </div>
                  <div className="pdtMatter">
-                  {hovered1&&<div className="hover1" style={style1}> </div>}
-                  {hovered2&&<div className="hover2" style={style2}> </div>}
-                  {hovered3&&<div className="hover3" style={style3}> </div>}
+                  {hovered1&&<div className="hover1" style={style1}><img src={img1} className="imghovered"/></div>}
+                  {hovered2&&<div className="hover2" style={style2}><img src={img2} className="imghovered"/></div>}
+                  {hovered3&&<div className="hover3" style={style3}><img src={img3} className="imghovered"/></div>}
                    <h1>{name}</h1>
                    <h2>{price}</h2>
                    <Link to="/signup"><button className="spnbtn1">Add to Cart +</button></Link>
