@@ -18,7 +18,8 @@ function TrendingItem(props) {
           <div className='trending_item_info'>
               <h2>{props.text}</h2>
               <h3>{props.price}</h3>
-              <a href="/services" style={{textDecoration:"none"}}><h5 className='trending_item_text'>Add to cart +</h5></a>
+              { !props.show &&
+              <a href={props.path} style={{textDecoration:"none"}}><h5 className='trending_item_text'>Add to cart +</h5></a>}
           </div>
         </Link>
       </li>
