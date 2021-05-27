@@ -23,9 +23,8 @@ class Cards extends Component{
   constructor (props) {
     super (props);
     this.state = {
-        text: ["FARMER'S RICE & FLOUR", 'KINGDOM OF SPICES', 'PICKLES & CHUTNEY TALES ','VIBRANT OF PULSES','NATURAL HONEY DEW','BREAKFAST BITES'],
-        // label: ['Grain','Grain','Grain','Grain','Grain'],
-        path: ['/OurCollection/rice&flour','/OurCollection/spices','/OurCollection/pickles&chutneys','/OurCollection/pulses','/OurCollection/honey','/OurCollection/breakfast']
+        text: ["Immunity", 'Elixir Of Life', 'Ancient Living','Kingdom Of Spices','Wakeup Mood','Limited Edition'],
+        path: ['/OurCollection/Immunity','/OurCollection/Elixir-Of-Life','/OurCollection/Ancient-Living','/OurCollection/Kingdom-Of-Spices','/OurCollection/Wakeup-Mood','/OurCollection/Limited-Edition']
     }
   }
 
