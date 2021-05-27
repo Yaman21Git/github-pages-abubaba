@@ -3,35 +3,35 @@ import {Link} from 'react-router-dom'
 import TrendingItem from '../../TrendingItems'
 import '../../Trending.css'
 
-import img0 from '../../../images2/139-Arhar.jpg'
-import img1 from '../../../images2/142-Chana-.jpg'
-import img2 from '../../../images2/144-Chitra-Kidney-Beans.jpg'
-import img3 from '../../../images2/148-Red-Kidney-Beans-.jpg'
-import img4 from '../../../images2/149-Urad.jpg'
-import img5 from '../../../images2/143-chick-pea.jpg'
+import img0 from '../../../images2/127 Coriander-Powder.jpg'
+import img1 from '../../../images2/125-Chaat-Masala.jpg'
+import img2 from '../../../images2/Peri-Peri-.jpg'
+import img3 from '../../../images2/182-Lakadong-Turmeric-Amended.jpg'
+import img4 from '../../../images2/184-Kashmiri-Red-Chilli-03.jpg'
 
 const index0=[0,1,2];
-const index1=[3,4,5];
-const imgSrc=[img0,img1,img2,img3,img4,img5];
-const text=['Organic Arhar Dal', 'Organic Chana Dal', 'Chitra Kidney Beans','Red Kidney Beans','Organic Urad Dal', 'White Chick Pea'];
-const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
-const path=['/products/60ab737b57cf811148043aa7','/products/60aa77933f3ca14f407dc629','/products/60aa79363f3ca14f407dc62a','/products/60aa79bb3f3ca14f407dc62b','/products/60aa7a753f3ca14f407dc62c','/products/60aa978f2e79914b043dc0ae'];
+const index1=[3,4];
+const imgSrc=[img0,img1,img2,img3,img4];
+const text=['Spices', 'Masala', 'Exotic Seasonings','Lakadong Turmeric Powder','Kashmiri Red Chilli'];
+const price=['','','','₹ 00.00','₹ 00.00'];
+const show=[true, true, true, false, false];
+const path=['/category/spices','/category/masala','/category/exotic','/products/60aaafc02e79914b043dc0ca','/products/60aab0902e79914b043dc0cb'];
 
 export default function Pulses(){
      return(
          <>
            <div className='trends'>
-           <h1 style={{marginBottom:"5%"}}>Vibrant Pulses</h1>
+           <h1 style={{marginBottom:"5%"}}>Kingdom Of Spices</h1>
             <div className='trends_container'>
                 <div className='trends_wrapper'>
                 <ul className='trends_items'>
                 {index0.map(i => {
-                    return <TrendingItem src={imgSrc[i]} text={text[i]} path={path[i]} price={price[i]}/>
+                    return <TrendingItem src={imgSrc[i]} text={text[i]} path={path[i]} price={price[i]} show={show[i]}/>
                     })}
                 </ul>
-                <ul className='trends_items'>
+                <ul className='trends_items' style={{width:"67%"}}>
                 {index1.map(i => {
-                    return <TrendingItem src={imgSrc[i]} text={text[i]} path={path[i]} price={price[i]}/>
+                    return <TrendingItem src={imgSrc[i]} text={text[i]} path={path[i]} price={price[i]} show={show[i]}/>
                     })}
                 </ul>
                 </div>
