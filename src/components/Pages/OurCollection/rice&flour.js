@@ -6,8 +6,8 @@ import '../../Trending.css'
 import img0 from '../../../images2/156 Aleovera-Juice.jpg';
 import img1 from '../../../images2/182-Lakadong-Turmeric-Amended.jpg'
 
-const index0=[0,1];
-const index1=[2,3,4];
+const index0=[0,1,2];
+const index1=[3,4];
 
 const imgSrc=[img0,img1,"https://i.ibb.co/7Kbqg5M/download.jpg","https://i.ibb.co/7Kbqg5M/download.jpg","https://i.ibb.co/7Kbqg5M/download.jpg"];
 const text=['Juices', 'Lakadong Turmeric Powder', 'Coming Soon','Coming Soon','Coming Soon'];
