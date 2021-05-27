@@ -14,6 +14,7 @@ import img2 from '../../images2/Ellipse 3.png'
 import star from '../../images2/4 start.png'
 //import Footer from '../Footer';
 import pickles from '../../images2/picklesNew.png'
+import { newsletter } from './product';
 
 const index0=[0,1,2];
 
