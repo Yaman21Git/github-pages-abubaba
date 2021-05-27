@@ -26,7 +26,7 @@ const index2=[6,7,8];
 const imgSrc=[img0,img1,img2,img3,img4,img5,img6,img7,img8];
 const text=['Organic Turmeric Powder', 'Organic Red Chilli Powder', 'Organic Cumin Powder','Organic Tulsi Honey','Royal Saffron White','Himalayan White Honey','Choco Nutty Granula','Fruit-n-nut Granola','Classic Museli'];
 const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
-const path=['/services','/services','/services','/services','/services','/services',,'/services','/services','/services'];
+const path=['/products/60aaaf1e2e79914b043dc0c9','/products/60aaad322e79914b043dc0c6','/products/60aaa9db2e79914b043dc0c1','/products/60aa9e252e79914b043dc0b3','/products/60aa9d522e79914b043dc0b2','/products/60aa9b512e79914b043dc0af','/products/60aa9f242e79914b043dc0b4','/products/60aaa43e2e79914b043dc0bb','/products/60aa9ff82e79914b043dc0b5'];
 
 export default function Services(){
     return (

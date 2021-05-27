@@ -1,5 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 import '../../App.css'
+import { Button } from '../button'
+import '../Footer.css'
+import { sendQuery } from './product';
 
 export default function AboutUs(){
     return (
@@ -60,7 +63,6 @@ export default function AboutUs(){
                    <p className="pClass">The benefits that the organic food provides are conclusive and we love to see the satisfaction reflecting in the smiles of our customers when they see the difference. In the end, you matter to us.
                    </p>
                 </div>
-              </div>
             </div>
             
             <h1 className="healthhead">Health Benefits</h1>
@@ -89,7 +91,7 @@ export default function AboutUs(){
             </div>
             </div>
          </div>
+         </div>
        </>
-       
     );
 }

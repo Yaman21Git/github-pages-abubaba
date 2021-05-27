@@ -25,7 +25,7 @@ const index2=[6,7,8];
 const imgSrc=[img0,img1,img2,img3,img4,img5,img6,img7,img8];
 const text=['Black Pepper Powder', 'Organic Cardamom', 'Organic Coriander Powder','Organic Arhar Dal','Organic Chana Dal','Organic Urad Dal','Organic Wheat Flour','Organic Bajra Flour','Organic Brown Rice'];
 const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
-const path=['/services','/services','/services','/services','/services','/services',,'/services','/services','/services'];
+const path=['/products/60aaa63a2e79914b043dc0bc','/products/60aaa8382e79914b043dc0be','/products/60aaa9442e79914b043dc0c0','/products/60ab737b57cf811148043aa7','/products/60aa77933f3ca14f407dc629','/products/60aa7a753f3ca14f407dc62c','/products/60aa2bb368aee53db07ae16c','/products/60ab714757cf811148043aa5','/products/60aa62f8a823f64adc11d6de'];
 
 export default function Services2(){
     return (

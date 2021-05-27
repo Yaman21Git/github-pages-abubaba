@@ -25,7 +25,7 @@ const index2=[6,7,8];
 const imgSrc=[img0,img1,img2,img3,img4,img5,img6,img7,img8];
 const text=['Chana Masala', 'Chaat Masala', 'Dal Makhni','Chick Pea','Chitra Kidney Beans','Red Kedney Beans','Chia Seeds','Flax Seeds','Musk Melon Seeds'];
 const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
-const path=['/services','/services','/services','/services','/services','/services',,'/services','/services','/services'];
+const path=['/products/60abcf5d7b07ce47e470394b','/products/60aaa8b32e79914b043dc0bf','/products/60aaaa672e79914b043dc0c2','/products/60aa978f2e79914b043dc0ae','/products/60aa79363f3ca14f407dc62a','/products/60aa79bb3f3ca14f407dc62b','/products/60aaa08e2e79914b043dc0b6','/products/60aaa1342e79914b043dc0b7','/products/60aaa1e02e79914b043dc0b8'];
 
 export default function Services4(){
     return (

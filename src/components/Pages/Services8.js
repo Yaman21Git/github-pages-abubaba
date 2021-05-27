@@ -17,7 +17,8 @@ const index0=[0,1,2];
 const imgSrc=[img0,img1,img2];
 const text=['Organic Noni Juice','Raw Forrest Honey','Luxury Gold Honey'];
 const price=['₹ 00.00','₹ 00.00','₹ 00.00'];
-const path=['/services','/services','/services'];
+const path=['/products/60acba31444bd63a3835cf46','/products/60aa9bf02e79914b043dc0b0','/products/']
+
 
 export default function Services8(){
     return (

@@ -25,7 +25,7 @@ const index2=[6,7,8];
 const imgSrc=[img0,img1,img2,img3,img4,img5,img6,img7,img8];
 const text=['Organic Noni Juice','Raw Forrest Honey','Kashmiri Saffron','Organic Amala Juice','Peanut Butter','Dried Blueberries','Organic Gir Ghee','White Sesame Oil','Badri Ghee'];
 const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
-const path=['/services','/services','/services','/services','/services','/services','/services','/services','/services'];
+const path=['/products/60acba31444bd63a3835cf46','/products/60aa9bf02e79914b043dc0b0','/products/60aa9c8b2e79914b043dc0b1','/products/60acbcc4444bd63a3835cf4a','/products/60aaa3532e79914b043dc0ba','/products/60aaa2852e79914b043dc0b9','/products/60acbbae444bd63a3835cf48','/products/60acbed7444bd63a3835cf4e','/products/60acbacd444bd63a3835cf47'];
 
 export default function Services7(){
     return (
