@@ -26,19 +26,43 @@ class SignUp extends Component {
         });
     };
 
+    isValid = () => {
+        const { check, password, password2 } = this.state
+        const x = document.getElementById('check');
+        if (password !== password2) {
+            this.setState({
+                error: "Passwords do not match",
+                loading: false
+            })
+            return false;
+        }
+
+        if(!x.checked)
+        {
+            this.setState({
+                error: "Please Accept The Terms and Conditions ",
+                loading: false
+            })
+            return false;
+        }
+        return true;
+    }
+
     clickSubmit = str => event => {
         event.preventDefault();
         this.setState({loading: true, error: ""})
         const { name, email, password } = this.state
         const user = { name: name, email: email, password: password };
 
-        signup(user)
-        .then(data => {
-            if(data.error)
-                this.setState({error: data.error, loading: false})
-            else
-                authenticate(data , () => { this.setState({redirectToRefer: true, loading: false, error: ""}) });
-        })   
+        if(this.isValid()){
+            signup(user)
+            .then(data => {
+                if(data.error)
+                    this.setState({error: data.error, loading: false})
+                else
+                    authenticate(data , () => { this.setState({redirectToRefer: true, loading: false, error: ""}) });
+            })   
+        }
     }
 
     render() {
@@ -67,7 +91,7 @@ class SignUp extends Component {
                         <p className="p1"><input className="input-form" type="email" placeholder="Email-Address" onChange={this.handleChange("email")} value={this.state.email}></input></p>
                         <p className="p1"><input className="input-form" type="password" placeholder="Set Password" onChange={this.handleChange("password")}  value={this.state.password}></input></p>
                         <p className="p1"><input className="input-form" type="password" placeholder="Confirm Password" onChange={this.handleChange("password2")}  value={this.state.password2}></input></p>
-                        <p className="p2"><input type="checkbox"></input><label>I agree all statements <u><a href="https://abubabaorganic.com/privacy-policy/">Terms & Condition</a></u></label></p>
+                        <p className="p2"><input type="checkbox" id="check"></input><label>I agree all statements <u><a href="https://abubabaorganic.com/privacy-policy/">Terms & Condition</a></u></label></p>
                         <p className="p2"><input type="checkbox"></input><label>Subscribe to newsletter for latest Updates</label></p>
                         <button className="signupBtn" onClick = {this.clickSubmit("false")}>SIGN UP</button>
                         <p className="haveAcc">Already have an account? <a href="/signin">Login</a></p>
