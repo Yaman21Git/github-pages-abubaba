@@ -119,7 +119,7 @@ class GirGhee extends Component{
     }
 
     render() {
-
+        
         const {product, redirect, quantity} = this.state
         const { hovered1, hovered2, hovered3 } = this.state;
         const style1 = hovered1 ? { height:"25vw", marginTop:"-25%"} : {display:"none"};
@@ -135,7 +135,7 @@ class GirGhee extends Component{
                 <div className="pdtImages">
                     <div className="images">
                         <img className="full"  src={product.photos[0]} />
-                        <img className="small" src={product.photos[1]} onMouseOver={this.onMousehover1} onMouseOut={this.onMouseout1}/>
+                        <img className="small first-one" src={product.photos[1]} onMouseOver={this.onMousehover1} onMouseOut={this.onMouseout1}/>
                         <img className="small" src={product.photos[2]} onMouseOver={this.onMousehover2} onMouseOut={this.onMouseout2}/>
                         <img className="small" src={product.photos[3]} onMouseOver={this.onMousehover3} onMouseOut={this.onMouseout3}/>
                     </div>
@@ -148,9 +148,9 @@ class GirGhee extends Component{
                         <p>
                             <br/>
                             Quantity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                            <button onClick={this.decrementValue} style={{ width: "25px",  height: "25px", marginRight: "1%"}} > - </button>
-                            <input type="text" value={quantity} onChange={this.handleInput} size="2" style={{textAlign: "center", height: "25px"}}/>
-                            <button onClick= {this.incrementValue} style={{ width: "25px",  height: "25px", marginLeft: "1%"}} > + </button>
+                            <button onClick={this.decrementValue} className="quantity-btn" > - </button>
+                            <input type="text" value={quantity} onChange={this.handleInput} size="2" className="number"/>
+                            <button onClick= {this.incrementValue} className="quantity-btn2" > + </button>
                         </p>
 
                         {isAuthenticated() ? <button className="spnbtn1" onClick={this.addToCart}>Add to Cart +</button> : <Link to="/signin"><button className="spnbtn1">Add to Cart +</button></Link> }
