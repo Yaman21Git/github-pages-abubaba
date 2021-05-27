@@ -29,6 +29,7 @@ import GirGhee from './components/Pages/Products/GirGhee'
 import ScrollToTop from './components/scrollToTop'
 import Cart from './components/Pages/Carts'
 import Search from './components/Pages/Search'
+import subCategories from './components/Pages/OurCollection/subCategories';
 
 class App extends React.Component{
   render(){
@@ -54,15 +55,16 @@ class App extends React.Component{
              <Route path='/signup' component={SignUp}/>
              <Route path='/signin' component={SignIn}/>
              <Route path='/Products/GirGhee' component={GirGhee}/>
-             <Route path='/OurCollection/rice&flour' component={Riceflour}/>
-             <Route path='/OurCollection/spices' component={Spices}/>
-             <Route path='/OurCollection/pickles&chutneys' component={Pickles}/>
-             <Route path='/OurCollection/pulses' component={Pulses}/>
-             <Route path='/OurCollection/honey' component={Honey}/>
-             <Route path='/OurCollection/breakfast' component={Breakfast}/>
+             <Route path='/OurCollection/Immunity' component={Riceflour}/>
+             <Route path='/OurCollection/Elixir-Of-Life' component={Spices}/>
+             <Route path='/OurCollection/Ancient-Living' component={Pickles}/>
+             <Route path='/OurCollection/Kingdom-Of-Spices' component={Pulses}/>
+             <Route path='/OurCollection/Wakeup-Mood' component={Honey}/>
+             <Route path='/OurCollection/Limited-Edition' component={Breakfast}/>
              <Route path='/cart' component={Cart}/>
              <Route path='/search' component={Search}/>
              <Route path='/products/:productId' component={GirGhee}></Route>
+             <Route path='/category/:category' component={subCategories}></Route>
            </Switch>
            <Footer/>
          </Router>
