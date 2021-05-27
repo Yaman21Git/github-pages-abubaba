@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
-import { addToCart, addToWishlist, load } from '../product'
+import { addToCart, addToWishlist, load, getProductsByCategoty } from '../product'
 import { isAuthenticated } from '../auth'
 import '../../../App.css'
 import './Products.css'
 import {Link, Redirect} from 'react-router-dom';
 import imgstar from '../../../images2/4 start.png'
+import TrendingItem from '../../TrendingItems'
+import '../../Trending.css'
 
 
 class GirGhee extends Component{
@@ -20,7 +22,9 @@ class GirGhee extends Component{
             hovered1:false,
             hovered2:false,
             hovered3:false,
-            redirectToCart: ""
+            redirectToCart: "",
+            index: [[0,1,2]],
+            suggested: ""
         }
     }
 
@@ -35,6 +39,13 @@ class GirGhee extends Component{
                     product: data,
                     productId: productId
                 })
+                const val = {name: data.id}
+                getProductsByCategoty(val)
+                .then(result => {
+                    this.setState({
+                        suggested: result
+                    })
+                });
             }
         });
     }
@@ -124,7 +135,7 @@ class GirGhee extends Component{
 
     render() {
 
-        const {product, redirect, quantity, redirectToCart} = this.state
+        const {product, redirect, quantity, redirectToCart, suggested, index} = this.state
         const { hovered1, hovered2, hovered3 } = this.state;
         const style1 = hovered1 ? { height:"25vw", marginTop:"-25%"} : {display:"none"};
         const style2 = hovered2 ? { height:"25vw", marginTop:"-25%"} : {display:"none"};
@@ -208,8 +219,19 @@ class GirGhee extends Component{
                   <h3 className="marginBtm"><a className="viewall" href="/Products/GirGhee">View all reviews</a></h3>
                 </div>
                 </div>
-                <div className="peopleAlso">
-                  <h2>People has also Purchased</h2>
+                <div className='trends'>
+                    <h2>People has also Purchased</h2>
+                    {index && <div className='trends_container'>
+                        <div className='trends_wrapper'>
+                        {index.map( (array, i) => (
+                            <ul className='trends_items' style={{width: !suggested[1] ? "33%" : (!suggested[2] ? "67%" : "100%") }}>
+                            { array.map( (val, j) => (
+                                (suggested[val] && <TrendingItem src={suggested[val].photos[0]} text={suggested[val].name} path={`/products/${suggested[val]._id}`} price={suggested[i].price}/>)
+                            ))}
+                            </ul>
+                        ))}   
+                        </div>
+                    </div>}
                 </div>
               </div>)
       );
