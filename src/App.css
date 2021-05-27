@@ -147,61 +147,6 @@
   }
 }
 
-@media screen and (max-width:680px) {
-  .homeFact-container{
-    width: 100%;
-    height: 50vh;
-    background-size: 100% auto;
-  }
-
-  .homeFacts{
-    width:80%;
-    height:90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:auto;
-    margin-bottom:auto;
-    text-align: center;
-  }
-
-  .homeFacts .fact1{
-    min-width:48%;
-    max-height:50%;
-    margin-left: 0;
-    margin-bottom: 2%;
-    float:left;
-  }
-
-  .homeFacts .fact2{
-    min-width:48%;
-    max-height:50%;
-    margin-left: -3%;
-    margin-bottom: 2%;
-    float:left;
-    border-right: 3px solid #F6EFE5;
-  }
-
-  .homeFacts .fact2 >h2{
-    margin-top: 50%;
-  }
-
-  .homeFacts .fact3{
-    min-width:48%;
-    max-height:50%;
-    margin-left: 3%;
-    margin-top: 2%;
-    float:left;
-  }
-
-  .homeFacts .fact4{
-    min-width:45%;
-    max-height:50%;
-    margin-left: 0;
-    margin-top: 2%;
-    float:left;
-  }
-}
-
 .homeFacts .fact1{ 
   width:20%;
   height:60%;
@@ -316,6 +261,105 @@
   font-size: 0.85vw;
 }
 
+@media screen and (max-width:680px) {
+  .homeFact-container{
+    width: 100%;
+    height: 54vh;
+    background-size: 100% auto;
+  }
+
+  .homeFacts{
+    width:80%;
+    height:90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:auto;
+    margin-bottom:auto;
+    text-align: center;
+  }
+
+  .homeFacts .fact1{
+    min-width:46%;
+    max-height:46%;
+    margin-left: 3%;
+    margin-bottom: 4%;
+    float:left;
+  }
+
+  .homeFacts .fact2{
+    min-width:48%;
+    max-height:46%;
+    margin-left: -3%;
+    margin-bottom: 4%;
+    float:left;
+    border-right:none;
+  }
+
+  .homeFacts .fact3{
+    min-width:48%;
+    max-height:50%;
+    margin-left: 1%;
+    margin-top: 2%;
+    float:left;
+  }
+
+  .homeFacts .fact4{
+    min-width:45%;
+    max-height:50%;
+    margin-left: 0;
+    margin-top: 2%;
+    float:left;
+  }
+
+  .homeFacts .fact1 >h2{
+    font-size: 2vw;
+    margin-top: 53%;
+    width:50%;
+    margin-left: 20%;
+    margin-bottom: -2%;
+  }
+
+  .homeFacts .fact1 >button{
+    font-size:1.8vw;
+  }
+
+  .homeFacts .fact2 >h2{
+    font-size: 2vw;
+    margin-top: 50%;
+    width:50%;
+    margin-left: 25%;
+    margin-bottom: -2%;
+  }
+
+  .homeFacts .fact2 >button{
+    font-size:1.8vw;
+  }
+
+  .homeFacts .fact3 >h2{
+    font-size: 2vw;
+    margin-top: 50%;
+    width:50%;
+    margin-left: 25%;
+    margin-bottom: -2%;
+  }
+
+  .homeFacts .fact3 >button{
+    font-size:1.8vw;
+  }
+
+  .homeFacts .fact4 >h2{
+    font-size: 2vw;
+    margin-top: 52.5%;
+    width:50%;
+    margin-left: 25%;
+    margin-bottom: -2%;
+  }
+
+  .homeFacts .fact4 >button{
+    font-size:1.8vw;
+  }
+}
+
 .home-certification{
   background-color: black;
   color: white;
@@ -386,14 +430,6 @@
   background-position:left;
   background-repeat: no-repeat;
   float: left;
-}
-
-@media screen and (max-width:658px) {
-  .home-certification{
-    width: 100%;
-    height: auto;
-    background-size: 100% auto;
-  }
 }
 
 .home-subscribe {
@@ -467,6 +503,13 @@
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
+    height:30vw;
+}
+
+.about-container >h1{
+    color:white;
+    font-size:8vw; 
+    padding-top:22%;
 }
 
 .abubaba_org-container {
@@ -490,7 +533,7 @@
   }
 
   .borderBlack{
-    border:2px solid black;
+    border:0.2vw solid black;
     height: 94%;
     width:96%;
     margin:auto;
@@ -512,8 +555,9 @@
   float:left;
   height:50%;
   margin-top: 10%;
-  border-right: 3px solid black;
+  border-right: 0.22vw solid black;
 }
+
 .matter{
   margin-top: 10vh;
   margin-right: 9vw;
@@ -524,10 +568,17 @@
   font-family: 'Montserrat';
 }
 
+
 .matter >div{
   margin-bottom: 5%;
   font-family: 'Montserrat';
   text-align: left;
+}
+
+.matter >div >h1{
+  font-family:'Montserrat', sans-serif;
+  font-size:4vw;
+  font-weight:400;
 }
 
 .matter .sec{
@@ -538,6 +589,46 @@
 .matter >p{
   text-align: left;
   font-size: 0.9vw;
+}
+
+@media screen and (max-width:680px) {
+  .oldage{
+    min-width:92%;
+    margin-left:3%;
+    min-height: 84%;
+  }
+
+  .imgAbu{
+    width:36%;
+  }
+
+  .dividing{
+    width:9%;
+  }
+
+  .matter{
+    width:44%;
+    margin-right: 2%;
+  }
+
+  .matter >div >h1{
+    width:48%;
+    float:left;
+    font-size: 3.4vw;
+    line-height: 1.5rem;
+    margin-bottom: 5%;
+  }
+
+  .matter >p{
+    font-size: 1.6vw;
+  }
+
+  .shopNowbtn1{
+    font-size: 1.2vw;
+    margin-left: 20%;
+    margin-top: 5%;
+    border:1px solid black;
+  }
 }
 
 @media screen and (max-width:1100px){
@@ -592,11 +683,34 @@
   padding-bottom: 5%;
 }
 
+.blogContainer .tags{
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 1.2%;
+}
+
+.blogContainer .tags >h2{
+  margin-left: 5%;
+  font-size: 1.2vw;
+  margin-bottom: 0%;
+}
+
+.blogContainer .tags .first-link{
+  margin-left: 5%;
+}
+
+.blogContainer .tags >a{
+  margin-right: 2%;
+  font-size: 0.7vw;
+  color: black;
+}
+
 @media screen and (max-width:800px){
   .blogContainer{
     height: 75vw;
   }
 }
+
+
 .blogContainer>a{
   margin-left: 5%;
   font-family: 'Montserrat';
@@ -634,6 +748,68 @@
   color: black;
   font-family: 'Montserrat',sans-serif;
   font-weight: 500;
+}
+
+.dateCalender{
+  float:left;
+  width:50%;
+  margin-left:30%; 
+  margin-top:4.5%; 
+}
+
+.dateCalender >h2{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 1.6vw;
+}
+
+.dateCalender >h3{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 1vw;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 2px solid black;
+  border-right: none;
+  font-size: 1vw;
+  padding: 2%;
+  height: 2.5vw;
+  border-radius: 15px 0 0 15px;
+  outline: none;
+  color: #9DBFAF;
+  background-color: #F6EFE5;
+}
+
+.searchTerm:focus{
+  color:black;
+}
+
+.searchButton {
+  width: 10%;
+  height: 2.5vw;
+  border: 2px solid black;
+  border-left: 2px solid white; 
+  background:#F6EFE5;
+  text-align: center;
+  color:black;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  font-size: 1.5vw;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  margin-top: 6%;
+  margin-left: 60%;
+  transform: translate(-50%, -50%);
 }
 
 .blogPost{
@@ -682,11 +858,176 @@
    text-align: left;
  }
 
+ .Blogmatter >h1{
+  color:white;
+  font-size:2.3vw;
+  margin-bottom:7%;
+  text-align:left;
+ }
+
  .readmorebtn{
    margin-top:12%;
    margin-left: -70%;
    margin-right: 18%;
  }
+
+ .Blogmatter .likes-para{
+   margin-bottom:7%;
+   font-size:0.6vw;
+ }
+
+ .Blogmatter .material{
+  font-size:0.7vw;
+ }
+
+ @media screen and (max-width:680px) {
+  .blogContainer{
+    height: 130vw;
+    /* height: 90vw; */
+  }
+  
+  .heads{
+    font-size: 1.5vw;
+  }
+
+  .blogtop .subBlog{
+    margin-left: 12%;
+  }
+
+  .blogtop ul{
+    height: 2.6vw;
+  }
+
+  .dateCalender{
+    width:100%;
+    margin-left:0; 
+    margin-top:4.5%; 
+    text-align: center;
+  }
+
+  .dateCalender >h2{
+    font-size: 2.4vw;
+  }
+   
+  .dateCalender >h3{
+    font-size: 1.5vw;
+  }
+  
+  .searchTerm {
+    border: 1.4px solid black;
+    border-right: none;
+    font-size: 1.4vw;
+    padding: 3%;
+    height: 5.1vw;
+  }
+  
+  .searchButton {
+    width: 10%;
+    height: 5.1vw;
+    border: 1.4px solid black;
+    font-size: 3vw;
+    border-left: 1.4px solid #F6EFE5;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 70%;
+    position: absolute;
+    margin-top: 16%;
+    margin-left: 50%;
+  }
+
+  .blogContainer>a{
+    font-size: 1.4vw;
+  }
+  
+  .blogPost{
+    margin-top:-14%;
+    width:100%;
+    height:80vw;
+  }
+  
+  .Fblog{
+    height:57%;
+    width: 100%;
+    background-size: cover;
+    background-position:40%;
+  }
+
+  .Fblogmatter{
+    width:80%;
+    height:55%;
+    margin-left: 10%;
+    margin-top: -10%;
+    box-shadow: 1px 5px 5px grey;
+  }
+
+  .blogPost>h2{
+    margin-bottom: 32%;
+    font-family: 'Montserrat';
+    font-size: 1.5vw;
+  }
+  
+  .blogPost>a{
+    margin-right: 2%;
+    font-family: 'Montserrat';
+    font-size: 0.8vw;
+    color: black;
+  }
+  
+   .Blogmatter{
+     margin-top: 8%;
+     max-width: 70%;
+   }
+
+   .Blogmatter >h1{
+    font-size:4.6vw;
+    font-weight: lighter;
+   }
+
+   .Blogmatter .likes-para{
+     margin-left: 10%;
+     font-size: 1.5vw;
+   }
+
+   .Blogmatter .material{
+     font-size: 1.6vw;
+     margin-bottom: -12%;
+   }
+  
+   .Blogmatter .shopNowbtn{
+     background-color: black;
+     color:white;
+     margin-top: 20%;
+     margin-left: 25%;
+     height: 4vw;
+     width:20vw;
+     padding:0 2% 0 2%;
+     font-size: 1.6vw;
+     font-weight: 300;
+   }
+
+   .blogContainer .tags{
+    padding-top: 2%;
+    margin-left: 10%;
+    width:60%;
+  }
+  
+  .blogContainer .tags >h2{
+    font-size: 1.5vw;
+    margin-left: 1%;
+  }
+
+  .blogContainer .tags .first-link{
+    margin-left: 1%;
+  }
+  
+  .blogContainer .tags >a{
+    margin-right: 3%;
+    font-size: 1.4vw;
+    color: black;
+  }
+}
 
  .map{
    height:30vw;
@@ -730,6 +1071,47 @@
 
 .contactDetails >p{
   font-size: 0.9vw;
+}
+
+
+.signin-container{
+  background-color: #F6EFE5;
+  padding-top: 2%;
+  height:500px;
+}
+
+.signin-container .mainForm .checkSignin{
+  margin-right:330px;
+}
+
+@media screen and (max-width:680px) {
+   .signin-container{
+     height: 60vw;
+   }
+
+  .signin-container >h1{
+      font-size: 9vw;
+  }
+
+  .signin-container .mainForm .checkSignin{
+    margin-left:10%;
+    font-size: 1.2vw;
+  }
+
+  .signin-container .mainForm .createAcc{
+    font-size: 1.2vw;
+    margin-top: 1%;
+  }
+}
+
+.contactus-shrink .signup-container .contactForm .hello-contact{
+  margin-left:-65%;
+  font-size:4vw;
+}
+
+.contactus-shrink .signup-container .contactForm .queries{
+margin-left:12%;
+font-size:1vw;
 }
 
 .signup-container{
@@ -790,9 +1172,9 @@
   font-size: 0.95vw;
 }
 .mainForm .p1 >input{
-  padding: 0.8% 0.8% 0.8% 0.8%;
+  padding: 0.6% 0.8% 0.6% 0.8%;
   width:35%;
-  font-size: 0.7vw;
+  font-size: 1vw;
   border-radius:15px;
   background-color: #F6EFE5;
 }
@@ -812,57 +1194,198 @@
   color:whitesmoke;
 }
 
+.contactus-shrink .signup-container .contactForm .mainForm .p1 .input-form{
+  width:70%;
+  margin-bottom:3%;
+}
+
+.contactus-shrink .signup-container .contactForm .mainForm .p1 .message-text{
+  border-radius:10px;
+  border:2px solid black;
+  height:6vw;
+  width:70%;
+  background-color:#F6EFE5;
+}
+
+.map-container{
+  height:34vw;
+  width:100%;
+  background-color:#F6EFE5;
+}
+
+@media screen and (max-width:680px) {
+  .about-container{
+    height: 70vw;
+  }
+
+  .about-container >h1{
+    font-size:9vw; 
+    padding-top:25%;
+    font-weight: lighter;
+  }
+
+  .contactus-shrink{
+    width:86%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -20%;
+    box-shadow: 0 5px 10px grey;
+    margin-bottom: 10%;
+  }
+
+  .contactus-shrink .signup-container{
+    border-radius: 10px 10px 0 0;
+    height: 90vw;
+  }
+
+  .contactus-shrink .signup-container .contactForm{
+    width:100%;
+  }
+
+  .contactus-shrink .signup-container .contactForm .mainForm{
+    width:100%;
+  }  
+
+  .contactus-shrink .signup-container .contactForm .hello-contact{
+    font-size:6vw;
+    margin-left:-76%;
+  }
+
+  .contactus-shrink .signup-container .contactForm .queries{
+    margin-top:1%;
+    margin-bottom: 8%;
+    margin-left: 5%;
+    font-size:2vw;
+  }
+  
+  .contactus-shrink .signup-container .contactForm .mainForm .p1 .input-form{
+    width:100%;
+    margin-left: 5%;
+  }
+
+  .contactus-shrink .signup-container .contactForm .mainForm .p2{
+    margin-left: 2%;
+    font-size: 1.3vw;
+  }
+
+  .contactus-shrink .signup-container .contactForm .mainForm .p1 .message-text{
+    border-radius:10px;
+    height:13vw;
+    margin-left: 5%;
+    width:100%;
+    border:1.5px solid black;
+    font-size: 2vw;
+  }
+
+  .contactDetails{
+    width:30%;
+    margin-top: -8%;
+    margin-left:30%;
+  }
+  
+  .contactDetails >h1{
+    font-size: 1.6vw;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .contactDetails >p{
+    font-size: 1.2vw;
+    width:60%;
+    float:right;
+    margin-bottom: 8%;
+  }
+   
+  .contactDetails >h1 >i{
+    margin-right: 28%;
+    font-size: 2em;
+  }
+  
+  .map-container{
+    height:86vw;
+  }
+  
+  .map{
+    height:94%;
+  }
+
+  .map .about-container2{
+    box-shadow:none;
+  }
+}
+
+@media screen and (max-width:680px) {
+  .signup-container{
+    height:80vw;
+  }
+
+  .signup-container >h1{
+    font-size: 9vw;
+  }
+
+  .mainForm{
+    margin-top: 14%;
+  }
+
+  .signup{
+    margin-top: 3%;
+  }
+
+  .sRight{
+    width:70%;
+    font-size:1.8vw;
+    padding-top: 3%;
+    height: 6vw;
+  }
+
+  .sLeft{
+    width:70%;
+    padding-top: 3%;
+    font-size:1.8vw;
+    height: 6vw;
+  }
+  
+  .signin{
+    margin-top: 3%;
+  }
+
+  .mainForm .p1 >input{
+    padding: 1.6% 1.8% 1.6% 1.8%;
+    width:70%;
+    border:1.4px solid black;
+    font-size: 1.6vw;
+    margin-bottom: 1%;
+  }
+
+  .signup-container .mainForm .p2{
+    font-size: 1.2vw;
+    margin-right:28%;
+  }
+  
+  .signup-container .mainForm .p2 >input{
+    margin-right: 1%;
+    font-size: 1vw;
+  }
+
+  .mainForm .signupBtn{
+    width:14%;
+    height:7%;
+    font-size:1.4vw;
+    margin-top: 2%;
+  }
+
+  .signup-container .mainForm .haveAcc{
+    font-size: 1.2vw;
+    margin-top: 1%;
+  }
+
+}
+
 @media screen and (max-width:1500px){
   .blogtop{
       width:100%;
       height:auto;
       background-size: 100% auto;
     }
-}
-
-.search {
-  width: 100%;
-  position: relative;
-  display: flex;
-}
-
-.searchTerm {
-  width: 100%;
-  border: 2px solid black;
-  border-right: none;
-  font-size: 1vw;
-  padding: 2%;
-  height: 2.5vw;
-  border-radius: 15px 0 0 15px;
-  outline: none;
-  color: #9DBFAF;
-  background-color: #F6EFE5;
-}
-
-.searchTerm:focus{
-  color:black;
-}
-
-.searchButton {
-  width: 10%;
-  height: 2.5vw;
-  border: 2px solid black;
-  border-left: 2px solid white; 
-  background:#F6EFE5;
-  text-align: center;
-  color:black;
-  border-radius: 0 15px 15px 0;
-  cursor: pointer;
-  font-size: 1.5vw;
-}
-
-/*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 30%;
-  position: absolute;
-  margin-top: 6%;
-  margin-left: 60%;
-  transform: translate(-50%, -50%);
 }
 
 .aboutus-header{
@@ -883,6 +1406,10 @@
   margin-right: auto;
   margin-top: 3%;
   margin-bottom: 4%;
+}
+
+.aboutus-container .weRbest >h1{
+  font-size:4.8vw;
 }
 
 .aboutus-container .weRbest >p{
@@ -1006,6 +1533,20 @@
   text-align: left;
   margin: auto;
 }
+
+.aboutusFacts .hrclass{
+  height:0.25vw;
+  background-Color:black;
+  width:10%;
+  margin:4% auto 5% auto;
+}
+
+.healthhead{
+  font-size:6vw;
+  margin-top:8%;
+  margin-bottom:3%;
+}
+
 .aboutus-container .healthFacts-container{
   width:80%;
   margin-left:auto;
@@ -1014,6 +1555,7 @@
   background-color: #DFF2D4;
   margin-bottom: 2%;
 }
+
 .aboutus-container .healthFacts-container .pureNatural{
   width:35%;
   float:left;
@@ -1046,6 +1588,126 @@
   margin-left: 5%;
   margin-bottom: 1.4%;
   font-size: 0.9vw;
+}
+
+@media screen and (max-width:680px) {
+  .aboutus-header{
+    height: 70vw;
+    background-position: 90% 0;
+  }
+
+  .aboutus-container .mobileView{
+    width:94%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: -32%;
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 1px 5px 5px grey;
+    margin-bottom: 10%;
+    padding-top: 3%;
+  }
+
+  .aboutus-container .weRbest{
+    max-width: 86%;
+  }
+
+  .aboutus-container .weRbest >h1{
+    font-size: 6vw;
+    margin-bottom: 4%;
+  }
+  
+  .aboutus-container .weRbest >p{
+    font-size: 2vw;
+    font-weight: 500;
+  }
+
+  .aboutus-container .aboutus-img .aboutusImg{
+    height: 100%;
+    width: 100%;
+  }
+
+  .aboutusFacts{
+    height: 100vw;
+    width:94%;
+    margin-top: 8%;
+  }
+
+  .aboutusFacts .Row1 .row1 .indiaImg{
+      width:60%;
+    }
+
+  .aboutusFacts .Row1 .row2 .indiaImg{
+      width:60%;
+    }
+
+    .aboutusFacts .Row2 .row1 .indiaImg{
+      width:70%;
+    }
+
+  .aboutusFacts .Row2 .row2 .indiaImg{
+      width:60%;
+    }
+
+    .h2{
+      font-size: 2vw;
+      font-weight: 800;
+    }
+
+    .aboutusFacts .pClass{
+      font-size: 1.4vw;
+      width:70%;
+    }
+
+    .aboutusFacts .hrclass{
+      height:0.5vw;
+      width:20%;
+    }
+
+    .healthhead{
+      font-size:8vw;
+      margin-top:10%;
+    }
+
+    .aboutus-container .healthFacts-container{
+      width:100%;
+      height:110vw;
+      border-radius: 20px;
+    }
+
+
+    .aboutus-container .healthFacts-container .pureNatural{
+      width:100%;
+      height:45%;
+      background-position: 50% 45%;
+      background-size: 70% 130%;
+      background-color:#DFF2D4;
+      border-bottom: 1.4px solid black;
+    }
+
+    .aboutus-container .healthFacts-container .health{
+      width:100%;
+      height:55%;
+      border-radius: 0 0 20px 20px;
+    }
+
+    .aboutus-container .healthFacts-container .health >h1{
+      font-size: 2vw;
+      font-weight: 800;
+      margin-left: 10%;
+    }
+    
+    .aboutus-container .healthFacts-container .health >p{
+      width:80%;
+      margin-left: 10%;
+      margin-bottom: 1.4%;
+      font-size: 1.8vw;
+    }
+
+    .aboutus-container .healthFacts-container .health >hr{
+      height: 0.16vw;
+      background-color: black;
+    }
 }
 
 .service-container{
@@ -1110,6 +1772,10 @@
   text-align: center;
   color: #F6EFE5;
   padding-top: 20%;
+}
+
+.service-container .shopNow .h1shopnow{
+  font-size:6vw;
 }
 
 .service-container .shopNow .jugaad{
@@ -1206,6 +1872,20 @@
   height: 23%;
   width:46.1%;
   float: left;
+}
+
+.service-container .jugaadComplete .addtocart-btn{
+  border:1px solid white;
+  padding-top:1%;
+  padding-bottom:1%;
+  width:34%;
+  margin-left:33%;
+}
+
+.service-container .jugaadComplete .addtocart-btn .cartlink{
+  font-size:0.9vw;
+  text-decoration:none;
+  color:white;
 }
 
 .service-container .jugaadComplete .Row1 .r2c2{
@@ -1314,4 +1994,130 @@
 .classh2{
   font-family: 'Montserrat';
   font-size: 1.4vw;
+}
+
+.service-container .jugaadComplete .luxury-items{
+  font-size:3.8vw;
+}
+
+@media screen and (max-width:680px) {
+  .service-container .shopNow{
+    min-height:50vw;
+  }
+
+  .service-container .shopNow .jugaad{
+    width:90%;
+    margin-top: 12%;
+  }
+
+  .service-container .jugaadComplete{
+    width:90%;
+    margin-top: -7.7%;
+    height: 190vw;
+    margin-bottom: -2%;
+  }
+
+  .service-container .jugaadComplete >h1{
+    font-size: 6vw;
+  }
+
+  .service-container .jugaadComplete >p{
+    width:50%;
+    margin-top: -5%;
+    text-align: center;
+    font-size: 1.4vw;
+    font-weight: 800;
+  }
+
+  .service-container .shopNow .h1shopnow{
+    font-size:9vw;
+    margin-bottom: -3.4%;
+  }
+
+  .service-container .jugaadComplete .Row1{
+    margin-bottom: 5%;
+    height: 48vw;
+    width:84%;
+  }
+
+  .service-container .jugaadComplete .Row2{
+    margin-bottom: 5%;
+    height: 48vw;
+    width:84%;
+  }
+
+  .service-container .jugaadComplete .Row3{
+    margin-bottom: 5%;
+    height: 48vw;
+    width:84%;
+  }
+
+  .service-container .jugaadComplete .Row1 .r2c1{
+    height: 25%;
+  }
+
+  .service-container .jugaadComplete .Row1 .r2c2{
+    height: 25%;
+  }
+
+  .service-container .jugaadComplete .Row2 .r2c1{
+    height: 25%;
+  }
+
+  .service-container .jugaadComplete .Row2 .r2c2{
+    height: 25%;
+  }
+
+  .service-container .jugaadComplete .Row3 .r2c1{
+    height: 25%;
+  }
+
+  .service-container .jugaadComplete .Row3 .r2c2{
+    height: 25%;
+  }
+
+  .service-container .jugaadComplete .addtocart-btn{
+    height:0;
+    border:1px solid black;
+  }
+
+  .service-container .jugaadComplete .addtocart-btn .cartlink{
+    font-size:1.4vw;
+    border: 1px solid white;
+  }
+
+  .service-container .jugaadComplete .luxury-items{
+    font-size:2vw;
+    margin-bottom: -4%;
+    font-family: 'Montserrat', sans-serif;
+    margin-left:8%;
+    text-align: left;
+  }
+
+  .pageno{
+    margin-left: 10%;
+    font-size: 1.8vw;
+  }
+  
+  .shopnow_dot {
+    height: 15px;
+    width: 15px;
+  }
+  
+  .shopdot_first{
+    font-size: 2vw;
+  }
+  
+  .show{
+    font-size: 2vw;
+  }
+  
+  .nextpage{
+    font-size: 1.8vw;
+  }
+  
+  .shopnow_dot1 {
+    height: 15px;
+    width: 15px;
+  }
 }

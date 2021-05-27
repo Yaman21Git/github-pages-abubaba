@@ -1,13 +1,4 @@
-.cards {
-    padding: 4rem;
-    background: #F6EFE5;
-    background-image: url('../images2/pickles.jpg');
-    background-repeat: no-repeat;
-    background-size: 60vw 80vw;
-    background-position: 0 -3000%;
-  }
-
-  .cards {
+ .cards {
     padding: 4rem;
     background: #F6EFE5;
     background-image: url('../images2/ourcollectionBG.jpg');
@@ -23,7 +14,7 @@
   
   .cards__container {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     align-items: center;
     max-width: 1500px;
     width: 100%;
@@ -35,11 +26,13 @@
     margin-left:auto;
     margin-right: auto;
     width:100%;
+    padding-left: -10%;
   }
-  
+
   .cards__items {
     margin-bottom: 1%;
     width:100%;
+    height: 30vw;
   }
   
   .cards__item {
@@ -47,7 +40,7 @@
     flex: 1;
     margin: 0 0.5rem;
     width: 100%;
-    height: 30vw;
+    height: 100%;
     border-radius: 15px;
   }
   
@@ -122,6 +115,33 @@
     font-family: 'Monserrat', sans-serif;
     font-size: 1.2vw;
     cursor:pointer;
+    border:none;
+  }
+
+  @media  screen and (max-width:680px) {
+    .cards{
+      padding: 12% 1% 1% 1%;
+    }
+
+    .cards__container {
+      max-width: 700px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .cards__items {
+      width:100%;
+      height: 50vw;
+    }
+
+    .cards__item__text{
+      font-size: 2.2vw;
+      line-height: 2.5rem;
+    }
+
+    .expmore{
+      font-size: 2vw;
+    }
   }
 
   .cards__item__text:hover{
@@ -144,10 +164,10 @@
   
   @media only screen and (max-width: 1024px) {
     .cards__item {
-      margin-bottom: 2rem;
+      margin-bottom: 0.7rem;
       display:flex;
-      width:50%;
-      margin-left: 25%;
+      width:48.2%;
+      margin-left: 0;
       float:left;
     }
   }

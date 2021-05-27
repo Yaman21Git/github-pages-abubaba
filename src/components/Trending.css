@@ -124,19 +124,55 @@ h1 {
   }
   
   @media only screen and (max-width: 1024px) {
+    .trends{
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+      padding-left:0;
+      padding-right: 0;
+    }
+
+    .trends_wrapper{
+      width:100%;
+    }
+
     .trending_item {
       margin-bottom: 2rem;
-      width: 60%;
+      width: 50%;
+      float:left;
+      height: 100%;
     }
 
     .trending_item_pic-wrap {
       position: relative;
       width: 100%;
-      height: 40vw;
+      height: 50vw;
       overflow: hidden;
     }
 
+    .trending_item_img{
+      border-radius: 20px;
+      height: 96%;
+    }
+  
+    .trending_item_info >h2{
+       margin-top: 0;
+       font-size: 2.2vw;
+    }
+  
+    .trending_item_info >h3{
+      font-size: 2vw;
+   }
+    
     .trending_item_text {
+      font-size: 2vw;
+      font-weight: 500;
+      width: 84%;
+      margin-left:auto;
+      margin-right: auto;
       line-height: 20px;
+    }
+
+    .trending_item_link {
+      box-shadow: none;
     }
   }

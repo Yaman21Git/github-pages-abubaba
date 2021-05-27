@@ -6,7 +6,7 @@ import {Button} from '../components/button'
 function CardItem(props) {
   return (
     <>
-      <li className='cards__item'>
+      <div className='cards__item'>
         <div className='cards__item__link' to={props.path}>
           <figure className='cards__item__pic-wrap'>
             <img
@@ -22,7 +22,7 @@ function CardItem(props) {
             </div>
           </figure>
         </div>
-      </li>
+      </div>
     </>
   );
 }

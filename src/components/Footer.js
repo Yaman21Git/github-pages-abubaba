@@ -11,7 +11,7 @@ function Footer() {
         <div className="footerWrapper">
         <hr></hr>
          <div className="socialMedia">
-           <h2 style={{fontSize:"1.5vw", marginLeft:"30%",marginTop:"9%"}}>Connect with us</h2>
+           <h2>Connect with us</h2>
            <div className="social-media">
          <Link class='social-icon-link facebook'
                 to='/'
@@ -66,13 +66,26 @@ function Footer() {
               <p><a href="/">Privacy Policy</a></p>
             </div>
             <div className="contactInfo">
-                <h2 style={{fontSize:"1.5vw",marginBottom:"5%",marginLeft:"10%"}}>Contact us</h2>
+                <h2>Contact us</h2>
                 <form className="reachus">
                    <p><input className="footer-input" type="name" placeholder="Full Name*" name="name"></input></p>
                    <p><input className="footer-input" type="email" placeholder="Email Address*" name="email"></input></p>
                    <p><input className="footer-input" type="text" placeholder="Message*" name="message"></input></p>
                    <Link to="/"><button className="btnsubmit">Submit</button></Link>
                 </form>
+            </div>
+
+            <div className="footerInfo2 hidden-info">
+              <h2>Information</h2>
+              <p><a href="/">Home</a></p>
+              <p><a href="/contactus">About Us</a></p>
+              <p><a href="/services">Shop</a></p>
+              <p><a href="/Blogs">Blogs</a></p>
+              <p><a href="/">FAQs</a></p>
+              <p><a href="/">Shipping Information</a></p>
+              <p><a href="/">Return Policy</a></p>
+              <p><a href="/">Terms and Conditions</a></p>
+              <p><a href="/">Privacy Policy</a></p>
             </div>
          </div>
       </div>

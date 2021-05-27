@@ -14,8 +14,8 @@ function AbubabaOrg() {
                 <div className="dividing">
                 </div>
                 <div className="matter">
-                  <div style={{marginTop:"-5%"}}><h1 style={{fontFamily:'Montserrat',fontSize:"4vw", fontWeight:"400"}}>ABUBABA</h1>
-                  <h1 style={{fontFamily:'Montserrat',fontSize:"4vw", fontWeight:"400"}}>ORGANIC</h1></div>
+                  <div style={{marginTop:"-5%"}}><h1>ABUBABA</h1>
+                  <h1>ORGANIC</h1></div>
                   <p>Abubaba organic sells curated hand-made products prepared by local artisans.</p>
                    <p className="sec">Our impeccable quality products are prepared to meet absolute standards in organic production and will not let you down.</p>
                    <Link to="/services"><button className="shopNowbtn1" type="submit">SHOP NOW</button></Link>

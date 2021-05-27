@@ -69,8 +69,8 @@ class SignUp extends Component {
                         <p className="p1"><input className="input-form" type="password" placeholder="Confirm Password" onChange={this.handleChange("password2")}  value={this.state.password2}></input></p>
                         <p className="p2"><input type="checkbox"></input><label>I agree all statements <u><a href="https://abubabaorganic.com/privacy-policy/">Terms & Condition</a></u></label></p>
                         <p className="p2"><input type="checkbox"></input><label>Subscribe to newsletter for latest Updates</label></p>
-                        <div style={{background:"black", margin:"0 auto", width:"6.3%"}}><Button buttonStyle="btn--outline" onClick = {this.clickSubmit("false")}>SIGN UP</Button></div>
-                        <p>Already have an account? <a href="/signin">Login</a></p>
+                        <button className="signupBtn" onClick = {this.clickSubmit("false")}>SIGN UP</button>
+                        <p className="haveAcc">Already have an account? <a href="/signin">Login</a></p>
                     </form>
                 </div>
             </div>

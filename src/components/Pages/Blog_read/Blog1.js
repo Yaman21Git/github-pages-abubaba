@@ -56,7 +56,7 @@ export default function Blog1(){
 
                 <p className="lastp"><b>TAGS:</b> organic farming, organic farming advantages, organic farming and its benefits, organic farming and organic food, organic farming definition, organic farming in delhi, organic farming in india</p>
                 <h3 className="share">Share</h3>
-                <span class="shopnow_dot1" style={{marginLeft:"13%",textAlign:"right"}}><Link to="/blogs" style={{textDecoration:"none",color:"black"}}><p>←</p></Link></span>
+                <span class="shopnow_dot1" style={{marginLeft:"10%",textAlign:"right"}}><Link to="/blogs" style={{textDecoration:"none",color:"black"}}><p>←</p></Link></span>
                 <span class="nextpage" style={{marginLeft:"0"}}>——— Previous</span>
                 <span class="shopdot_first">
                     <Link to="/Blog_read/Blog1" style={{textDecoration:"none",color:"black"}}>
@@ -69,6 +69,16 @@ export default function Blog1(){
                 </span>
                 <span class="nextpage">Next ———</span>
                 <span class="shopnow_dot1"><Link to="/blogs" style={{textDecoration:"none",color:"black"}}><p>→</p></Link></span>
+          </div>
+          <div className="comment-Blog">
+             <h2>Leave us a reply</h2>
+             <p className="req">Your email address will not be published. Required fields are marked *</p>
+             <form className="leaveus-reply">
+             <p><input type="text" placeholder="Full Name*" name="name"></input></p>
+             <p><input type="email" placeholder="E-mail address*" name="email"></input></p>
+             <p><input className="comment" type="text" placeholder="Comment*" name="comment"></input></p>
+             <button type="submit" className="post-comment">Post Comment</button>
+             </form>
           </div>
         </>
     );

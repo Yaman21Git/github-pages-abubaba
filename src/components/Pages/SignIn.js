@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import '../../App.css'
 import {Button} from '../button'
 import { Redirect} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import { signin , authenticate, isAuthenticated} from './auth'
 
 
@@ -47,9 +48,9 @@ class SignIn extends Component {
         return(
             <>
             <div>
-                <div className="signin-container" style={{height:"500px"}}>
+                <div className="signin-container">
                     <h1>My Account</h1>
-                    <div className="signup"><div className="sRight" style={{background:"white"}}><a href="/signup" style={{textDecoration:"none", color:"black"}}>SIGN UP</a></div></div>
+                    <div className="signup"><div className="sRight" style={{background:"#F6EFE5"}}><a href="/signup" style={{textDecoration:"none", color:"black"}}>SIGN UP</a></div></div>
                     <div className="signin"><div className="sLeft" style={{background:"black"}}><a href="/signin" style={{textDecoration:"none", color:"white"}}>SIGN IN</a></div></div>
                     <form className="mainForm">
                         
@@ -58,10 +59,10 @@ class SignIn extends Component {
                         <p className="p1"><input className="input-form" type="email" placeholder="Email-Address" onChange={this.handleChange("email")} value={this.state.email}></input></p>
                         <p className="p1"><input className="input-form" type="password" placeholder="Password"  onChange={this.handleChange("password")}  value={this.state.password}></input></p>
                         
-                        <p style={{marginRight:"330px"}}><input type="checkbox"></input><label> Remember me</label></p>
+                        <p className="checkSignin"><input type="checkbox"></input><label> Remember me</label></p>
                         
-                        <div style={{background:"black", margin:"0 auto", width:"6.3%"}}><Button buttonStyle="btn--outline" onClick={this.clickSubmit("false")}>SIGN IN</Button></div>
-                        <p>Create Account <a href="/signup">SIGN UP</a></p>
+                        <button className="signupBtn" onClick={this.clickSubmit("false")}>SIGN IN</button>
+                        <p className="createAcc">Create Account <a href="/signup">SIGN UP</a></p>
                     </form>
                 </div>
             </div>

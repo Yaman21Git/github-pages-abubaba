@@ -37,16 +37,16 @@ class Cards extends Component{
       <h1 style={{marginBottom:"4%"}}>Our Collection</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
-          <ul className='cards__items'>
+          <div className='cards__items'>
           {index.map(i => {
               return <CardItem src={srcImg[i]} text={<u>{this.state.text[i]}</u>} path={this.state.path[i]}/>
             })}
-          </ul>
-          <ul className='cards__items'>
+          </div>
+          <div className='cards__items'>
           {index2.map(i => {
               return <CardItem src={srcImg[i]} text={<u>{this.state.text[i]}</u>} path={this.state.path[i]}/>
             })}
-          </ul>
+          </div>
         </div>
       </div>
     </div>

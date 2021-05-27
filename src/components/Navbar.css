@@ -100,54 +100,12 @@
   padding-left: 9%;
 }
 
-@media screen and (max-width:680px) {
-  .navbar {
-    background: black;
-    height: 8vw;
-    width:100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    font-family: 'Monserrat', sans-serif;
-  }
-
-  .navbar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 7vw;
-    width:100%;
-    margin-right: auto;
-  }
-
-  .menu-icon {
-    height:80%;
-    width:5%;
-    float: left;
-    margin-right: 82%;
-    margin-top: -4%;
-  }
-
-  .abubabaLogo{
-    background-image: url('../images2/ABUBABA\ LOGO.png') ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 5vw;
-    width: 60%;
-    background-position-y:56%;
-    margin-left: -10%;
-    margin-right: 10%;
-  }
-
-  .icons{
-    width:33%;
-    height:100%;
-    padding-right:2%;
-  }
+.search-icon{
+  width:2%;
+  height: 56%;
+  position:absolute;
+  margin-top: 0%;
+  margin-left: -2.4%;
 }
 
 @media screen and (max-width:800px){
@@ -266,5 +224,90 @@
     width:2vw;
     margin-left:5%;
     margin-bottom: 2%;
+  }
+}
+
+@media screen and (max-width:680px) {
+  .navbar {
+    background: black;
+    height: 8vw;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    font-family: 'Monserrat', sans-serif;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7vw;
+    width:100%;
+    margin-right: auto;
+  }
+
+  .menu-icon {
+    height:80%;
+    width:5%;
+    float: left;
+    margin-right: 82%;
+    margin-top: -4%;
+  }
+
+  .abubabaLogo{
+    background-image: url('../images2/ABUBABA\ LOGO.png') ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 5vw;
+    width: 60%;
+    background-position-y:56%;
+    margin-left: -10%;
+    margin-right: 10%;
+  }
+
+  .icons{
+    width:33%;
+    height:100%;
+    padding-right:2%;
+  }
+
+  .nav-menu {
+    width: 50%;
+    height: 80vw;
+    top: 8vw;
+    grid-gap: 3.5%;
+  }
+
+  .fa-times {
+    font-size: 3.4vw;
+    margin-left: -80%;
+  }
+
+  .nav-item {
+    height: 8vw;
+  }
+
+  .icons{
+    padding-left: 0;
+  }
+
+  .cart-icon{
+    position:absolute;
+    min-height: 4vw;
+    min-width:4vw;
+    margin-top:1.4%;
+  }
+
+  .search-icon{
+    position: absolute;
+    min-width:3.4vw;
+    max-height: 4vw;
+    margin-left: 0;
+    margin-top: 1.5%;
   }
 }
