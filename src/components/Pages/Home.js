@@ -29,7 +29,8 @@ class Home extends Component{
         showMessage0:false,
         showMessage1:false,
         showMessage2:false,
-        showMessage3:false
+        showMessage3:false,
+        email: ""
       };
   }
   
@@ -100,8 +101,8 @@ class Home extends Component{
          <h1>SUBSCRIBE</h1>
          <p>Sign in for the latest updates and offers on our products.</p>
          <form>
-           <input className="email" type="text" placeholder="Enter email address" ></input>
-           <Link to="/"><input className="submit" type="submit" placeholder="SUBMIT"></input></Link>
+           <input className="email" type="text" value={this.state.email} placeholder="Enter email address" onChange={event => this.setState({email: event.target.value})}></input>
+           <Link to="/"><input className="submit" type="submit" placeholder="SUBMIT" onClick={ () => { const {email} = this.state;   const emailentry = {email : email}; newsletter(emailentry).then(result => alert(result)) } }></input></Link>
          </form>
        </div>
       </div>

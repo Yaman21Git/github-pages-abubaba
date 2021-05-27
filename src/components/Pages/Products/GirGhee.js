@@ -1,10 +1,15 @@
 import React, { Component } from 'react'
-import { addToCart, addToWishlist, load } from '../product'
+import { addToCart, addToWishlist, load, getProductsByCategoty } from '../product'
 import { isAuthenticated } from '../auth'
 import '../../../App.css'
 import './Products.css'
 import {Link, Redirect} from 'react-router-dom';
 import imgstar from '../../../images2/4 start.png'
+import TrendingItem from '../../TrendingItems'
+import '../../Trending.css'
+import img0 from '../../../images2/161 Choco Nutty.jpg'
+import img1 from '../../../images2/191-Mango-Pickle.jpg'
+import img2 from '../../../images2/168-Blueberries.jpg'
 
 
 class GirGhee extends Component{
@@ -19,7 +24,14 @@ class GirGhee extends Component{
             redirect: false,
             hovered1:false,
             hovered2:false,
-            hovered3:false
+            hovered3:false,
+            redirectToCart: "",
+            index: [[0,1,2]],
+            suggested: "",
+            img: [img0, img1, img2],
+            text: ['Choco Nutty Granola', 'Mango Pickle', 'Blueberries'],
+            path: ['/products/60aa9f242e79914b043dc0b4','/products/60aa6cbe3f3ca14f407dc624','/products/60aaa2852e79914b043dc0b9'],
+            price: ['₹ 00.00','₹ 00.00','₹ 00.00']    
         }
     }
 
@@ -34,6 +46,13 @@ class GirGhee extends Component{
                     product: data,
                     productId: productId
                 })
+                const val = {name: data.id}
+                getProductsByCategoty(val)
+                .then(result => {
+                    this.setState({
+                        suggested: result
+                    })
+                });
             }
         });
     }
@@ -49,8 +68,11 @@ class GirGhee extends Component{
         .then(data => {
             if(data.error)
                 console.log(data.error)
-            else 
-                console.log("Product Added");
+            else{
+                this.setState({
+                    redirectToCart: true
+                })
+            }
         })
     }
 
@@ -72,7 +94,7 @@ class GirGhee extends Component{
             if(data.error)
                 console.log(data.error)
             else 
-                console.log("Product Added");
+                alert("Item Added To Wishlist");
         })
     }
 
@@ -129,6 +151,9 @@ class GirGhee extends Component{
         if(redirect)
             return <Redirect to="/signin"></Redirect>
 
+        if(redirectToCart)
+            return <Redirect to="/cart"></Redirect>
+
 
         return (
             (product && <div>
@@ -155,7 +180,7 @@ class GirGhee extends Component{
 
                         {isAuthenticated() ? <button className="spnbtn1" onClick={this.addToCart}>Add to Cart +</button> : <Link to="/signin"><button className="spnbtn1">Add to Cart +</button></Link> }
                         <p><span><button className="wishlist" onClick={this.addToWishlist}><i class="far fa-heart"></i> Wishlist</button></span>
-                        <span><button className="wishlist"><i class="fas fa-share-alt"></i> Share</button></span></p>
+                        <span><button className="wishlist"><i class="fas fa-share-alt" ></i> Share</button></span></p>
                     </div>
                 </div>
                 <div className="productDes">
@@ -201,8 +226,19 @@ class GirGhee extends Component{
                   <h3 className="marginBtm"><a className="viewall" href="/Products/GirGhee">View all reviews</a></h3>
                 </div>
                 </div>
-                <div className="peopleAlso">
-                  <h2>People has also Purchased</h2>
+                <div className='trends'>
+                    <h2>People has also Purchased</h2>
+                    {index && <div className='trends_container'>
+                        <div className='trends_wrapper'>
+                        {index.map( (array, i) => (
+                            <ul className='trends_items' style={{width: "100%" }}>
+                            { array.map( (val, j) => (
+                                (suggested[val] ? (<TrendingItem src={suggested[val].photos[0]} text={suggested[val].name} path={`/products/${suggested[val]._id}`} price={suggested[i].price}/>) : (<TrendingItem src={img[val]} path={path[val]} price={price[val]} text={text[val]}/>))
+                            ))}
+                            </ul>
+                        ))}   
+                        </div>
+                    </div>}
                 </div>
               </div>)
       );

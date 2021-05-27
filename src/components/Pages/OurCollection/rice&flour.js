@@ -6,8 +6,8 @@ import '../../Trending.css'
 import img0 from '../../../images2/156 Aleovera-Juice.jpg';
 import img1 from '../../../images2/182-Lakadong-Turmeric-Amended.jpg'
 
-const index0=[0,1];
-const index1=[2,3,4];
+const index0=[0,1,2];
+const index1=[3,4];
 
 const imgSrc=[img0,img1,"https://i.ibb.co/7Kbqg5M/download.jpg","https://i.ibb.co/7Kbqg5M/download.jpg","https://i.ibb.co/7Kbqg5M/download.jpg"];
 const text=['Juices', 'Lakadong Turmeric Powder', 'Coming Soon','Coming Soon','Coming Soon'];
@@ -22,12 +22,12 @@ export default function Riceflour(){
            <h1 style={{marginBottom:"5%"}}>Immunity</h1>
             <div className='trends_container'>
                 <div className='trends_wrapper'>
-                <ul className='trends_items' style={{width:"67%"}}>
+                <ul className='trends_items' >
                 {index0.map(i => {
                     return <TrendingItem src={imgSrc[i]} text={text[i]} path={path[i]} price={price[i]} show={show[i]}/>
                     })}
                 </ul>
-                <ul className='trends_items'>
+                <ul className='trends_items' style={{width:"67%"}}>
                 {index1.map(i => {
                     return <TrendingItem src={imgSrc[i]} text={text[i]} path={path[i]} price={price[i]} show={show[i]}/>
                     })}
