@@ -19,7 +19,8 @@ class GirGhee extends Component{
             redirect: false,
             hovered1:false,
             hovered2:false,
-            hovered3:false
+            hovered3:false,
+            redirectToCart: ""
         }
     }
 
@@ -49,8 +50,11 @@ class GirGhee extends Component{
         .then(data => {
             if(data.error)
                 console.log(data.error)
-            else 
-                console.log("Product Added");
+            else{
+                this.setState({
+                    redirectToCart: true
+                })
+            }
         })
     }
 
@@ -72,7 +76,7 @@ class GirGhee extends Component{
             if(data.error)
                 console.log(data.error)
             else 
-                console.log("Product Added");
+                alert("Item Added To Wishlist");
         })
     }
 
@@ -120,7 +124,7 @@ class GirGhee extends Component{
 
     render() {
 
-        const {product, redirect, quantity} = this.state
+        const {product, redirect, quantity, redirectToCart} = this.state
         const { hovered1, hovered2, hovered3 } = this.state;
         const style1 = hovered1 ? { height:"25vw", marginTop:"-25%"} : {display:"none"};
         const style2 = hovered2 ? { height:"25vw", marginTop:"-25%"} : {display:"none"};
@@ -128,6 +132,9 @@ class GirGhee extends Component{
 
         if(redirect)
             return <Redirect to="/signin"></Redirect>
+
+        if(redirectToCart)
+            return <Redirect to="/cart"></Redirect>
 
 
         return (
@@ -155,7 +162,7 @@ class GirGhee extends Component{
 
                         {isAuthenticated() ? <button className="spnbtn1" onClick={this.addToCart}>Add to Cart +</button> : <Link to="/signin"><button className="spnbtn1">Add to Cart +</button></Link> }
                         <p><span><button className="wishlist" onClick={this.addToWishlist}><i class="far fa-heart"></i> Wishlist</button></span>
-                        <span><button className="wishlist"><i class="fas fa-share-alt"></i> Share</button></span></p>
+                        <span><button className="wishlist"><i class="fas fa-share-alt" ></i> Share</button></span></p>
                     </div>
                 </div>
                 <div className="productDes">
