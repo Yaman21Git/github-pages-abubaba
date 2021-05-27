@@ -7,6 +7,9 @@ import {Link, Redirect} from 'react-router-dom';
 import imgstar from '../../../images2/4 start.png'
 import TrendingItem from '../../TrendingItems'
 import '../../Trending.css'
+import img0 from '../../../images2/161 Choco Nutty.jpg'
+import img1 from '../../../images2/191-Mango-Pickle.jpg'
+import img2 from '../../../images2/168-Blueberries.jpg'
 
 
 class GirGhee extends Component{
@@ -24,7 +27,11 @@ class GirGhee extends Component{
             hovered3:false,
             redirectToCart: "",
             index: [[0,1,2]],
-            suggested: ""
+            suggested: "",
+            img: [img0, img1, img2],
+            text: ['Choco Nutty Granola', 'Mango Pickle', 'Blueberries'],
+            path: ['/products/60aa9f242e79914b043dc0b4','/products/60aa6cbe3f3ca14f407dc624','/products/60aaa2852e79914b043dc0b9'],
+            price: ['₹ 00.00','₹ 00.00','₹ 00.00']    
         }
     }
 
@@ -135,7 +142,7 @@ class GirGhee extends Component{
 
     render() {
 
-        const {product, redirect, quantity, redirectToCart, suggested, index} = this.state
+        const {product, redirect, quantity, redirectToCart, suggested, index, img, path, price, text} = this.state
         const { hovered1, hovered2, hovered3 } = this.state;
         const style1 = hovered1 ? { height:"25vw", marginTop:"-25%"} : {display:"none"};
         const style2 = hovered2 ? { height:"25vw", marginTop:"-25%"} : {display:"none"};
@@ -224,9 +231,9 @@ class GirGhee extends Component{
                     {index && <div className='trends_container'>
                         <div className='trends_wrapper'>
                         {index.map( (array, i) => (
-                            <ul className='trends_items' style={{width: !suggested[1] ? "33%" : (!suggested[2] ? "67%" : "100%") }}>
+                            <ul className='trends_items' style={{width: "100%" }}>
                             { array.map( (val, j) => (
-                                (suggested[val] && <TrendingItem src={suggested[val].photos[0]} text={suggested[val].name} path={`/products/${suggested[val]._id}`} price={suggested[i].price}/>)
+                                (suggested[val] ? (<TrendingItem src={suggested[val].photos[0]} text={suggested[val].name} path={`/products/${suggested[val]._id}`} price={suggested[i].price}/>) : (<TrendingItem src={img[val]} path={path[val]} price={price[val]} text={text[val]}/>))
                             ))}
                             </ul>
                         ))}   
