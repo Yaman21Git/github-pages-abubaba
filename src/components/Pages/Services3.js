@@ -3,6 +3,7 @@ import '../../App.css'
 import {Button} from "../button"
 import Cards from "../Cards"
 import ShopComp from "../shopComp"
+import CommonSix from '../CommonSix'
 import { Link } from 'react-router-dom';
 // import Trending from "../Trending"
 

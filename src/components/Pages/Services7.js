@@ -4,6 +4,7 @@ import {Button} from "../button"
 import Cards from "../Cards"
 import ShopComp from "../shopComp"
 import { Link } from 'react-router-dom';
+import CommonSix from '../CommonSix'
 // import Trending from "../Trending"
 
 import '../Trending.css';
