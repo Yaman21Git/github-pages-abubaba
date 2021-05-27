@@ -35,8 +35,10 @@ class SignIn extends Component {
         .then(data => {
             if(data.error)
                 this.setState({error: data.error, loading: false})
-            else
+            else{
+                alert(`You are logged in as ${data.user.name}`)
                 authenticate(data , () => { this.setState({redirectToRefer: true, loading: false}) });
+            }
         })   
     }
 
