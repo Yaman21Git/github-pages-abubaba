@@ -141,8 +141,7 @@ class GirGhee extends Component{
     }
 
     render() {
-        
-        const {product, redirect, quantity} = this.state
+        const {product, redirect, quantity, redirectToCart, suggested, index, img, path, price, text} = this.state
         const { hovered1, hovered2, hovered3 } = this.state;
         const style1 = hovered1 ? { height:"25vw", marginTop:"-25%"} : {display:"none"};
         const style2 = hovered2 ? { height:"25vw", marginTop:"-25%"} : {display:"none"};
@@ -248,4 +247,3 @@ class GirGhee extends Component{
 
 
 export default GirGhee;
-    
