@@ -1803,6 +1803,11 @@ font-size:1vw;
   }
 }
 
+.service-container .background-shopnow{
+  background-image: url('./images2/Background-\ Shop\ now.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .service-container .jugaadComplete{
   margin-left:auto;

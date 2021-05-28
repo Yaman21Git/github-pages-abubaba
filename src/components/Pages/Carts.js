@@ -5,8 +5,6 @@ import '../Footer.css'
 import {Link, Redirect} from 'react-router-dom';
 import { getUser, load } from './product';
 import { isAuthenticated } from './auth';
-import './carts.css'
-
 
 class Cart extends Component {
    constructor(){

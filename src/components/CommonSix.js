@@ -12,6 +12,7 @@ export default function CommonSix(){
             </div>
           {/* </div> */}
         </div>
+        <div className="background-shopnow">
         <div className="jugaadComplete">
             <h1>Trending</h1>
             <br/><br/>
@@ -75,7 +76,7 @@ All our products are of high quality with unique uses of being grown, cultivated
                </div>
             </div>
         </div>
-
+       </div>
      </>
     );
 }

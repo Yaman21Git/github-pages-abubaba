@@ -52,8 +52,8 @@ class SignIn extends Component {
             <div>
                 <div className="signin-container">
                     <h1>My Account</h1>
-                    <div className="signup"><div className="sRight" style={{background:"#F6EFE5"}}><a href="/signup" style={{textDecoration:"none", color:"black"}}>SIGN UP</a></div></div>
-                    <div className="signin"><div className="sLeft" style={{background:"black"}}><a href="/signin" style={{textDecoration:"none", color:"white"}}>SIGN IN</a></div></div>
+                    <div className="signup"><div className="sRight" style={{background:"#F6EFE5"}}><Link to="/signup" style={{textDecoration:"none", color:"black"}}><a href="/signup" style={{textDecoration:"none", color:"black"}}>SIGN UP</a></Link></div></div>
+                    <div className="signin"><div className="sLeft" style={{background:"black"}}><Link to="/signin" style={{textDecoration:"none", color:"white"}}><a href="/signin" style={{textDecoration:"none", color:"white"}}>SIGN IN</a></Link></div></div>
                     <form className="mainForm">
                         
                         { error && <div><h3>***{error}***</h3> <br/> </div>}
@@ -64,7 +64,7 @@ class SignIn extends Component {
                         <p className="checkSignin"><input type="checkbox"></input><label> Remember me</label></p>
                         
                         <button className="signupBtn" onClick={this.clickSubmit("false")}>SIGN IN</button>
-                        <p className="createAcc">Create Account <a href="/signup">SIGN UP</a></p>
+                        <p className="createAcc">Create Account <Link to="/signup"><a href="/signup">SIGN UP</a></Link></p>
                     </form>
                 </div>
             </div>

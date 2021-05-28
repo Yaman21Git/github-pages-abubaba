@@ -76,8 +76,8 @@ class SignUp extends Component {
             <div>
                 <div className="signup-container">
                     <h1>My Account</h1>
-                    <div className="signup"><div className="sRight"><a href="/signup" style={{textDecoration:"none", color:"white"}}>SIGN UP</a></div></div>
-                    <div className="signin"><div className="sLeft"><a href="/signin" style={{textDecoration:"none", color:"black"}}>SIGN IN</a></div></div>
+                    <div className="signup"><div className="sRight"><Link to="/signup" style={{textDecoration:"none", color:"white"}}><a href="/signup" style={{textDecoration:"none", color:"white"}}>SIGN UP</a></Link></div></div>
+                    <div className="signin"><div className="sLeft"><Link to="/signin" style={{textDecoration:"none", color:"black"}}><a href="/signin" style={{textDecoration:"none", color:"black"}}>SIGN IN</a></Link></div></div>
                     
                     <form className="mainForm">
 
@@ -94,7 +94,7 @@ class SignUp extends Component {
                         <p className="p2"><input type="checkbox" id="check"></input><label>I agree all statements <u><a href="https://abubabaorganic.com/privacy-policy/">Terms & Condition</a></u></label></p>
                         <p className="p2"><input type="checkbox"></input><label>Subscribe to newsletter for latest Updates</label></p>
                         <button className="signupBtn" onClick = {this.clickSubmit("false")}>SIGN UP</button>
-                        <p className="haveAcc">Already have an account? <a href="/signin">Login</a></p>
+                        <p className="haveAcc">Already have an account? <Link to="/signin"><a href="/signin">Login</a></Link></p>
                     </form>
                 </div>
             </div>

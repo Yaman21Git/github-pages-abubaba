@@ -1,6 +1,9 @@
 .trends {
     padding: 4rem;
     background:#F6EFE5;
+    background-image: url('../images2/Background-\ Trending.png');
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
 h1 {
