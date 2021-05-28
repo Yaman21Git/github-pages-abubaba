@@ -5,6 +5,7 @@ import '../Footer.css'
 import {Link, Redirect} from 'react-router-dom';
 import { getUser, load } from './product';
 import { isAuthenticated } from './auth';
+import './carts.css'
 
 
 class Cart extends Component {
@@ -12,11 +13,18 @@ class Cart extends Component {
       super()
       this.state = {
           user: "",
-          products: ""
+          products: "",
+          redirect: ""
       }
    }
 
    componentDidMount = () => {
+      if(!isAuthenticated()){
+         this.setState({
+            redirect: true
+         })
+         return;
+      }
       const userId = isAuthenticated().user._id;
       var {products} = this.state
       
@@ -44,10 +52,10 @@ class Cart extends Component {
 
    
    render() {
-      const {user, products} = this.state
+      const {user, products, redirect} = this.state
       
-      if(!isAuthenticated())
-         <Redirect to='signin'></Redirect>
+      if(!isAuthenticated() ||  redirect)
+         return <Redirect to='/signin'></Redirect>
 
       return (
          <>
