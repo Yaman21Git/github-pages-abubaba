@@ -19,8 +19,8 @@ export default function AboutUs(){
               <p>The practice that makes us different, is the elimination of the advanced industrial mechanics in our organic products and by going back to our roots and using the traditional handcrafted methods to achieve the finest quality food.</p>
               <p>Our natural edible Oils are extracted from the traditional Bull-driven Kohlu method as opposed to the Cold-pressed method, which helps in retaining maximum health benefits. And  just like the our Oil, our Ghee and Spices are prepared by our artisans with the traditional Hand-churned Bilona method and Hand-ground method that not only are more nutritious but also reflects the immense love and devotion from our artisans.</p>
            </div>
-           <div className="aboutus-img" style={{height:"44vw"}}>
-             <div className="aboutusImg">
+           <div className="aboutus-img">
+             <div className="aboutusImg" style={{height:"44vw"}} >
              </div>
            </div>
 
@@ -30,8 +30,8 @@ export default function AboutUs(){
               <p>At Abubaba Organic, we are dedicated to improving and enhancing the food we eat by offering completely natural and organic products that offer traditional nourishments leading to long-term benefits towards a healthy and disease-free lifestyle.</p>
               <p>The distinct Lakadong Turmeric and the Kashmiri Red Chili are only a few from our wide range of organic products that embody the power of natural food and promise positive changes in the lifestyle, health, and well-being of our customers.</p>
               <p>Join us in our journey towards a wholesome lifestyle.</p>
-            </div>
-            <div className="aboutusFacts">
+          </div>
+          <div className="aboutusFacts">
                <div className="Row1">
                  <div className="row1">
                    <div class="indiaImg"></div>
@@ -64,7 +64,7 @@ export default function AboutUs(){
                    </p>
                 </div>
             </div>
-            
+          </div>  
             <h1 className="healthhead">Health Benefits</h1>
             <div className="healthFacts-container">
               <div className="pureNatural">
@@ -88,7 +88,6 @@ export default function AboutUs(){
               <h1>Prevents Blood Clotting</h1>
               <p>Olive oil is a proven agent in the reduction of risks of heart attacks and strokes while also preventing harmful blood clots in people with high cholesterol.</p>
               </div>
-            </div>
             </div>
          </div>
          </div>

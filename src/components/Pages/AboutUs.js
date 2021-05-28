@@ -64,7 +64,7 @@ class ContactUs extends Component{
                             <form className="mainForm" style={{width:"80%", marginTop:"5%"}}>
                                 <p className="p1"><input className="input-form" type="text" name="name" placeholder="Full Name" value={name} onChange={this.handleChange}></input></p>
                                 <p className="p1"><input className="input-form" type="email" name="email" placeholder="Username / Email-Address" value={email} onChange={this.handleChange}></input></p>
-                                <p className="p1"><textarea name="comment" placeholder=" Message" name="message" value={message} onChange={this.handleChange}></textarea></p>
+                                <p className="p1"><textarea className="message-text" name="comment" placeholder=" Message" name="message" value={message} onChange={this.handleChange}></textarea></p>
                                 <p className="p2"><input type="checkbox" id="check"></input><label> &nbsp; I agree that my submitted data is being collected and stored.</label></p>
                                 <Button className="btn-change" buttonStyle="btn--rounded" onClick={this.handleClick}>SUBMIT</Button>
                             </form>
