@@ -4,7 +4,7 @@ import { Button } from '../button'
 import '../Footer.css'
 import {Link, Redirect} from 'react-router-dom';
 import { getUser, load } from './product';
-import { isAuthenticated } from './auth';
+import { isAuthenticated, signout } from './auth';
 import './carts.css'
 
 
@@ -25,31 +25,36 @@ class Cart extends Component {
          })
          return;
       }
-      const userId = isAuthenticated().user._id;
-      var {products} = this.state
-      
-      getUser(userId)
-      .then(data => {
-         if(data.error)
-               console.log(data.error)
-         else{
-               this.setState({
-                  user: data
-               })
-               products = new Array;
-               data.cart.map((item,i) => {
-                  load(item.productId)
-                  .then(result => {
-                     products.push(result);
-                     this.setState({products: products})
+      if(isAuthenticated){
+         const userId = isAuthenticated().user._id;
+         var {products} = this.state
+         
+         getUser(userId)
+         .then(data => {
+            if(data.error)
+                  console.log(data.error)
+            else{
+                  this.setState({
+                     user: data
                   })
-                  
-              })
-         }
-      });
+                  products = new Array;
+                  data.cart.map((item,i) => {
+                     load(item.productId)
+                     .then(result => {
+                        products.push(result);
+                        this.setState({products: products})
+                     })
+                     
+               })
+            }
+         });
+      }
    }
    
-
+   handleClick = () => {
+      signout( () => this.setState({ redirect: true}))
+      .then(result => alert("You are successfully logged out."))
+   }
    
    render() {
       const {user, products, redirect} = this.state
@@ -60,6 +65,7 @@ class Cart extends Component {
       return (
          <>
           <div className="yourCart">
+               <button className="signout" onClick={this.handleClick}>Sign Out</button>
                <h1>Your Cart</h1>
                <table className="table" style={{width: "100%"}}>
                   <thead>
@@ -67,7 +73,7 @@ class Cart extends Component {
                         <th className="product">Product</th>
                         <th className="price">Price</th>
                         <th className="price">Quantity</th>
-                        <th className="total">Total</th>
+                        <th className="total">Subtotal</th>
                      </tr>
                   </thead>
                   <tbody>
