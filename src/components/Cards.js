@@ -3,12 +3,12 @@ import './Cards.css';
 import '../App.css';
 import CardItem from './CardItem';
 
-import img0 from '../images2/152-Brown-Rice.jpg';
-import img1 from '../images2/125-Chaat-Masala.jpg';
-import img2 from '../images2/191-Mango-Pickle.jpg';
-import img3 from '../images2/139-Arhar.jpg';
-import img4 from '../images2/Tulsi-HOney-revised (2).jpg';
-import img5 from '../images2/163-Museli-Munch.jpg';
+import img0 from '../images2/156 Aleovera-Juice.jpg';
+import img1 from '../images2/187 ghee-gir.jpg';
+import img2 from '../images2/150-Wheat-Flour.jpg';
+import img3 from '../images2/125-Chaat-Masala.jpg';
+import img4 from '../images2/161 Choco Nutty.jpg';
+import img5 from '../images2/Royal-Saffron-white-honey.jpg';
 
 const srcImg=[img0,img1,img2,img3,img4,img5];
 
