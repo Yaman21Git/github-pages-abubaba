@@ -117,3 +117,20 @@ export const newsletter = (email) => {
     })
     .catch(err => console.log(err));
 }
+
+
+
+export const addOrder = (userId, cart) => {
+    return fetch(`https://yamanbackend.herokuapp.com/addOrder/${userId}` , {
+        method: "PUT",
+        headers: {
+            Accept: "application/json",
+            "Content-type": "application/json"
+        },
+        body: JSON.stringify(cart)
+    })
+    .then(response => {
+        return response.json();
+    })
+    .catch(err => console.log(err));
+}

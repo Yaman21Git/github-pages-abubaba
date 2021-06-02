@@ -52,7 +52,7 @@ class SignUp extends Component {
         event.preventDefault();
         this.setState({loading: true, error: ""})
         const { name, email, password } = this.state
-        const user = { name: name, email: email, password: password };
+        const user = { name: name, email: email, password: password, phone: "", address: "" };
 
         if(this.isValid()){
             signup(user)
