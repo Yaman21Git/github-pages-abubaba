@@ -58,3 +58,28 @@ export const isAuthenticated = () => {
     else
         return false
 };
+
+export const userDetails = () => {
+    if (typeof window == "undefined")
+        return false
+    if (localStorage.getItem("user"))
+        return JSON.parse(localStorage.getItem("user"))
+    else
+        return false
+};
+
+
+export const updateUser = (user, userId) => {
+    return fetch(`https://yamanbackend.herokuapp.com/updateUser/${userId}`, {
+        method: "PUT",
+        headers: {
+            Accept: "application/json",
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(user)
+        })
+        .then(response => {
+            return response.json()
+        })
+        .catch(err => console.log(err))
+}
