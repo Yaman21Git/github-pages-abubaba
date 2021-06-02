@@ -28,7 +28,9 @@ class Cart extends Component {
 
    componentDidMount = () => {
       var {products} = this.state
-      var array = JSON.parse(localStorage.getItem("cart")); 
+      var array = JSON.parse(localStorage.getItem("cart"));
+      if(!array)
+         return;
       var total = 0;
       array.map((item,i) => {
          load(item.id)
@@ -114,15 +116,17 @@ class Cart extends Component {
          }
          updateUser(user, userId)
          .then(result => {
-            console.log(result);
-
+            
             const details = {
+               id: result._id,
                name: result.name,
                phone: result.phone, 
                address: result.address,
                email: result.email
             }
             localStorage.setItem("user", JSON.stringify(details));
+            
+
             this.setState({
                redirectToVerify: true
             })
@@ -138,11 +142,12 @@ class Cart extends Component {
       if(redirect)
          return <Redirect to='/signin'></Redirect>
       if(redirectToVerify)
-         return <Verify orderId={orderId} amount={total}/>
+         return <Verify orderId={orderId} amount={total} cart={cart}/>
       return (
          <>
           <div className="yourCart">
                <h1>Your Cart</h1>
+               {cart ? (
                <table className="table">
                      <thead>
                         <tr>
@@ -162,10 +167,10 @@ class Cart extends Component {
                               </tr>
                         ))}
                      </tbody>
-               </table>
+               </table>) : (<div  style={{textAlign: "center"}}>No items added to cart yet.</div>) }
                <div className="user-info">
-                  { isAuthenticated().user && ( <div> <button className="signout" onClick={this.handleClick}>Sign Out</button>
-                  <p className="username"><i class="fa fa-user" aria-hidden="true"></i> signed in as: {isAuthenticated().user.name}</p> </div>)}
+                  { isAuthenticated().user && ( <> <button className="signout" onClick={this.handleClick}>Sign Out</button>
+                  <p className="username"><i class="fa fa-user" aria-hidden="true"></i> signed in as: {isAuthenticated().user.name}</p> </> )}
                   <form className="checkout-form">
                      <h3>This order belongs to</h3>
                      <input className="info" type="text" name="name" value={name} placeholder="Your Name*"  onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>
