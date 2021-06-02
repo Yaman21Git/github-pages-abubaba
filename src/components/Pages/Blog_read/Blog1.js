@@ -77,7 +77,7 @@ export default function Blog1(){
              <p><input type="text" placeholder="Full Name*" name="name"></input></p>
              <p><input type="email" placeholder="E-mail address*" name="email"></input></p>
              <p><input className="comment" type="text" placeholder="Comment*" name="comment"></input></p>
-             <button type="submit" className="post-comment">Post Comment</button>
+             <button type="submit" className="post-comment"> <Link to="/Blog_read/Blog1" style={{textDecoration:"none",color:"white"}}>Post Comment</Link></button>
              </form>
           </div>
         </>

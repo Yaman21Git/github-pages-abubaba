@@ -28,7 +28,7 @@ export default function Blogs(){
                     </div>
                 </div>
               </div>
-            <Link to="/blogs"><a href="/blogs">Recent post ></a></Link>
+            <div className="recent-post"><Link to="/blogs"><a href="/blogs">Recent post ></a></Link></div>
             <div className="blogPost">
                 <div className="Fblog"></div>
                 <div className="Fblogmatter">

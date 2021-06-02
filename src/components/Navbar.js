@@ -81,7 +81,7 @@ function Navbar() {
               </Link>
             </li>
 
-            <li>
+            <li className='nav-item'>
               <Link
                 to='/Blogs'
                 className='nav-links'

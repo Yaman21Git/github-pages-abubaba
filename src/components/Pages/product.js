@@ -9,7 +9,7 @@ export const load = (productId) => {
 }
 
 export const addToCart = (productId, user) => {
-    return fetch(`http://localhost:8000/addToCart/${productId}` , {
+    return fetch(`https://yamanbackend.herokuapp.com/addToCart/${productId}` , {
         method: "PUT",
         headers: {
             Accept: "application/json",

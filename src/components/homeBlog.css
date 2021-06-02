@@ -6,7 +6,7 @@
     padding-bottom: 6%;
 }
 
-@media screen and (max-width:680px) {
+/* @media screen and (max-width:680px) {
     .blogs >h1{
         height: 10vw;
         margin-bottom: -4%;
@@ -16,7 +16,7 @@
         font-weight: lighter;
         padding-top: 2%;
     }
-}
+} */
 
 .blogs_container{
     height:84%;
@@ -89,6 +89,12 @@
     background-color:black;
     /* opacity: 0.7; */
     padding-top: 58%;
+}
+
+@media screen and (max-width:680px) {
+    .expmorebtn{
+        padding-top: 50%;
+    }
 }
 
 .blog_item_img:hover +.expmorebtn{

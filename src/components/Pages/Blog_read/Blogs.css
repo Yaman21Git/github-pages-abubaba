@@ -227,11 +227,23 @@ ul >li{
 
     .share{
         font-size: 1.6vw;
+        margin-left:39%;
     }
 
     .comment-Blog .req{
         font-size: 1.2vw;
         width: 45%;
+        margin-left: 24%;
+    }
+
+    .comment-Blog .leaveus-reply{
+        width:100%;
+        padding-right: 8%;
+    }
+
+    .comment-Blog >h2{
+        margin-right:5%;
+        padding-right: 8%;
     }
 
     .comment-Blog .leaveus-reply >p >input{

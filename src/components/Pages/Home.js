@@ -54,7 +54,7 @@ class Home extends Component{
       <HeroSection />
       <div className="homeFact-container">
       <div className="homeFacts">
-        <h1 style={{fontSize:"6vw", marginBottom:"3%"}}>It Matters</h1>
+        <h1 className="it-matters">It Matters</h1>
          <div className="fact1">
            <h2>ORIGIN OF THE PRODUCT</h2>
              <button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler0}>Read More ˅</button>

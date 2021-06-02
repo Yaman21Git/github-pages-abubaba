@@ -135,13 +135,6 @@
   .fa-times{
     font-size: 5vw;
   }
-
-  .icons{
-    width:40%;
-    height:70%;
-    padding-left:5%;
-    padding-bottom: 2%;
-  }
 }
 
 @media screen and (max-width: 1800px) {
@@ -231,7 +224,7 @@
 @media screen and (max-width:680px) {
   .navbar {
     background: black;
-    height: 8vw;
+    height: 10vw;
     width:100%;
     display: flex;
     justify-content: center;
@@ -257,7 +250,7 @@
     width:5%;
     float: left;
     margin-right: 82%;
-    margin-top: -4%;
+    margin-top: -5%;
   }
 
   .abubabaLogo{
@@ -265,50 +258,53 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 5vw;
-    width: 60%;
+    width: 70%;
     background-position-y:56%;
-    margin-left: -10%;
+    margin-left: -15%;
     margin-right: 10%;
-  }
-
-  .icons{
-    width:33%;
-    height:100%;
-    padding-right:2%;
   }
 
   .nav-menu {
     width: 50%;
-    height: 80vw;
-    top: 8vw;
-    grid-gap: 3.5%;
+    height: 150vw;
+    top: 10vw;
+    grid-gap: 4%;
   }
 
   .fa-times {
-    font-size: 3.4vw;
+    font-size: 4vw;
     margin-left: -80%;
   }
 
+  .fa-bars {
+    font-size: 4vw;
+    margin-left:-80%;
+  }
+
   .nav-item {
-    height: 8vw;
+    height: 10vw;
+    font-size: 3vw;
   }
 
   .icons{
-    padding-left: 0;
+    width:30%;
+    height:70%;
+    padding-left:0;
+    padding-bottom: 7%;
   }
 
-  .cart-icon{
-    position:absolute;
+  .icons .cart-icon{
     min-height: 4vw;
     min-width:4vw;
     margin-top:1.4%;
+    position:relative;
+    margin-left: 40%;
+    margin-top: 10%;
   }
 
   .search-icon{
-    position: absolute;
     min-width:3.4vw;
-    max-height: 4vw;
-    margin-left: 0;
-    margin-top: 1.5%;
+    max-height: 4.2vw;
+    margin-top: 1.4%;
   }
 }

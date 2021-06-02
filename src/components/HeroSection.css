@@ -50,11 +50,10 @@
     .hero-container {
       background: url('../images2/172-Black-Sesame-Rectified.jpg');
       background-repeat: no-repeat;
-      min-height: 110vh;
+      height: auto;
       width: 100%;
-      background-size: 100% 100%;
-      background-position: 0  70%;
-      padding-bottom: 0;
+      background-size: 100% auto;
+      padding-bottom: 3%;
       padding-top:0;
     }
 
@@ -69,14 +68,14 @@
     }
 
     .hero-btns >h1{
-      font-size: 4.6vw;
+      font-size: 5.6vw;
       text-align: left;
       font-weight: lighter;
       margin-bottom: 4%;
     }
 
     .hero-btns >p{
-      font-size: 1.2vw;
+      font-size: 1.5vw;
       width: 50%;
       font-family: 'Monserrat', sans-serif;
     }
@@ -87,18 +86,9 @@
       color: black;
       font-size: 2vw;
       font-weight: 800;
-      margin-top: 184%;
-      margin-left: 56%;
+      margin-top: 200%;
+      margin-left: 58%;
       padding-left: 6%;
       padding-right: 6%;
     }
   }
-   
-@media screen and (max-width: 1500px) {
-
-  .hero-container{
-          width: 100%;
-          height: auto;
-          background-size: 100% auto;
-  }
-}

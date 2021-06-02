@@ -30,6 +30,7 @@ import ScrollToTop from './components/scrollToTop'
 import Cart from './components/Pages/Carts'
 import Search from './components/Pages/Search'
 import subCategories from './components/Pages/OurCollection/subCategories';
+import Verify from './components/Pages/Verify'
 
 class App extends React.Component{
   render(){
@@ -62,6 +63,7 @@ class App extends React.Component{
              <Route path='/OurCollection/Wakeup-Mood' component={Honey}/>
              <Route path='/OurCollection/Limited-Edition' component={Breakfast}/>
              <Route path='/cart' component={Cart}/>
+             <Route path='/cart/verify' component={Verify}/>
              <Route path='/search' component={Search}/>
              <Route path='/products/:productId' component={GirGhee}></Route>
              <Route path='/category/:category' component={subCategories}></Route>

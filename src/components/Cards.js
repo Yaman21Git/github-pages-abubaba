@@ -23,7 +23,7 @@ class Cards extends Component{
   constructor (props) {
     super (props);
     this.state = {
-        text: ["Immunity", 'Elixir Of Life', 'Ancient Living','Kingdom Of Spices','Wakeup Mood','Limited Edition'],
+        text: ["IMMUNITY", 'ELIXIR OF LIFE', 'ANCIENT LIVING','KINGDOM OF SPICES','WAKE UP MODD','LIMITED EDITION'],
         path: ['/OurCollection/Immunity','/OurCollection/Elixir-Of-Life','/OurCollection/Ancient-Living','/OurCollection/Kingdom-Of-Spices','/OurCollection/Wakeup-Mood','/OurCollection/Limited-Edition']
     }
   }
@@ -33,7 +33,7 @@ class Cards extends Component{
   return (
     <>
     <div className='cards'>
-      <h1 style={{marginBottom:"4%"}}>Our Collection</h1>
+      <h1>Our Collection</h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
           <div className='cards__items'>

@@ -226,7 +226,7 @@ class GirGhee extends Component{
                 </div>
                 </div>
                 <div className='trends'>
-                    <h2>People has also Purchased</h2>
+                    <h2 style={{textAlign:"center", fontFamily:"Monserrat, sans-serif", marginBottom:"5%"}}>People also Purchased</h2>
                     {index && <div className='trends_container'>
                         <div className='trends_wrapper'>
                         {index.map( (array, i) => (

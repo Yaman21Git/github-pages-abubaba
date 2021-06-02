@@ -1,15 +1,16 @@
  .cards {
     padding: 4rem;
     background: #F6EFE5;
-    background-image: url('../images2/ourcollectionBG.jpg');
+    background-image: url('../images2/ClientTestBG.jpg');
     background-repeat: no-repeat;
-    background-size: 60vw 80vw;
-    background-position: 100% -3000%;
+    background-size: cover;
+    background-position: 0 130%;
   }
   
   h1 {
     text-align: center;
     font-size: 6vw;
+    margin-bottom:4%;
   }
   
   .cards__container {
@@ -123,6 +124,10 @@
       padding: 12% 1% 1% 1%;
     }
 
+    .cards >h1 {
+      font-size: 8vw;
+    }
+
     .cards__container {
       max-width: 700px;
       width: 100%;
@@ -136,7 +141,7 @@
 
     .cards__item__text{
       font-size: 2.2vw;
-      line-height: 2.5rem;
+      line-height: 2rem;
     }
 
     .expmore{
@@ -166,7 +171,7 @@
     .cards__item {
       margin-bottom: 0.7rem;
       display:flex;
-      width:48.2%;
+      width:47%;
       margin-left: 0;
       float:left;
     }
