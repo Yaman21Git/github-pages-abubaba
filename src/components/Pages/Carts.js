@@ -162,10 +162,10 @@ class Cart extends Component {
                               </tr>
                         ))}
                      </tbody>
-                  </table>
+               </table>
                <div className="user-info">
                   { isAuthenticated().user && ( <div> <button className="signout" onClick={this.handleClick}>Sign Out</button>
-                  <p><i class="fa fa-user" aria-hidden="true"></i> signed in as: {isAuthenticated().user.name}</p> </div>)}
+                  <p className="username"><i class="fa fa-user" aria-hidden="true"></i> signed in as: {isAuthenticated().user.name}</p> </div>)}
                   <form className="checkout-form">
                      <h3>This order belongs to</h3>
                      <input className="info" type="text" name="name" value={name} placeholder="Your Name*"  onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>
