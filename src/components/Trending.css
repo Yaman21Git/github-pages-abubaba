@@ -135,7 +135,7 @@ h1 {
     }
 
     .trends >h1 {
-      font-size: 9vw;
+      font-size: 12vw;
     }
 
     .trends_wrapper{
@@ -171,7 +171,7 @@ h1 {
    }
     
     .trending_item_text {
-      font-size: 2vw;
+      font-size: 3vw;
       font-weight: 500;
       width: 84%;
       margin-left:auto;

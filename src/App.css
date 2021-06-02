@@ -288,11 +288,33 @@
   font-size: 0.85vw;
 }
 
+.clientTest >h1{
+  font-size:6vw;
+}
+
+.clientTest >p{
+  text-align:center; 
+  font-family:'Monserrat',sans-serif;
+  font-size:1.2vw;
+  margin-bottom:1%;
+}
+
 @media screen and (max-width:680px) {
   .homeFact-container{
     width: 100%;
-    height: 54vh;
+    height: 52vh;
     background-size: 100% auto;
+    margin-top: -1%;
+  }
+
+  .clientTest >h1{
+    font-size:10vw;
+  }
+
+  .clientTest >p{
+    margin-top: -4%;
+    font-size: 2vw;
+    margin-bottom:0;
   }
 
   .homeFacts{
@@ -306,14 +328,14 @@
   }
 
   .homeFacts .it-matters{
-    font-size:8vw; 
+    font-size:10vw; 
     margin-bottom: 5%;
   }
 
   .homeFacts .fact1{
     min-width:46%;
     max-height:46%;
-    background-size: 94% 70%;
+    background-size: 86% 60%;
     margin-left: 3%;
     margin-bottom: 4%;
     float:left;
@@ -322,7 +344,7 @@
   .homeFacts .fact2{
     min-width:48%;
     max-height:46%;
-    background-size: 96% 80%;
+    background-size: 88% 70%;
     margin-left: 0;
     margin-bottom: 4%;
     float:left;
@@ -332,7 +354,7 @@
   .homeFacts .fact3{
     min-width:48%;
     max-height:50%;
-    background-size: 100% 80%;
+    background-size: 94% 70%;
     margin-left: 1%;
     margin-top: 2%;
     float:left;
@@ -341,7 +363,7 @@
   .homeFacts .fact4{
     min-width:45%;
     max-height:50%;
-    background-size: 94% 70%;
+    background-size: 90% 60%;
     margin-left: 0;
     margin-top: 2%;
     float:left;
@@ -349,7 +371,7 @@
 
   .homeFacts .fact1 >h2{
     font-size: 2vw;
-    margin-top: 78%;
+    margin-top: 75%;
     width:50%;
     margin-left: 20%;
     margin-bottom: -4%;
@@ -361,7 +383,7 @@
 
   .homeFacts .fact2 >h2{
     font-size: 2vw;
-    margin-top: 74%;
+    margin-top: 70%;
     width:50%;
     margin-left: 25%;
     margin-bottom: -4%;
@@ -385,7 +407,7 @@
 
   .homeFacts .fact4 >h2{
     font-size: 2vw;
-    margin-top: 80%;
+    margin-top: 78%;
     margin-left: 27%;
     width:45%;
     margin-bottom: -4%;
@@ -393,6 +415,11 @@
 
   .homeFacts .fact4 >button{
     font-size:1.8vw;
+  }
+
+  .home-certification >h1{
+    font-size: 9vw;
+    margin-bottom: 0;
   }
 }
 
@@ -1624,6 +1651,7 @@ font-size:1vw;
   text-align: left;
   font-weight: 800;
   margin-left: 5%;
+  margin-bottom: 0;
 }
 
 .aboutus-container .healthFacts-container .health >p{
@@ -2132,10 +2160,10 @@ font-size:1vw;
 
   .service-container .jugaadComplete .addtocart-btn .cartlink{
     font-size:1.6vw;
-    border: 1px solid white;
+    border: 0.6px solid white;
     position: absolute;
-    margin-left:-4.4%;
-    margin-top:-0.7%;
+    margin-left:-4.6%;
+    margin-top:-0.9%;
   }
 
   .service-container .jugaadComplete .luxury-items{

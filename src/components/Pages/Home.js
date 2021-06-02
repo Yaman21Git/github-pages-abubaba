@@ -81,8 +81,8 @@ class Home extends Component{
       <Trending/>
       <HomeBlog/>
       <div className="clientTest">
-          <h1 style={{fontSize:"6vw"}}>Client Testimonials</h1>
-          <p style={{textAlign:"center", fontFamily:"'Monserrat',sans-serif",fontSize:"1.2vw",marginBottom:"1%"}}>What our Customers say about us?</p>
+          <h1>Our Customer's Love</h1>
+          <p>What our Customers say about us?</p>
           {index0.map(i => {
                 return <ClientsItem src={this.state.src[i]} name={this.state.name[i]} description={this.state.description[i]}/>
                 })}

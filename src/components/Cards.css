@@ -80,6 +80,7 @@
   
   .cards__item__img {
     position: absolute;
+    /* background-color: black; */
     top: 0;
     right: 0;
     bottom: 0;
@@ -121,11 +122,11 @@
 
   @media  screen and (max-width:680px) {
     .cards{
-      padding: 12% 1% 1% 1%;
+      padding: 12% 0% 1% 2%;
     }
 
     .cards >h1 {
-      font-size: 8vw;
+      font-size: 10vw;
     }
 
     .cards__container {
