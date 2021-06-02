@@ -58,21 +58,37 @@ class GirGhee extends Component{
     }
 
     addToCart = () => {
-        const userId = isAuthenticated().user._id;
-        const {productId, quantity} = this.state;
-        const user = {
-            id: userId,
-            quantity: quantity
-        }
-        addToCart(productId, user)
-        .then(data => {
-            if(data.error)
-                console.log(data.error)
-            else{
-                this.setState({
-                    redirectToCart: true
-                })
+        const {productId, quantity} = this.state
+        if (!(localStorage.getItem("cart"))){
+            console.log(quantity);
+            const details = {
+                id: productId,
+                quantity: quantity
             }
+            localStorage.setItem("cart", JSON.stringify([details]));
+        }
+        else{
+            var flag = false;
+            var array = JSON.parse(localStorage.getItem("cart"));
+            
+            console.log(array);
+            for(var i=0; i<array.length; i++){
+                if(productId === array[i].id){
+                    flag = true;
+                    array[i].quantity += quantity;
+                }
+            }
+            if(!flag){
+                const details = {
+                    id: productId,
+                    quantity: quantity
+                }
+                array.push(details);
+            }
+            localStorage.setItem("cart", JSON.stringify(array));
+        }
+        this.setState({
+            redirectToCart: true
         })
     }
 
@@ -141,7 +157,7 @@ class GirGhee extends Component{
     }
 
     render() {
-        const {product, redirect, quantity, redirectToCart, suggested, index, img, path, price, text} = this.state
+        const {product, redirect, productId, quantity, redirectToCart, suggested, index, img, path, price, text} = this.state
         const { hovered1, hovered2, hovered3 } = this.state;
         const style1 = hovered1 ? { height:"25vw", marginTop:"-25%"} : {display:"none"};
         const style2 = hovered2 ? { height:"25vw", marginTop:"-25%"} : {display:"none"};
@@ -177,7 +193,7 @@ class GirGhee extends Component{
                             <button onClick= {this.incrementValue} className="quantity-btn2" > + </button>
                         </p>
 
-                        {isAuthenticated() ? <button className="spnbtn1" onClick={this.addToCart}>Add to Cart +</button> : <Link to="/signin"><button className="spnbtn1">Add to Cart +</button></Link> }
+                        <button className="spnbtn1" onClick={this.addToCart}>Add to Cart +</button>
                         <p><span><button className="wishlist" onClick={this.addToWishlist}><i class="far fa-heart"></i> Wishlist</button></span>
                         <span><button className="wishlist"><i class="fas fa-share-alt" ></i> Share</button></span></p>
                     </div>
@@ -211,7 +227,7 @@ class GirGhee extends Component{
                 <div className="review-container">
                   <h2>Customers Reviews</h2>
                   <span className="span1"><img src={imgstar}/></span><span className="span2">Based on {product.rating.total / 5} reviews.</span>
-                  <Link to="/Products/GirGhee"><span className="btn"><button className="spnbtn">Write a Review.</button></span></Link>
+                  <Link to={`/products/${productId}`}><span className="btn"><button className="spnbtn">Write a Review.</button></span></Link>
                   <ul>
                   { product.reviews.map((review, i) => (
                       <li className="remBullet" key={i}>
@@ -222,7 +238,7 @@ class GirGhee extends Component{
                       </li>
                   ))}
                   </ul>
-                  <h3 className="marginBtm"><a className="viewall" href="/Products/GirGhee">View all reviews</a></h3>
+                  <h3 className="marginBtm"><a className="viewall" href={`/products/${productId}`}>View all reviews</a></h3>
                 </div>
                 </div>
                 <div className='trends'>
