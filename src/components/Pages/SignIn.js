@@ -46,7 +46,7 @@ class SignIn extends Component {
 
         const {redirectToRefer, error, loading} = this.state;
         if(redirectToRefer || isAuthenticated().user)
-            return <Redirect to="/"></Redirect>
+            return <Redirect to="/cart"></Redirect>
         return(
             <>
             <div>
