@@ -79,8 +79,8 @@ class Verify extends Component{
     render(){
         const {amount, redirectToAccount} = this.state;
 
-        // if(redirectToAccount)
-        //     return <Redirect to='/cart'></Redirect>
+        if(redirectToAccount)
+            return <Redirect to='/'></Redirect>
         return(
             <div className="verify-info">
                 <h1>Verify your details</h1>
