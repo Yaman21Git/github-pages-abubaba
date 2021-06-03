@@ -75,7 +75,7 @@ class SignUp extends Component {
             <>
             <div>
                 <div className="signup-container">
-                    <h1>My Account</h1>
+                    <h1 style={{marginBottom:"0%"}}>My Account</h1>
                     <div className="signup"><div className="sRight"><Link to="/signup" style={{textDecoration:"none", color:"white"}}><a href="/signup" style={{textDecoration:"none", color:"white"}}>SIGN UP</a></Link></div></div>
                     <div className="signin"><div className="sLeft"><Link to="/signin" style={{textDecoration:"none", color:"black"}}><a href="/signin" style={{textDecoration:"none", color:"black"}}>SIGN IN</a></Link></div></div>
                     

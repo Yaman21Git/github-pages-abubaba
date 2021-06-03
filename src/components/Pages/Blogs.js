@@ -8,7 +8,7 @@ export default function Blogs(){
         <>
           <div className="blogContainer">
               <div className="blogtop" style={{height:"38%", paddingTop:"2.7%"}}>
-                 <h1 style={{fontSize:"5.3vw"}}>Blogs</h1>
+                 <h1 style={{fontSize:"5.3vw", marginBottom:"0"}}>Blogs</h1>
                  <div className="subBlog">
                     <ul>
                         <li><Link to="/blogs" className="heads" style={{textDecoration:"none"}} >⚫ Blogger</Link></li>

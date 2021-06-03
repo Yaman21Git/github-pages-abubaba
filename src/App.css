@@ -2351,6 +2351,36 @@ font-size:1vw;
   cursor: pointer;
 }
 
+.verify-info{
+  background-image: url('./images2/Background-\ Shop\ now.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 5%;
+  padding-top: 2%;
+}
+
+.verify-info .details{
+  border: 1px solid black;
+  width:30%;
+  margin :auto;
+}
+
+.verify-info .details >p{
+  font-size: 1.2vw;
+}
+
+.verify-info .details >button{
+  background-color: black;
+  color: white;
+  font-size: 1vw;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: none;
+  padding: 1% 2% 1% 2%;
+  cursor: pointer;
+}
+
 @media screen and (max-width:680px) {
   .yourCart .table {
     width: 90%;
@@ -2431,5 +2461,21 @@ font-size:1vw;
     font-size: 1.6vw;
     margin-left: 65%;
     margin-bottom: -5%;
+  }
+
+  .verify-info >h1{
+    font-size: 9vw;
+  }
+
+  .verify-info .details{
+    width:60%;
+  }
+  
+  .verify-info .details >p{
+    font-size: 2.2vw;
+  }
+  
+  .verify-info .details >button{
+    font-size: 2vw;
   }
 }

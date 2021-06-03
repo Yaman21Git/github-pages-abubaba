@@ -51,7 +51,7 @@ class SignIn extends Component {
             <>
             <div>
                 <div className="signin-container">
-                    <h1>My Account</h1>
+                    <h1 style={{marginBottom:"0%"}}>My Account</h1>
                     <div className="signup"><div className="sRight" style={{background:"#F6EFE5"}}><Link to="/signup" style={{textDecoration:"none", color:"black"}}><a href="/signup" style={{textDecoration:"none", color:"black"}}>SIGN UP</a></Link></div></div>
                     <div className="signin"><div className="sLeft" style={{background:"black"}}><Link to="/signin" style={{textDecoration:"none", color:"white"}}><a href="/signin" style={{textDecoration:"none", color:"white"}}>SIGN IN</a></Link></div></div>
                     <form className="mainForm">

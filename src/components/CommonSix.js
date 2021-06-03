@@ -14,7 +14,7 @@ export default function CommonSix(){
         </div>
         <div className="background-shopnow">
         <div className="jugaadComplete">
-            <h1>Trending</h1>
+            <h1 style={{marginBottom:"0%"}}>Trending</h1>
             <br/><br/>
             <p>We are trusted and certified organic luxury food brand
 All our products are of high quality with unique uses of being grown, cultivated and packed in an organic way.</p>
@@ -59,7 +59,7 @@ All our products are of high quality with unique uses of being grown, cultivated
             <h1 class="luxury-items"><u>Luxury Products</u></h1>
             <div className="Row3">
                <Link to="products/60aa9c8b2e79914b043dc0b1"><div className="r1c1"></div></Link>
-               <Link to="products/60aa9c8b2e79914b043dc0b1"><div className="r1c2"></div></Link>
+               <Link to="products/60aea48122472a5940a04a28"><div className="r1c2"></div></Link>
                <div className="r2c1">
                    <span style={{color:"yellow", fontSize:"1.5vw"}}>★★★★</span><span style={{color:"white",fontSize:"1.5vw"}}>★</span>
                    <h2 className="classh2"><Link to="products/60aa9c8b2e79914b043dc0b1" style={{textDecoration:"none",color:"white"}}>Kashmiri Saffron</Link></h2>
@@ -69,7 +69,7 @@ All our products are of high quality with unique uses of being grown, cultivated
                 </div>
                <div className="r2c2">
                    <span style={{color:"yellow", fontSize:"1.5vw"}}>★★★★★</span>
-                   <h2 className="classh2"><Link to="products/60aa9c8b2e79914b043dc0b1" style={{textDecoration:"none",color:"white"}}>24k Gold Honey</Link></h2>
+                   <h2 className="classh2"><Link to="products/60aea48122472a5940a04a28" style={{textDecoration:"none",color:"white"}}>24k Gold Honey</Link></h2>
                    <h2 className="classh2">₹ 00.00</h2>
                    {/* <Button buttonStyle="btn--outline">Add to Cart +</Button> */}
                    <div className="addtocart-btn"><Link to="/cart" className="cartlink">Add to Cart +</Link></div>
