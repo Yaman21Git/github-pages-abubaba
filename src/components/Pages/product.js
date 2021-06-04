@@ -120,8 +120,8 @@ export const newsletter = (email) => {
 
 
 
-export const addOrder = (userId, cart) => {
-    return fetch(`https://yamanbackend.herokuapp.com/addOrder/${userId}` , {
+export const addOrder = (cart) => {
+    return fetch(`https://yamanbackend.herokuapp.com/addOrder` , {
         method: "PUT",
         headers: {
             Accept: "application/json",
