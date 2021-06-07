@@ -73,11 +73,31 @@
     cursor:pointer;
 }
 
+.search-item-container .search-heading{
+  width:50%;
+  padding-top:2%;
+}
+
+.search-item-container .search-heading >h1{
+  margin-left:8%;
+  text-align:left;
+  font-size:4vw;
+}
+
 @media screen and (max-width:680px) {
+.search-item-container{
+    min-height: 80vw;
+    padding-top: 1%;
+    background-image: url('./images2/Background-\ Shop\ now.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .search-item-container .navbar-hidden{
     height:6vw;
     width:50%;
-    float: right;
+    float: center;
+    margin-left: 25%;
 }
 
 .search-item-container .navbar-hidden .search-btn{
@@ -89,8 +109,8 @@
 }
 
 .search-item-container .navbar-hidden .search-btn >input{
-  font-size: 1.5vw;
-  padding-left: 2%;
+  font-size: 2vw;
+  padding: 1% 0 1% 2%;
   border:1px solid black;
   margin-top: 0;
 }
@@ -98,7 +118,17 @@
 .search-item-container .navbar-hidden .search-btn .redbtn{
     font-size: 1.4vw;
     border:1px solid black;
-    padding:3.4% 6.4% 3.4% 6.4%;
+    padding:4% 6.4% 3% 6.4%;
+}
+
+.search-item-container .search-heading{
+  width:100%;
+}
+
+.search-item-container .search-heading >h1{
+  margin-left:0;
+  text-align:center;
+  font-size:6vw;
 }
 }
 
@@ -289,6 +319,14 @@
   font-size: 0.85vw;
 }
 
+.onclickinfo{
+  font-family:'Monserrat', sans-serif;
+  font-size:1vw;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 .clientTest >h1{
   font-size:6vw;
 }
@@ -306,6 +344,15 @@
     height: 52vh;
     background-size: 100% auto;
     margin-top: -1%;
+  }
+  
+  .onclickinfo{
+    font-size:1.6vw;
+    width:100%;
+  }
+
+  .clientTest{
+    height: 60vw;
   }
 
   .clientTest >h1{
@@ -561,9 +608,39 @@
   border-color: black;
   font-size: 0.96vw;
 }
+
+@media screen and (max-width:680px) {
+  .home-subscribe .subscribe .logo{
+    margin-top:0;
+    height:40%;
+    border-bottom:1.6px solid black;
+    background-size: cover;
+    background-position: 100%;
+  }
+
+  .home-subscribe .subscribe >h1{
+    font-size:4vw;
+  }
+  
+  .home-subscribe .subscribe >p{
+    font-size: 2vw;
+  }
+  
+  .home-subscribe .subscribe .email{
+    padding: 2% 0 2% 2%;
+    width:60%;
+    font-size: 1.4vw;
+  }
+  
+  .home-subscribe .subscribe .submit{
+    padding: 2% 0 2% 0;
+    font-size: 1.4vw;
+  }
+}
 .about-container{
-    background-image: url("./images2/pexels-karolina-grabowska-4199098-min-min.jpg");
-    background-position: top;
+    /* background-image: url("./images2/pexels-karolina-grabowska-4199098-min-min.jpg"); */
+    background-image: url("./images2/79\ Honey-revised-a.jpg");
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     color: #fff;
@@ -684,13 +761,13 @@
   }
 
   .matter >p{
-    font-size: 1.6vw;
+    font-size: 1.8vw;
   }
 
   .shopNowbtn1{
     font-size: 1.2vw;
     margin-left: 20%;
-    margin-top: 5%;
+    margin-top: 0;
     border:1px solid black;
   }
 }
@@ -782,13 +859,23 @@
   color: black;
 }
 
+.blogContainer .blogtop{
+  height:38%;
+  padding-top:2.7%;
+}
+
+.blogContainer .blogtop .blogsheading{
+  font-size:5.3vw;
+  margin-bottom:0;
+  margin-right:5%;
+}
+
 .blogtop .subBlog{
   margin-left: 17%;
   width:100%;
   font-size: 1.5vw;
   margin-top: 2%;
 }
-
 
 .blogtop ul{
   overflow-x:hidden;
@@ -951,15 +1038,22 @@
   }
   
   .heads{
-    font-size: 1.5vw;
+    font-size: 2vw;
+  }
+
+  .blogContainer .blogtop .blogsheading{
+    font-size:10vw;
   }
 
   .blogtop .subBlog{
-    margin-left: 12%;
+    margin-left: 5%;
+    width: 90%;
+    margin-bottom: -3%;
   }
 
   .blogtop ul{
-    height: 2.6vw;
+    height: 2.8vw;
+    width:94%;
   }
 
   .dateCalender{
@@ -1101,24 +1195,12 @@
 }
 
  .map{
-   height:30vw;
-   width:96%;
+   height:36vw;
+   width:100%;
    margin-left: auto;
    margin-right: auto;
+   background-color:#F6EFE5;
  }
-
-.about-container2{
-  height: 90%;
-  width: 90%;
-  margin:auto;
-  background-image: url("./images2/Map.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-  box-shadow: 10px 10px 5px grey;
-}
 
 .contactForm{
   float:left;
@@ -1136,12 +1218,12 @@
 
 .contactDetails >h1{
   margin-top: 10%;
-  font-size: 2vw;
+  font-size: 3vw;
   text-align: left;
 }
 
 .contactDetails >p{
-  font-size: 0.9vw;
+  font-size: 1.2vw;
 }
 
 
@@ -1157,38 +1239,49 @@
 
 @media screen and (max-width:680px) {
    .signin-container{
-     height: 60vw;
+     height: 70vw;
    }
 
   .signin-container >h1{
-      font-size: 9vw;
+      font-size: 10vw;
   }
 
   .signin-container .mainForm .checkSignin{
-    margin-left:20%;
-    font-size: 1vw;
+    margin-left:15%;
+    width:50%;
+    text-align: left;
+  }
+
+  .signin-container .mainForm .checkSignin >label{
+    font-size: 1.6vw;
   }
 
   .signin-container .mainForm .createAcc{
-    font-size: 1.2vw;
+    font-size: 1.6vw;
     margin-top: 1%;
   }
 }
 
-.contactus-shrink .signup-container .contactForm .hello-contact{
-  margin-left:-65%;
-  font-size:4vw;
-}
-
-.contactus-shrink .signup-container .contactForm .queries{
-margin-left:12%;
-font-size:1vw;
+.contactus-shrink{
+  height: auto;
+  background-color: #F6EFE5;
 }
 
 .signup-container{
-  height:38vw;
+  height: 40vw;
   background-color: #F6EFE5;
   padding-top: 2%;
+}
+
+.contactus-shrink .signup-container .contactForm .hello-contact{
+  margin-left:-60%;
+  margin-bottom: 2%;
+  font-size:5vw;
+}
+
+.contactus-shrink .signup-container .contactForm .queries{
+  margin-left:12%;
+  font-size:1.2vw;
 }
 
 .mainForm{
@@ -1265,22 +1358,25 @@ font-size:1vw;
   color:whitesmoke;
 }
 
+.contactus-shrink .signup-container .contactForm .mainForm{
+  margin-top: 6.5%;
+  align-content: center;
+  text-align:center;
+  height: 20vw;
+}
+
 .contactus-shrink .signup-container .contactForm .mainForm .p1 .input-form{
   width:70%;
-  margin-bottom:3%;
+  margin-bottom:1%;
+  font-size: 1.4vw;
 }
 
 .contactus-shrink .signup-container .contactForm .mainForm .p1 .message-text{
   border-radius:10px;
   border:2px solid black;
   height:6vw;
+  font-size: 1.5vw;
   width:70%;
-  background-color:#F6EFE5;
-}
-
-.map-container{
-  height:34vw;
-  width:100%;
   background-color:#F6EFE5;
 }
 
@@ -1290,8 +1386,8 @@ font-size:1vw;
   }
 
   .about-container >h1{
-    font-size:9vw; 
-    padding-top:35%;
+    font-size:12vw; 
+    padding-top:5%;
     font-weight: lighter;
   }
 
@@ -1302,6 +1398,7 @@ font-size:1vw;
     margin-top: -20%;
     box-shadow: 0 5px 10px grey;
     margin-bottom: 10%;
+    border-radius: 10px 10px 0 0;
   }
 
   .contactus-shrink .signup-container{
@@ -1315,28 +1412,35 @@ font-size:1vw;
 
   .contactus-shrink .signup-container .contactForm .mainForm{
     width:100%;
+    margin-top: 6.5%;
+    align-content: center;
+    text-align:center;
+    height: 100%;
   }  
 
   .contactus-shrink .signup-container .contactForm .hello-contact{
-    font-size:6vw;
-    margin-left:-76%;
+    font-size:8vw;
+    margin-left:-70%;
   }
 
   .contactus-shrink .signup-container .contactForm .queries{
     margin-top:1%;
-    margin-bottom: 8%;
+    margin-bottom: 5%;
     margin-left: 5%;
-    font-size:2vw;
+    font-size:2.4vw;
   }
   
   .contactus-shrink .signup-container .contactForm .mainForm .p1 .input-form{
     width:100%;
     margin-left: 5%;
+    margin-bottom: 3%;
+    font-size: 2.4vw;
   }
 
   .contactus-shrink .signup-container .contactForm .mainForm .p2{
-    margin-left: 2%;
-    font-size: 1.3vw;
+    text-align: left;
+    margin-left: -3%;
+    width:90%;
   }
 
   .contactus-shrink .signup-container .contactForm .mainForm .p1 .message-text{
@@ -1345,52 +1449,50 @@ font-size:1vw;
     margin-left: 5%;
     width:100%;
     border:1.5px solid black;
-    font-size: 2vw;
+    font-size: 2.6vw;
   }
 
   .contactDetails{
-    width:30%;
-    margin-top: -8%;
-    margin-left:30%;
+    width:50%;
+    margin-top: -15%;
+    margin-left:25%;
+    margin-bottom: 2%;
   }
   
   .contactDetails >h1{
-    font-size: 1.6vw;
+    font-size: 2.8vw;
+    margin-bottom: 2%;
     font-family: 'Montserrat', sans-serif;
   }
   
   .contactDetails >p{
-    font-size: 1.2vw;
-    width:60%;
-    float:right;
-    margin-bottom: 8%;
+    font-size: 1.6vw;
+    width:70%;
+    text-align: left;
+    margin-left: 30%;
+    margin-bottom: 0;
   }
    
   .contactDetails >h1 >i{
-    margin-right: 28%;
-    font-size: 2em;
-  }
-  
-  .map-container{
-    height:86vw;
-  }
-  
-  .map{
-    height:94%;
+    margin-right: 20%;
+    float: left;
+    min-width: 5.2vw;
+    min-height: 6vw;
+    font-size: 1.6em;
   }
 
-  .map .about-container2{
-    box-shadow:none;
+  .map{
+    height:50vw;
   }
 }
 
 @media screen and (max-width:680px) {
   .signup-container{
-    height:80vw;
+    height:94vw;
   }
 
   .signup-container >h1{
-    font-size: 9vw;
+    font-size: 10vw;
   }
 
   .mainForm{
@@ -1403,15 +1505,15 @@ font-size:1vw;
 
   .sRight{
     width:70%;
-    font-size:1.8vw;
-    padding-top: 3%;
+    font-size:2.4vw;
+    padding-top: 2%;
     height: 6vw;
   }
 
   .sLeft{
     width:70%;
-    padding-top: 3%;
-    font-size:1.8vw;
+    padding-top: 2%;
+    font-size:2.4vw;
     height: 6vw;
   }
   
@@ -1423,7 +1525,7 @@ font-size:1vw;
     padding: 1.6% 1.8% 1.6% 1.8%;
     width:70%;
     border:1.4px solid black;
-    font-size: 1.6vw;
+    font-size: 2vw;
     margin-bottom: 1%;
   }
 
@@ -1434,18 +1536,22 @@ font-size:1vw;
   
   .signup-container .mainForm .p2 >input{
     margin-right: 1%;
-    font-size: 1vw;
+    margin-left: 10%;
+  }
+  
+  .signup-container .mainForm .p2 >label{
+      font-size: 1.6vw;
   }
 
   .mainForm .signupBtn{
     width:14%;
     height:7%;
-    font-size:1.4vw;
+    font-size:2.4vw;
     margin-top: 2%;
   }
 
   .signup-container .mainForm .haveAcc{
-    font-size: 1.2vw;
+    font-size: 1.6vw;
     margin-top: 1%;
   }
 
@@ -1468,6 +1574,10 @@ font-size:1vw;
   color: #fff;
   text-align: center;
   padding-top: 15%;
+}
+
+.aboutus-header >h1{
+  font-size:8vw;
 }
 
 .aboutus-container .weRbest{
@@ -1668,6 +1778,10 @@ font-size:1vw;
     background-position: 90% 0;
   }
 
+  .aboutus-header >h1{
+    font-size:11vw;
+  }
+
   .aboutus-container .mobileView{
     width:94%;
     margin-left:auto;
@@ -1685,7 +1799,7 @@ font-size:1vw;
   }
 
   .aboutus-container .weRbest >h1{
-    font-size: 6vw;
+    font-size: 8vw;
     margin-bottom: 4%;
   }
   
@@ -1722,13 +1836,13 @@ font-size:1vw;
     }
 
     .h2{
-      font-size: 2vw;
+      font-size: 2.4vw;
       font-weight: 800;
     }
 
     .aboutusFacts .pClass{
-      font-size: 1.4vw;
-      width:70%;
+      font-size: 1.6vw;
+      width:80%;
     }
 
     .aboutusFacts .hrclass{
@@ -1743,14 +1857,14 @@ font-size:1vw;
 
     .aboutus-container .healthFacts-container{
       width:100%;
-      height:110vw;
+      height:120vw;
       border-radius: 20px;
     }
 
 
     .aboutus-container .healthFacts-container .pureNatural{
       width:100%;
-      height:45%;
+      height:48%;
       background-position: 50% 45%;
       background-size: 70% 130%;
       background-color:#DFF2D4;
@@ -1759,7 +1873,7 @@ font-size:1vw;
 
     .aboutus-container .healthFacts-container .health{
       width:100%;
-      height:55%;
+      height:52%;
       border-radius: 0 0 20px 20px;
     }
 
@@ -1952,15 +2066,14 @@ font-size:1vw;
 }
 
 .service-container .jugaadComplete .addtocart-btn{
-  border:1px solid white;
   padding-top:1%;
   padding-bottom:1%;
-  width:34%;
-  margin-left:33%;
+  width:50%;
+  margin-left:25%;
 }
 
 .service-container .jugaadComplete .addtocart-btn .cartlink{
-  font-size:0.9vw;
+  font-size:1.6vw;
   text-decoration:none;
   color:white;
 }
@@ -2090,43 +2203,43 @@ font-size:1vw;
   .service-container .jugaadComplete{
     width:90%;
     margin-top: -7.7%;
-    height: 190vw;
+    height: 226vw;
     margin-bottom: -2%;
   }
 
   .service-container .jugaadComplete >h1{
-    font-size: 6vw;
+    font-size: 9vw;
   }
 
   .service-container .jugaadComplete >p{
-    width:50%;
-    margin-top: -5%;
+    width:60%;
+    margin-top: -7%;
     text-align: center;
-    font-size: 1.4vw;
-    font-weight: 800;
+    font-size: 2vw;
+    font-weight: 600;
   }
 
   .service-container .shopNow .h1shopnow{
-    font-size:9vw;
-    margin-bottom: -3.4%;
+    font-size:12vw;
+    margin-bottom: -6.8%;
   }
 
   .service-container .jugaadComplete .Row1{
     margin-bottom: 5%;
-    height: 48vw;
-    width:84%;
+    height: 56vw;
+    width:90%;
   }
 
   .service-container .jugaadComplete .Row2{
     margin-bottom: 5%;
-    height: 48vw;
-    width:84%;
+    height: 56vw;
+    width:90%;
   }
 
   .service-container .jugaadComplete .Row3{
     margin-bottom: 5%;
-    height: 48vw;
-    width:84%;
+    height: 56vw;
+    width:90%;
   }
 
   .service-container .jugaadComplete .Row1 .r2c1{
@@ -2153,6 +2266,12 @@ font-size:1vw;
     height: 25%;
   }
 
+  .classh2{
+    font-size: 2vw;
+    margin-bottom: 2%;
+    margin-top: -2%;
+  }
+
   .service-container .jugaadComplete .addtocart-btn{
     height:0;
     text-align: center;
@@ -2160,18 +2279,17 @@ font-size:1vw;
   }
 
   .service-container .jugaadComplete .addtocart-btn .cartlink{
-    font-size:1.6vw;
-    border: 0.6px solid white;
+    font-size:2.8vw;
     position: absolute;
-    margin-left:-4.6%;
-    margin-top:-0.9%;
+    margin-left:-8%;
+    margin-top:-1.2%;
   }
 
   .service-container .jugaadComplete .luxury-items{
-    font-size:2vw;
+    font-size:2.6vw;
     margin-bottom: -4%;
     font-family: 'Montserrat', sans-serif;
-    margin-left:8%;
+    margin-left:5%;
     text-align: left;
   }
 
@@ -2382,20 +2500,25 @@ font-size:1vw;
 }
 
 @media screen and (max-width:680px) {
+  .yourCart{
+    min-height: 80vw;
+  }
+
   .yourCart .table {
     width: 90%;
     margin-left: 3%;
-    margin-top: 50%;
+    margin-top: 65%;
   }
 
   .user-info{
     width:86%;
     margin-left:10%; 
+    height: auto;
     top:12vw;
   }
 
   .user-info .checkout-form{
-    margin-top: 10vw;
+    margin-top: 18vw;
   }
 
   .user-info .checkout-form .info{
@@ -2410,7 +2533,7 @@ font-size:1vw;
   }
 
   .user-info .checkout-form >h3{
-    font-size: 2.4vw;
+    font-size: 2.8vw;
     margin-bottom: 1%;
     margin-right: 14%;
   }
@@ -2421,7 +2544,8 @@ font-size:1vw;
   }
   
   .yourCart >h1{
-    font-size: 8vw;
+    font-size: 10vw;
+    margin-bottom: 0;
   }
   
   .yourCart .table .product {

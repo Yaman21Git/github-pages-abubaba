@@ -10,7 +10,7 @@ function ClientsItem(props) {
         <div className='client_item'>
           <img src={props.src} alt="clients" className="imgfig"/>
           <h2 className="name">{props.name}</h2>
-          <h2 className="name" style={{fontSize:"1.2vw", color:"yellow"}}>
+          <h2 className="name">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>

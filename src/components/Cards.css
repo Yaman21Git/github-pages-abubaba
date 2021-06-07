@@ -119,6 +119,12 @@
     cursor:pointer;
     border:none;
   }
+  
+  .cards__item__text:hover{
+      margin-top: 0;
+      transition-timing-function: ease-in;
+      transition-duration: 0.5s;
+    }
 
   @media  screen and (max-width:680px) {
     .cards{
@@ -148,12 +154,10 @@
     .expmore{
       font-size: 2vw;
     }
-  }
 
-  .cards__item__text:hover{
-    margin-top: 0;
-    transition-timing-function: ease-in;
-    transition-duration: 0.5s;
+    .cards__item__text:hover{
+      margin-top: 25%;
+    }
   }
   
   @media only screen and (min-width: 1200px) {

@@ -70,17 +70,15 @@ class ContactUs extends Component{
                             </form>
                         </div>
                         <div className="contactDetails">
-                            <h1><i class="fas fa-map-marker-alt"></i>  Address</h1>
-                            <p>A-1/128, Rohini Sector 11, New Delhi, India</p>
-                            <h1><i class="fas fa-phone-alt"></i>  Phone Number</h1>
+                            <h1><i class="fas fa-map-marker-alt"></i>Address</h1>
+                            <p>Rohini Sector 11, New Delhi, India</p>
+                            <h1><i class="fas fa-phone-alt"></i>Phone Number</h1>
                             <p>+91 8595136293</p>
-                            <h1><i class="far fa-envelope"></i>  Email Us</h1>
+                            <h1><i class="far fa-envelope"></i>Email Us</h1>
                             <p>info@yoursite.com, info@abubabaorganics.com</p>
                         </div>
                     </div>
-                
-
-                    <div style={{height:"45vw", width:"100%",backgroundColor:"#F6EFE5"}}>
+                    <div className="map">
                         <iframe style = {{
                         width: "100%",
                         height: "90%",

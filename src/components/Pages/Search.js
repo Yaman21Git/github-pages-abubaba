@@ -54,7 +54,7 @@ class Search extends Component{
                     <button className="redbtn" onClick={this.handleClick}>SEARCH</button>
                 </div>
               </div>
-              <div style={{width:"50%", paddingTop:"2%"}}><h1 style={{marginLeft:"8%", textAlign:"left",fontSize:"4vw"}}>Your searched items will appear below:</h1></div>
+              <div className="search-heading"><h1>Your searched items will appear below:</h1></div>
               <br/><br/>
                 {index && <div className='trends_container'>
                     <div className='trends_wrapper'>

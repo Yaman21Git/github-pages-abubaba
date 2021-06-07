@@ -238,11 +238,11 @@ class GirGhee extends Component{
                       </li>
                   ))}
                   </ul>
-                  <h3 className="marginBtm"><a className="viewall" href={`/products/${productId}`}>View all reviews</a></h3>
+                  <h3 className="marginBtm"><Link className="viewall" to={`/products/${productId}`}>View all reviews</Link></h3>
                 </div>
                 </div>
+                <div className="peopleAlso"><h2>People also Purchased</h2></div>
                 <div className='trends'>
-                    <h2 style={{textAlign:"center", fontFamily:"Monserrat, sans-serif", marginBottom:"5%"}}>People also Purchased</h2>
                     {index && <div className='trends_container'>
                         <div className='trends_wrapper'>
                         {index.map( (array, i) => (

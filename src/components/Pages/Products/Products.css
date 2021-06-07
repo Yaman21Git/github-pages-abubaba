@@ -253,15 +253,16 @@ h2{
 }
 
 .peopleAlso{
-    height:30vw;
     background-color: #F6EFE5;
     padding-top:5%;
+    margin-bottom: -5%;
     text-align: center;
 }
 
 .peopleAlso >h2{
     font-family: 'Montserrat', sans-serif;
     font-size: 600;
+    margin-bottom: 5%;
 }
 
 @media screen and (max-width:680px) {
@@ -302,7 +303,7 @@ h2{
      .pdtMatter >h1{
         margin-left: 0;
         margin-bottom: -5%;
-        font-size: 7vw;
+        font-size: 10vw;
     }
 
     .pdtMatter >h2{
@@ -335,8 +336,8 @@ h2{
 
     .spnbtn1{
         border-radius:0;
-        padding: 2% 10% 2% 10%;
-        font-size:2vw;
+        padding: 1% 5% 1% 5%;
+        font-size:4vw;
         margin-top: 1.5%;
         margin-left: 3%;
         border: none;
@@ -344,7 +345,7 @@ h2{
     
     .wishlist{
         padding: 2% 3.8% 2% 3.8%;
-        font-size:2vw;
+        font-size:3vw;
         margin-top: 5%;
         margin-left: 1%;
     }
@@ -401,5 +402,15 @@ h2{
 
     .peopleAlso >h2{
         font-size: 3vw;
+    }
+
+    .spnbtn{
+        font-size:2vw;
+        margin-left:-15%;
+      }
+
+    .viewall{
+        font-size: 1.6vw;
+        margin-left: 80%;
     }
 }

@@ -164,7 +164,7 @@ class Cart extends Component {
                               </tr>
                         ))}
                      </tbody>
-               </table>) : (<div  style={{textAlign: "center"}}>No items added to cart yet.</div>) }
+               </table>) : (<div  style={{textAlign: "center",fontFamily:"'Monserrat',sans-serif",fontSize:"3vw"}}>No items added to cart yet.</div>) }
                <div className="user-info">
                   { isAuthenticated().user && ( <> <button className="signout" onClick={this.handleClick}>Sign Out</button>
                   <p className="username"><i class="fa fa-user" aria-hidden="true"></i> Signed in as: {isAuthenticated().user.name}</p> </> )}

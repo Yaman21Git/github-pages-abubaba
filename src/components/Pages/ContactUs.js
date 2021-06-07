@@ -9,7 +9,7 @@ export default function AboutUs(){
        <>
          <div className="aboutus-container">
            <div className="aboutus-header" >
-             <h1 style={{fontSize:"8vw"}}>About Us</h1>
+             <h1>About Us</h1>
            </div>
            <div className="mobileView">
            <div className="weRbest">

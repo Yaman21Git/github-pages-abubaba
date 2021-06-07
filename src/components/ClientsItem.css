@@ -26,6 +26,11 @@
     margin-bottom: 3%;
 }
 
+.name >i{
+    font-size:1.2vw;
+    color:yellow;
+}
+
 .des{
     width:64%;
     margin-left: auto;
@@ -33,4 +38,35 @@
     text-align: center;
     font-family: 'Montserrat',sans-serif;
     font-size: 0.8vw;
+}
+
+@media screen and (max-width:680px) {
+    .client_item{
+        margin-left: 6%;
+        margin-right: 2%;
+        width:40%;
+        height: 56%;
+        margin-top:10%;
+        border-radius: 10px;
+        box-shadow: 2px 2px 3px grey;
+    }
+    
+    .imgfig{
+        margin-left: 25%;
+        height:60%;
+        width: 50%;
+    }
+    
+    .name{
+        font-size: 2.4vw;
+    }
+
+    .name >i{
+        font-size:2vw;
+    }
+    
+    .des{
+        width:75%;
+        font-size: 1.4vw;
+    }
 }

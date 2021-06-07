@@ -94,17 +94,6 @@
     padding-top: 58%;
 }
 
-@media screen and (max-width:680px) {
-    .expmorebtn{
-        padding-top: 50%;
-    }
-
-    .blogs >h1{
-        font-size: 10vw;
-        margin-bottom: -2%;
-    }
-}
-
 .blog_item_img:hover +.expmorebtn{
     opacity: 0.8;
     cursor: pointer;
@@ -142,4 +131,32 @@
     font-size: 1.2vw;
     padding-left: 10%;
     padding-right: 10%;
+}
+
+@media screen and (max-width:680px) {
+    .blogs{
+        height: 70vw;
+    }
+    
+    .blog_item{
+        width:48%;
+        margin-top: 3.3%;
+    }
+
+    .expmorebtn{
+        padding-top: 33%;
+    }
+
+    .blogs >h1{
+        font-size: 10vw;
+        margin-bottom: -2%;
+    }
+
+    .readMore{
+        font-size: 2vw;
+    }  
+
+    .blog_item_info{
+        font-size: 2.4vw;
+    }
 }
