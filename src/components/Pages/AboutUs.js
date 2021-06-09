@@ -71,11 +71,11 @@ class ContactUs extends Component{
                         </div>
                         <div className="contactDetails">
                             <h1><i class="fas fa-map-marker-alt"></i>Address</h1>
-                            <p>Rohini Sector 11, New Delhi, India</p>
+                            <p>Rohini Sec-11, New Delhi, India</p>
                             <h1><i class="fas fa-phone-alt"></i>Phone Number</h1>
-                            <p>+91 8595136293</p>
+                            <p>+91 85951 36293</p>
                             <h1><i class="far fa-envelope"></i>Email Us</h1>
-                            <p>info@yoursite.com, info@abubabaorganics.com</p>
+                            <p>mann.director@abubabaorganic.com</p>
                         </div>
                     </div>
                     <div className="map">

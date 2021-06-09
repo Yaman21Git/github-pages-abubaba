@@ -36,7 +36,7 @@ All our products are of high quality with unique uses of being grown, cultivated
                    <div className="addtocart-btn"><Link to="/cart" className="cartlink">Add to Cart +</Link></div>
                </div>
             </div>
-            <h1 class="luxury-items"><u>Hand Grinded Organic Spices</u></h1>
+            <h1 class="luxury-items"><u>Hand Churned Organic Spices</u></h1>
             <div className="Row2">
                <Link to="products/60aaafc02e79914b043dc0ca"><div className="r1c1"></div></Link>
                <Link to="products/60aab0902e79914b043dc0cb"><div className="r1c2"></div></Link>

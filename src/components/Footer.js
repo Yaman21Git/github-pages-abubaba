@@ -96,15 +96,15 @@ class Footer extends Component {
                   </div>
                   <div className="footerInfo">
                     <h2>Information</h2>
-                    <p><a href="/">Home</a></p>
-                    <p><a href="/contactus">About Us</a></p>
-                    <p><a href="/services">Shop</a></p>
-                    <p><a href="/Blogs">Blogs</a></p>
-                    <p><a href="/">FAQs</a></p>
-                    <p><a href="/">Shipping Information</a></p>
-                    <p><a href="/">Return Policy</a></p>
-                    <p><a href="/">Terms and Conditions</a></p>
-                    <p><a href="/">Privacy Policy</a></p>
+                    <p><Link to="/">Home</Link></p>
+                    <p><Link to="/contactus">About Us</Link></p>
+                    <p><Link to="/services">Shop</Link></p>
+                    <p><Link to="/Blogs">Blogs</Link></p>
+                    <p><Link to="/">FAQs</Link></p>
+                    <p><Link to="/">Shipping Information</Link></p>
+                    <p><Link to="/">Return Policy</Link></p>
+                    <p><Link to="/terms&conditions">Terms and Conditions</Link></p>
+                    <p><Link to="/privacy-policy">Privacy Policy</Link></p>
                   </div>
                   <div className="contactInfo">
                       <h2>Contact us</h2>
@@ -118,15 +118,15 @@ class Footer extends Component {
 
                   <div className="footerInfo2 hidden-info">
                     <h2>Information</h2>
-                    <p><a href="/">Home</a></p>
-                    <p><a href="/contactus">About Us</a></p>
-                    <p><a href="/services">Shop</a></p>
-                    <p><a href="/Blogs">Blogs</a></p>
-                    <p><a href="/">FAQs</a></p>
-                    <p><a href="/">Shipping Information</a></p>
-                    <p><a href="/">Return Policy</a></p>
-                    <p><a href="/">Terms and Conditions</a></p>
-                    <p><a href="/">Privacy Policy</a></p>
+                    <p><Link to="/">Home</Link></p>
+                    <p><Link to="/contactus">About Us</Link></p>
+                    <p><Link to="/services">Shop</Link></p>
+                    <p><Link to="/Blogs">Blogs</Link></p>
+                    <p><Link to="/">FAQs</Link></p>
+                    <p><Link to="/">Shipping Information</Link></p>
+                    <p><Link to="/">Return Policy</Link></p>
+                    <p><Link to="/terms&conditions">Terms and Conditions</Link></p>
+                    <p><Link to="/privacy-policy">Privacy Policy</Link></p>
                   </div>
               </div>
             </div>

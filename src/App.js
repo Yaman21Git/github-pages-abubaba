@@ -31,6 +31,8 @@ import Cart from './components/Pages/Carts'
 import Search from './components/Pages/Search'
 import subCategories from './components/Pages/OurCollection/subCategories';
 import Verify from './components/Pages/Verify'
+import terms from './components/Pages/terms&con'
+import Privacy from './components/Pages/PrivacyPolicy'
 
 class App extends React.Component{
   render(){
@@ -67,6 +69,8 @@ class App extends React.Component{
              <Route path='/search' component={Search}/>
              <Route path='/products/:productId' component={GirGhee}></Route>
              <Route path='/category/:category' component={subCategories}></Route>
+             <Route path='/terms&conditions' component={terms}></Route>
+             <Route path='/privacy-policy' component={Privacy}></Route>
            </Switch>
            <Footer/>
          </Router>

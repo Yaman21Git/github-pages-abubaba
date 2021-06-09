@@ -11,7 +11,7 @@ function HeroSection() {
         {/* <img src="/images/banner.jpeg" alt=""/> */}
       <div className='hero-btns'>
         <h1>Super Healthy and Delicious Organic Products.</h1>
-        <p style={{fontFamily:"'Montserrat', sans-serif"}}>Abubaba Organic offers the best organic products in delhi. We have a huge range of organic products which are 100% certified.</p>
+        <p style={{fontFamily:"'Montserrat', sans-serif"}}>With an assortment of 100% certified organic food, Abubaba Organic offers the best of healthy organic products that are made to perfection.</p>
         <Link to="/services"><button className="shopNowbtn" type="submit">SHOP NOW</button></Link>
       </div>
     </div>

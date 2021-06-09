@@ -43,6 +43,12 @@
     padding: 1.6% 5.6%;
     font-size: 1vw;
   }
+
+  @media screen and (max-width:680px) {
+    .btn--medium {
+      font-size: 2vw;
+    }
+  }
   
   .btn--large {
     padding: 12px 26px;
