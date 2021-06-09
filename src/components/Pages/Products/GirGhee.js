@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { addToCart, addToWishlist, load, getProductsByCategoty } from '../product'
+import { addToCart, load, getProductsByCategoty } from '../product'
 import { isAuthenticated } from '../auth'
 import '../../../App.css'
 import './Products.css'
@@ -10,7 +10,11 @@ import '../../Trending.css'
 import img0 from '../../../images2/161 Choco Nutty.jpg'
 import img1 from '../../../images2/191-Mango-Pickle.jpg'
 import img2 from '../../../images2/168-Blueberries.jpg'
-
+import ThreeDotsLoader from './../../ThreeDotsLoader'
+import {FacebookShareButton, WhatsappShareButton, TwitterShareButton} from 'react-share'
+import {FacebookIcon, WhatsappIcon, TwitterIcon} from 'react-share'
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 class GirGhee extends Component{
     constructor(){
@@ -31,7 +35,9 @@ class GirGhee extends Component{
             img: [img0, img1, img2],
             text: ['Choco Nutty Granola', 'Mango Pickle', 'Blueberries'],
             path: ['/products/60aa9f242e79914b043dc0b4','/products/60aa6cbe3f3ca14f407dc624','/products/60aaa2852e79914b043dc0b9'],
-            price: ['₹ 00.00','₹ 00.00','₹ 00.00']    
+            price: ['₹ 00.00','₹ 00.00','₹ 00.00'],
+            url: String(window.location),
+            open: false
         }
     }
 
@@ -57,12 +63,13 @@ class GirGhee extends Component{
         });
     }
 
-    addToCart = () => {
-        const {productId, quantity} = this.state
+    addToCart = (str) => {
+        const {product, productId, quantity} = this.state
         if (!(localStorage.getItem("cart"))){
             console.log(quantity);
             const details = {
                 id: productId,
+                name: product.name,
                 quantity: quantity
             }
             localStorage.setItem("cart", JSON.stringify([details]));
@@ -81,36 +88,25 @@ class GirGhee extends Component{
             if(!flag){
                 const details = {
                     id: productId,
+                    name: product.name,
                     quantity: quantity
                 }
                 array.push(details);
             }
             localStorage.setItem("cart", JSON.stringify(array));
         }
+        toast.success(<div style={{ position: 'relative' }}>
+            <h6>Item added to cart</h6>
+            </div>, {
+            position: "top-center",
+            autoClose: true,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+        });
+        
         this.setState({
-            redirectToCart: true
-        })
-    }
-
-    addToWishlist = () => {
-
-        if(!isAuthenticated()){
-            this.setState({
-                redirect: true
-            })
-            return;
-        }
-        const userId = isAuthenticated().user._id;
-        const {productId} = this.state;
-        const user = {
-            id: userId
-        }
-        addToWishlist(productId, user)
-        .then(data => {
-            if(data.error)
-                console.log(data.error)
-            else 
-                alert("Item Added To Wishlist");
+            redirectToCart: str
         })
     }
 
@@ -152,12 +148,19 @@ class GirGhee extends Component{
             return;
     }
 
+    shareButton = () => {
+        var val = this.state.open;
+        val = (val ? false : true);
+        this.setState({
+            open: val
+        })
+    }
     handleInput = (event) => {
         const {quantity} = this.state;
     }
 
     render() {
-        const {product, redirect, productId, quantity, redirectToCart, suggested, index, img, path, price, text} = this.state
+        const {product, redirect, productId, quantity, redirectToCart, suggested, index, img, path, price, text, open, url} = this.state
         const { hovered1, hovered2, hovered3 } = this.state;
         const style1 = window.innerWidth>680 ? (hovered1 ? { height:"25vw", marginTop:"-25%"} : {display:"none"}) : (hovered1 ? {position:"absolute",marginTop:"-144%",height:"108vw"} : {display:"none"});
         const style2 = window.innerWidth>680 ? (hovered2 ? { height:"25vw", marginTop:"-25%"} : {display:"none"}) : (hovered2 ? {position:"absolute",marginTop:"-144%",height:"108vw"} : {display:"none"});
@@ -169,9 +172,9 @@ class GirGhee extends Component{
         if(redirectToCart)
             return <Redirect to="/cart"></Redirect>
 
-
         return (
-            (product && <div>
+            (product ? (<div>
+                <ToastContainer />
                 <div className="pdtImages">
                     <div className="images">
                         <img className="full"  src={product.photos[0]} />
@@ -184,7 +187,7 @@ class GirGhee extends Component{
                         {hovered2 && <div className="hover2" style={style2}><img className="imghovered" src={product.photos[2]}/> </div>}
                         {hovered3 && <div className="hover3" style={style3}><img className="imghovered" src={product.photos[3]}/> </div>}
                         <h1>{product.name}</h1>
-                        <h2>₹ {product.price}</h2>
+                        <h2>₹ {product.price}.00</h2>
                         <p>
                             <br/>
                             Quantity &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -193,9 +196,22 @@ class GirGhee extends Component{
                             <button onClick= {this.incrementValue} className="quantity-btn2" > + </button>
                         </p>
 
-                        <button className="spnbtn1" onClick={this.addToCart}>Add to Cart +</button>
-                        <p><span><button className="wishlist" onClick={this.addToWishlist}><i class="far fa-heart"></i> Wishlist</button></span>
-                        <span><button className="wishlist"><i class="fas fa-share-alt" ></i> Share</button></span></p>
+                        <button className="spnbtn1" onClick={() => this.addToCart(true)}>Buy Now</button>
+                        <p><span><button className="wishlist" onClick={() => this.addToCart(false)}>Add To Cart</button></span>
+                        <span><button className="wishlist" onClick={() => this.shareButton()}><i class="fas fa-share-alt" ></i> Share</button></span>
+                        {open && <span style={{padding: "5%"}}>
+                                <FacebookShareButton url={url} quote={"I loved this and would recommend everyone to try this out"} hashtag="AbubabaOrganic">
+                                    <FacebookIcon localFillColor="white" round={true} size={"2.5rem"}></FacebookIcon>
+                                </FacebookShareButton>
+                                <WhatsappShareButton url={url} quote={"I loved this and would recommend everyone to try this out"} hashtag="AbubabaOrganic">
+                                    <WhatsappIcon localFillColor="white" round={true} size={"2.5rem"}></WhatsappIcon>
+                                </WhatsappShareButton>
+                                <TwitterShareButton url={url} quote={"I loved this and would recommend everyone to try this out"} hashtag="AbubabaOrganic">
+                                    <TwitterIcon localFillColor="white" round={true} size={"2.5rem"} ></TwitterIcon>
+                                </TwitterShareButton>
+                        </span>}
+                        </p><br/>
+                        <p>{"*Product will be delivered within 3-4 days"}</p>
                     </div>
                 </div>
                 <div className="productDes">
@@ -241,8 +257,8 @@ class GirGhee extends Component{
                   <h3 className="marginBtm"><Link className="viewall" to={`/products/${productId}`}>View all reviews</Link></h3>
                 </div>
                 </div>
-                <div className="peopleAlso"><h2>People also Purchased</h2></div>
                 <div className='trends'>
+                <div className="peopleAlso"><h2>People also Purchased</h2></div>
                     {index && <div className='trends_container'>
                         <div className='trends_wrapper'>
                         {index.map( (array, i) => (
@@ -255,7 +271,7 @@ class GirGhee extends Component{
                         </div>
                     </div>}
                 </div>
-              </div>)
+              </div>) : (<ThreeDotsLoader/>))
       );
     }
 };
