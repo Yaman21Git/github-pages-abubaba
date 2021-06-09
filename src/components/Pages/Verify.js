@@ -27,7 +27,7 @@ class Verify extends Component{
 
 
    confirmPayment = (response) => {
-      const {cart, total} = this.state;
+      const {cart, amount} = this.state;
 
       const deatils = {
          razorpay_payment_id: response.razorpay_payment_id,
@@ -43,13 +43,13 @@ class Verify extends Component{
                orderId: response.razorpay_order_id,
                paymentId: response.razorpay_payment_id,
                products: cart,
-               amount: total,
+               amount: amount,
                email: userDetails().email
             }
 
             addOrder(order)
             .then(result => {
-               alert("Payment Successful!");
+               alert("Payment Successful! \nPlease check your email for the order details");
                localStorage.setItem("cart", JSON.stringify([]));
                this.setState({
                   redirectToAccount: true
@@ -88,7 +88,7 @@ class Verify extends Component{
                   <p>Your Name: {userDetails().name}</p> <br/>
                   <p>Your Contact: {userDetails().phone}</p> <br/>
                   <p>Your Address: {userDetails().address}</p> <br/>
-                  <p>Total Amount: {amount}</p>
+                  <p>Total Amount: ₹ {amount}.00</p>
                   
                   <button id="rzp-button1" onClick={ (event) => this.handlePayment(event) }>Proceed To Payment</button>
             </div>
