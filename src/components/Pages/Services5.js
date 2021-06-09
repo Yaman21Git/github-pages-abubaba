@@ -9,9 +9,9 @@ import { Link } from 'react-router-dom';
 
 import '../Trending.css';
 import TrendingItem from '../TrendingItems';
-import img0 from '../../images2/154-White-Rice-Basmati.jpg'
-import img1 from '../../images2/196-Bajra.jpg'
-import img2 from '../../images2/197-Poha.jpg'
+import img0 from '../../images2/01.jpg'
+import img1 from '../../images2/181-Peanut-Butter.jpg'
+import img2 from '../../images2/168-Blueberries.jpg'
 import img3 from '../../images2/130-Garam-Masala.jpg'
 import img4 from '../../images2/131-Pav-Bhaji-Masala (2).jpg'
 import img5 from '../../images2/123 Black-Pepper-Whole.jpg'
@@ -24,9 +24,9 @@ const index1=[3,4,5];
 const index2=[6,7,8];
 
 const imgSrc=[img0,img1,img2,img3,img4,img5,img6,img7,img8];
-const text=['White Rice Basmati', 'Organic Bajra', 'Organic Poha','Organic Garam Masala','Pav Bhaji Masala','Black Pepper Whole','Rajmah Masala','Sambhar Masala','Shahi Paneer Masala'];
-const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
-const path=['/products/60aa655fa823f64adc11d6df','/products/60ab6ee957cf811148043aa3','/products/60aa66aba823f64adc11d6e0','/products/60aaab422e79914b043dc0c3','/products/60aaabfa2e79914b043dc0c4','/products/60aaa6ea2e79914b043dc0bd','/products/60aaaca02e79914b043dc0c5','/products/60aaadf42e79914b043dc0c7','/products/60aaae9b2e79914b043dc0c8'];
+const text=['Organic Gir Ghee', 'Peanut Butter','Dried Blueberries','Organic Garam Masala','Pav Bhaji Masala','Black Pepper Whole','Rajmah Masala','Sambhar Masala','Shahi Paneer Masala'];
+const price=[1599, 420, 380, 140, 235, 125, 115, 205, 215];
+const path=['/products/60acbbae444bd63a3835cf48','/products/60aaa3532e79914b043dc0ba','/products/60aaa2852e79914b043dc0b9','/products/60aaab422e79914b043dc0c3','/products/60aaabfa2e79914b043dc0c4','/products/60aaa6ea2e79914b043dc0bd','/products/60aaaca02e79914b043dc0c5','/products/60aaadf42e79914b043dc0c7','/products/60aaae9b2e79914b043dc0c8'];
 
 export default function Services5(){
     return (
@@ -57,7 +57,7 @@ export default function Services5(){
             </div>
         </div>
         </div> 
-        <span class="pageno" style={{marginLeft:"10%",marginRight:"3%"}}>Page 5 of 8</span>
+        <span class="pageno" style={{marginLeft:"10%",marginRight:"3%"}}>Page 5 of 7</span>
         <span class="shopnow_dot1" style={{marginRight:"-13%",textAlign:"right"}}><Link to="/services4" style={{textDecoration:"none",color:"black"}}><p>←</p></Link></span>
         <span class="nextpage">——— Previous</span>
         <span class="shopdot_first"><Link to="/services" style={{textDecoration:"none",color:"black"}}>1</Link></span>
@@ -67,7 +67,7 @@ export default function Services5(){
         <span class="shopnow_dot show"><Link to="/services5" style={{textDecoration:"none",color:"black"}}>5</Link></span>
         <span class="show"><Link to="/services6" style={{textDecoration:"none",color:"black"}}>6</Link></span>
         <span class="show"><Link to="/services7" style={{textDecoration:"none",color:"black"}}>7</Link></span>
-        <span class="show"><Link to="/services8" style={{textDecoration:"none",color:"black"}}>8</Link></span>
+        {/* <span class="show"><Link to="/services8" style={{textDecoration:"none",color:"black"}}>8</Link></span> */}
         <span class="nextpage">Next ———</span>
         <span class="shopnow_dot1"><Link to="/services6" style={{textDecoration:"none",color:"black"}}><p>→</p></Link></span>
        </div>

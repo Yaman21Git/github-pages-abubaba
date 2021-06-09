@@ -25,7 +25,7 @@ const index2=[6,7,8];
 
 const imgSrc=[img0,img1,img2,img3,img4,img5,img6,img7,img8];
 const text=['Lakadong Turmeric', 'Kashmiri Red Chilli', 'Lemon Lime Salt','Kitchen King Masala','Peri Peri Mix','Lemon Chutney','Green Chilli Pickle','Garlic Pickle','Mango Chutney'];
-const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
+const price=[99, 99, 149, 160, 149, 369, 320, 369, 369];
 const path=['/products/60aaafc02e79914b043dc0ca','/products/60aab0902e79914b043dc0cb','/products/60abd1697b07ce47e470394c','/products/60aab16b2e79914b043dc0cc','/products/60abd2397b07ce47e470394d','/products/60aa71303f3ca14f407dc628','/products/60aa6f803f3ca14f407dc626','/products/60aa703d3f3ca14f407dc627','/products/60aa6b933f3ca14f407dc623'];
 
 export default function Services6(){
@@ -58,7 +58,7 @@ export default function Services6(){
             </div>
         </div>
         </div> 
-        <span class="pageno" style={{marginLeft:"10%",marginRight:"3%"}}>Page 6 of 8</span>
+        <span class="pageno" style={{marginLeft:"10%",marginRight:"3%"}}>Page 6 of 7</span>
         <span class="shopnow_dot1" style={{marginRight:"-13%",textAlign:"right"}}><Link to="/services5" style={{textDecoration:"none",color:"black"}}><p>←</p></Link></span>
         <span class="nextpage">——— Previous</span>
         <span class="shopdot_first"><Link to="/services" style={{textDecoration:"none",color:"black"}}>1</Link></span>
@@ -68,7 +68,7 @@ export default function Services6(){
         <span class="show"><Link to="/services5" style={{textDecoration:"none",color:"black"}}>5</Link></span>
         <span class="shopnow_dot show"><Link to="/services6" style={{textDecoration:"none",color:"black"}}>6</Link></span>
         <span class="show"><Link to="/services7" style={{textDecoration:"none",color:"black"}}>7</Link></span>
-        <span class="show"><Link to="/services8" style={{textDecoration:"none",color:"black"}}>8</Link></span>
+        {/* <span class="show"><Link to="/services8" style={{textDecoration:"none",color:"black"}}>8</Link></span> */}
         <span class="nextpage">Next ———</span>
         <span class="shopnow_dot1"><Link to="/services7" style={{textDecoration:"none",color:"black"}}><p>→</p></Link></span>
        </div>

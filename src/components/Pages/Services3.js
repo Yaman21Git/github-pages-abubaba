@@ -24,8 +24,8 @@ const index1=[3,4,5];
 const index2=[6,7,8];
 
 const imgSrc=[img0,img1,img2,img3,img4,img5,img6,img7,img8];
-const text=['Aleovera Juice', 'Diabetic Juice', 'Giloy Juice','Mustard Oil','Groundnut Oil','Black Sesame Rectified','Mango Pickle','Lemon Pickle Amended','Lemon Black Pickle'];
-const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
+const text=['Aleovera Juice', 'Diabetic Juice', 'Giloy Juice','Mustard Oil','Groundnut Oil','Black Sesame','Mango Pickle','Lemon Pickle','Lemon Black Pickle'];
+const price=[349, 549, 449, 510, 720, 1030, 320, 499, 430];
 const path=['/products/60ac95d0444bd63a3835cf44','/products/60acbc61444bd63a3835cf49','/products/60ac964c444bd63a3835cf45','/products/60acbd4e444bd63a3835cf4b','/products/60acbdef444bd63a3835cf4c','/products/60acbe78444bd63a3835cf4d','/products/60aa6cbe3f3ca14f407dc624','/products/60aa6e353f3ca14f407dc625','/products/60aa90202e79914b043dc0ad'];
 
 export default function Services3(){
@@ -58,7 +58,7 @@ export default function Services3(){
             </div>
         </div>
         </div> 
-        <span class="pageno" style={{marginLeft:"10%",marginRight:"3%"}}>Page 3 of 8</span>
+        <span class="pageno" style={{marginLeft:"10%",marginRight:"3%"}}>Page 3 of 7</span>
         <span class="shopnow_dot1" style={{marginRight:"-13%",textAlign:"right"}}><Link to="/services2" style={{textDecoration:"none",color:"black"}}><p>←</p></Link></span>
         <span class="nextpage">——— Previous</span>
         <span class="shopdot_first"><Link to="/services" style={{textDecoration:"none",color:"black"}}>1</Link></span>
@@ -68,7 +68,7 @@ export default function Services3(){
         <span class="show"><Link to="/services5" style={{textDecoration:"none",color:"black"}}>5</Link></span>
         <span class="show"><Link to="/services6" style={{textDecoration:"none",color:"black"}}>6</Link></span>
         <span class="show"><Link to="/services7" style={{textDecoration:"none",color:"black"}}>7</Link></span>
-        <span class="show"><Link to="/services8" style={{textDecoration:"none",color:"black"}}>8</Link></span>
+        {/* <span class="show"><Link to="/services8" style={{textDecoration:"none",color:"black"}}>8</Link></span> */}
         <span class="nextpage">Next ———</span>
         <span class="shopnow_dot1"><Link to="/services4" style={{textDecoration:"none",color:"black"}}><p>→</p></Link></span>
        </div>

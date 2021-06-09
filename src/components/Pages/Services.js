@@ -25,7 +25,7 @@ const index2=[6,7,8];
 
 const imgSrc=[img0,img1,img2,img3,img4,img5,img6,img7,img8];
 const text=['Organic Turmeric Powder', 'Organic Red Chilli Powder', 'Organic Cumin Powder','Organic Tulsi Honey','Royal Saffron White','Himalayan White Honey','Choco Nutty Granula','Fruit-n-nut Granola','Classic Museli'];
-const price=['₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00','₹ 00.00'];
+const price=[250, 450, 215, 540, 595, 485, 380, 410, 610];
 const path=['/products/60aaaf1e2e79914b043dc0c9','/products/60aaad322e79914b043dc0c6','/products/60aaa9db2e79914b043dc0c1','/products/60aa9e252e79914b043dc0b3','/products/60aa9d522e79914b043dc0b2','/products/60aa9b512e79914b043dc0af','/products/60aa9f242e79914b043dc0b4','/products/60aaa43e2e79914b043dc0bb','/products/60aa9ff82e79914b043dc0b5'];
 
 export default function Services(){
@@ -57,7 +57,7 @@ export default function Services(){
             </div>
         </div>
         </div> 
-        <span class="pageno">Page 1 of 8</span>
+        <span class="pageno">Page 1 of 7</span>
         <span class="shopnow_dot shopdot_first"><Link to="/services" style={{textDecoration:"none",color:"black"}}>1</Link></span>
         <span class="show"><Link to="/services2" style={{textDecoration:"none",color:"black"}}>2</Link></span>
         <span class="show"><Link to="/services3" style={{textDecoration:"none",color:"black"}}>3</Link></span>
@@ -65,7 +65,7 @@ export default function Services(){
         <span class="show"><Link to="/services5" style={{textDecoration:"none",color:"black"}}>5</Link></span>
         <span class="show"><Link to="/services6" style={{textDecoration:"none",color:"black"}}>6</Link></span>
         <span class="show"><Link to="/services7" style={{textDecoration:"none",color:"black"}}>7</Link></span>
-        <span class="show"><Link to="/services8" style={{textDecoration:"none",color:"black"}}>8</Link></span>
+        {/* <span class="show"><Link to="/services8" style={{textDecoration:"none",color:"black"}}>8</Link></span> */}
         <span class="nextpage">Next ———</span>
         <span class="shopnow_dot1"><Link to="/services2" style={{textDecoration:"none",color:"black"}}><p>→</p></Link></span>
        </div>
