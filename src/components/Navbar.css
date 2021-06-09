@@ -85,7 +85,7 @@
 }
 
 .abubabaLogo{
-  background-image: url('../images2/ABUBABA\ LOGO.png') ;
+  background-image: url('../images2/ABUBABA\ LOGO.png');
   background-size: cover;
   background-repeat: no-repeat;
   height: 3.4vw;
@@ -255,7 +255,8 @@
   }
 
   .abubabaLogo{
-    background-image: url('../images2/ABUBABA\ LOGO.png') ;
+    background-image: url('../images2/ABUBABA\ LOGO.png');
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     height: 7vw;

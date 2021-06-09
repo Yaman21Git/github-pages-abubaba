@@ -61,22 +61,22 @@ class Home extends Component{
          <div className="fact1">
            <h2>ORIGIN OF THE PRODUCT</h2>
              <button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler0}>Read More ˅</button>
-             {this.state.showMessage0 && <p className="onclickinfo">Our focus is not to choose the product but to let the product choose us. We believe in mother nature and it’s idea of deciding the optimal origin of the product which leads us to the best quality.</p>}
+             {this.state.showMessage0 && <p className="onclickinfo a">Our focus is not to choose the product but to let the product choose us. We believe in mother nature and it’s idea of deciding the optimal origin of the product which leads us to the best quality.</p>}
         </div>
          <div className="fact2">
            <h2>CERTIFIED ORGANIC</h2>
            <button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler1}>Read More ˅</button>
-             {this.state.showMessage1 && <p className="onclickinfo">We are a certified organic brand and our philosophy is to work and produce the optimal quality and high standard products for our customer. Our products are all natural and free from any artificial ingredients.</p>}
+             {this.state.showMessage1 && <p className="onclickinfo b">We are a certified organic brand and our philosophy is to work and produce the optimal quality and high standard products for our customer. Our products are all natural and free from any artificial ingredients.</p>}
         </div>
          <div className="fact3">
            <h2>ARTISANAL PROCESS</h2>
            <button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler2}>Read More ˅</button>
-             {this.state.showMessage2 && <p className="onclickinfo">All our products are handmade and handcrafted with love by our food artisans. With close attention to personal touch, we strive to retain the traditional methods of production to achieve the best quality.</p>}
+             {this.state.showMessage2 && <p className="onclickinfo a">All our products are handmade and handcrafted with love by our food artisans. With close attention to personal touch, we strive to retain the traditional methods of production to achieve the best quality.</p>}
          </div>
          <div className="fact4">
            <h2>RESULT MATTERS</h2>
            <button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler3}>Read More ˅</button>
-             {this.state.showMessage3 && <p className="onclickinfo">The benefits that the organic food provides are conclusive and we love to see the satisfaction reflecting in the smiles of our customers when they see the difference. In the end, you matter to us.</p>}
+             {this.state.showMessage3 && <p className="onclickinfo b">The benefits that the organic food provides are conclusive and we love to see the satisfaction reflecting in the smiles of our customers when they see the difference. In the end, you matter to us.</p>}
          </div>
       </div></div>
       <Cards />

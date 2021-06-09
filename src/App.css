@@ -209,7 +209,7 @@
   height:60%;
   margin-left: 2%;
   /* background-image: url('./images2/india_final.jpeg'); */
-  background-image: url('./images2/Beige\ \(4\).JPG');
+  background-image: url('./images2/Beige\ \(4\).jpg');
   background-size: 72% 76%;
   background-repeat: no-repeat;
   background-position-x: 50%;
@@ -239,7 +239,7 @@
 .homeFacts .fact2{ 
   width:27%;
   height:60%;
-  background-image: url('./images2/Beige\ \(1\).JPG');
+  background-image: url('./images2/Beige\ \(1\).jpg');
   background-size: 66% 80%;
   background-repeat: no-repeat;
   background-position-x: 50%;
@@ -267,7 +267,7 @@
 .homeFacts .fact3{ 
   width:23%;
   height:60%;
-  background-image: url('./images2/Beige\ \(2\).JPG');
+  background-image: url('./images2/Beige\ \(2\).jpg');
   background-size: 70% 80%;
   background-repeat: no-repeat;
   background-position-x: 50%;
@@ -295,7 +295,7 @@
 .homeFacts .fact4{ 
   width:23%;
   height:60%;
-  background-image: url('./images2/Beige\ \(3\).JPG');
+  background-image: url('./images2/Beige\ \(3\).jpg');
   background-size: 65% 70%;
   background-repeat: no-repeat;
   background-position-x: 50%;
@@ -346,9 +346,16 @@
     margin-top: -1%;
   }
   
-  .onclickinfo{
+  .a{
     font-size:1.6vw;
-    width:100%;
+    width:130%;
+    margin-left: -30%;
+  }
+
+  .b{
+    font-size:1.6vw;
+    width:140%;
+    margin-left: 0;
   }
 
   .clientTest{
@@ -687,7 +694,7 @@
   height:90%;
   margin-top: 1.8%;
   margin-left: 2vw;
-  background: #FAFBF6 url(./images2/abubaba_organic.PNG) no-repeat center top ;
+  background: #FAFBF6 url(./images2/abubaba_organic.jpg) no-repeat center top ;
   background-size:100% 100%;
 }
 
@@ -1566,7 +1573,7 @@
 
 .aboutus-header{
   height: 35vw;
-  background-image: url("./images2/aboutus.png");
+  background-image: url("./images2/aboutus.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1656,7 +1663,7 @@
     margin-left :auto ;
     margin-right: auto;
     margin-top: 7%;
-    background-image: url("./images2/Slide4.JPG");
+    background-image: url("./images2/Slide4.jpg");
     height:40%;
     width:50%;
     background-size:100% 100%;
@@ -1669,7 +1676,7 @@
   margin-right: auto;
   margin-top: 8%;
   margin-bottom: 0;
-  background-image: url("./images2/Slide1.JPG");
+  background-image: url("./images2/Slide1.jpg");
   height:40%;
   width:50%;
   background-size: 100% 100%;
@@ -1681,7 +1688,7 @@
   margin-left :auto ;
   margin-right: auto;
   margin-top: 5%;
-  background-image: url("./images2/Slide2.JPG");
+  background-image: url("./images2/Slide2.jpg");
   height:50%;
   width:62%;
   background-size: 100% 100%;
@@ -1694,7 +1701,7 @@
   margin-right: auto;
   margin-top: 10%;
   margin-bottom: 5%;
-  background-image: url("./images2/Slide3.JPG");
+  background-image: url("./images2/Slide3.jpg");
   height:40%;
   width:56%;
   background-size:100% 100%;
@@ -2468,6 +2475,10 @@
   cursor: pointer;
 }
 
+.user-info .checkout-form .total-amount{
+  font-size: 1.2vw;
+}
+
 .verify-info{
   background-image: url('./images2/Background-\ Shop\ now.png');
   background-repeat: no-repeat;
@@ -2540,6 +2551,12 @@
   .user-info .checkout-form .checkoutbtn{
     font-size: 2vw;
     margin-right: 15%;
+  }
+  
+  .user-info .checkout-form .total-amount >p{
+    margin-left:-15%;
+    margin-bottom: 0;
+    font-size: 2.2vw;
   }
   
   .yourCart >h1{

@@ -193,7 +193,7 @@ class Cart extends Component {
                      <input className="info" type="email" name="email" value={email} placeholder="Email Address*" onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>
                      <input className="info" type="number" name="phone" value={phone} placeholder="Contact Number*" onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>
                      <textarea className="info-address" name="address" value={address} placeholder="Address*" onChange = { e => this.setState({[e.target.name] : e.target.value}) }></textarea>
-                     <p>
+                     <p className="total-amount">
                         {cart.length > 0 && <p>Total Amount: ₹ {total}.00</p>} 
                         {cart.length > 0 && <p>Delivery Charges: ₹ {delivery}.00 </p>} <br/> 
                         <button className="checkoutbtn"  onClick={ event => this.checkoutHandle(event)}> Check Out -{'>'} </button>

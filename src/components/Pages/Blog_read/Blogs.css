@@ -153,7 +153,7 @@ ul >li{
 
 @media screen and (max-width:680px){
     .blogBack{
-        height:70vw;
+        height:80vw;
     }
 
     .blogBack >img{
@@ -162,7 +162,7 @@ ul >li{
 
     .centered {
         color: wheat;
-        top: 65%;
+        top: 66%;
         width:80%;
         height: 13vw;
         padding-top: 4%;

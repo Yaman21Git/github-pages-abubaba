@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import imgSearch from '../images2/search_icon.png'
+import imgSearch from '../images2/search_icon.jpg'
 import searchIcon from '../images2/Frame.png'
 import cartIcon from '../images2/Group.png'
 

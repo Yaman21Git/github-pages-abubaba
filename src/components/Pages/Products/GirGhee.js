@@ -211,7 +211,7 @@ class GirGhee extends Component{
                                 </TwitterShareButton>
                         </span>}
                         </p><br/>
-                        <p>{"*Product will be delivered within 3-4 days"}</p>
+                        <p className="delivery">{"*Product will be delivered within 3-4 days"}</p>
                     </div>
                 </div>
                 <div className="productDes">

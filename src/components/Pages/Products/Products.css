@@ -265,6 +265,10 @@ h2{
     margin-bottom: 5%;
 }
 
+.delivery{
+    font-size: 1.2vw;
+}
+
 @media screen and (max-width:680px) {
     .pdtImages{
         height:180vw;
@@ -412,5 +416,8 @@ h2{
     .viewall{
         font-size: 1.6vw;
         margin-left: 80%;
+    }
+    .pdtMatter .delivery{
+        font-size: 2.2vw;
     }
 }
