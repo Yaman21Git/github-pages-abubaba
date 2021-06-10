@@ -42,35 +42,35 @@ class App extends React.Component{
            <Navbar/>
            <ScrollToTop />
            <Switch>
-             <Route path='/' exact component={Home}/>
-             <Route path='/blogs' component={Blogs}/>
-             <Route path='/Blog_read/Blog1' component={Blog1}/>
-             <Route path='/about-us' component={AboutUs}/>
-             <Route path='/services' component={Services}/>
-             <Route path='/services2' component={Services2}/>
-             <Route path='/services3' component={Services3}/>
-             <Route path='/services4' component={Services4}/>
-             <Route path='/services5' component={Services5}/>
-             <Route path='/services6' component={Services6}/>
-             <Route path='/services7' component={Services7}/>
-             <Route path='/services8' component={Services8}/>
-             <Route path='/contactus' component={ContactUs}/>
-             <Route path='/signup' component={SignUp}/>
-             <Route path='/signin' component={SignIn}/>
-             <Route path='/Products/GirGhee' component={GirGhee}/>
-             <Route path='/OurCollection/Immunity' component={Riceflour}/>
-             <Route path='/OurCollection/Elixir-Of-Life' component={Spices}/>
-             <Route path='/OurCollection/Ancient-Living' component={Pickles}/>
-             <Route path='/OurCollection/Kingdom-Of-Spices' component={Pulses}/>
-             <Route path='/OurCollection/Wakeup-Mood' component={Honey}/>
-             <Route path='/OurCollection/Limited-Edition' component={Breakfast}/>
-             <Route path='/cart' component={Cart}/>
-             <Route path='/cart/verify' component={Verify}/>
-             <Route path='/search' component={Search}/>
-             <Route path='/products/:productId' component={GirGhee}></Route>
-             <Route path='/category/:category' component={subCategories}></Route>
-             <Route path='/terms&conditions' component={terms}></Route>
-             <Route path='/privacy-policy' component={Privacy}></Route>
+             <Route exact path='/' exact component={Home}/>
+             <Route exact path='/blogs' component={Blogs}/>
+             <Route exact path='/Blog_read/Blog1' component={Blog1}/>
+             <Route exact path='/about-us' component={AboutUs}/>
+             <Route exact path='/services' component={Services}/>
+             <Route exact path='/services2' component={Services2}/>
+             <Route exact path='/services3' component={Services3}/>
+             <Route exact path='/services4' component={Services4}/>
+             <Route exact path='/services5' component={Services5}/>
+             <Route exact path='/services6' component={Services6}/>
+             <Route exact path='/services7' component={Services7}/>
+             <Route exact path='/services8' component={Services8}/>
+             <Route exact path='/contactus' component={ContactUs}/>
+             <Route exact path='/signup' component={SignUp}/>
+             <Route exact path='/signin' component={SignIn}/>
+             <Route exact path='/Products/GirGhee' component={GirGhee}/>
+             <Route exact path='/OurCollection/Immunity' component={Riceflour}/>
+             <Route exact path='/OurCollection/Elixir-Of-Life' component={Spices}/>
+             <Route exact path='/OurCollection/Ancient-Living' component={Pickles}/>
+             <Route exact path='/OurCollection/Kingdom-Of-Spices' component={Pulses}/>
+             <Route exact path='/OurCollection/Wakeup-Mood' component={Honey}/>
+             <Route exact path='/OurCollection/Limited-Edition' component={Breakfast}/>
+             <Route exact path='/cart' component={Cart}/>
+             <Route exact path='/cart/verify' component={Verify}/>
+             <Route exact path='/search' component={Search}/>
+             <Route exact path='/products/:productId' component={GirGhee}></Route>
+             <Route exact path='/category/:category' component={subCategories}></Route>
+             <Route exact path='/terms&conditions' component={terms}></Route>
+             <Route exact path='/privacy-policy' component={Privacy}></Route>
            </Switch>
            <Footer/>
          </Router>

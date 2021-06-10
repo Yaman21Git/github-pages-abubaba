@@ -17,6 +17,12 @@ class Search extends Component{
 
     handleClick = () => {
         var {word, index} = this.state;
+
+        if(word === ""){
+            console.log(word);
+            return;
+        }
+
         const key = {word: word};
         searchByWord(key)
         .then(data => {

@@ -13,7 +13,7 @@ const index0=[0,1,2];
 const index1=[3,4];
 const imgSrc=[img0,img1,img2,img3,img4];
 const text=['Spices', 'Masala', 'Exotic Seasonings','Lakadong Turmeric Powder','Kashmiri Red Chilli'];
-const price=['','','','₹ 00.00','₹ 00.00'];
+const price=['','','', 99, 99];
 const show=[true, true, true, false, false];
 const path=['/category/spices','/category/masala','/category/exotic','/products/60aaafc02e79914b043dc0ca','/products/60aab0902e79914b043dc0cb'];
 
