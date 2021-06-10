@@ -5,10 +5,10 @@ import CardItem from './CardItem';
 
 import img0 from '../images2/156 Aleovera-Juice.jpg';
 import img1 from '../images2/187 ghee-gir.jpg';
-import img2 from '../images2/150-Wheat-Flour.jpg';
-import img3 from '../images2/Peri-Peri-.jpg';
+import img2 from '../images2/142-Chana-.jpg';
+import img3 from '../images2/186-Lemon-LIme-salt.jpg';
 import img4 from '../images2/161 Choco Nutty.jpg';
-import img5 from '../images2/pexels-tirachard-kumtanom-347140 1.jpg';
+import img5 from '../images2/DSC02735.jpg';
 
 const srcImg=[img0,img1,img2,img3,img4,img5];
 

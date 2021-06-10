@@ -11,7 +11,7 @@ const index1=[3,4];
 
 const imgSrc=[img0,img1,"https://i.ibb.co/7Kbqg5M/download.jpg","https://i.ibb.co/7Kbqg5M/download.jpg","https://i.ibb.co/7Kbqg5M/download.jpg"];
 const text=['Juices', 'Lakadong Turmeric Powder', 'Coming Soon','Coming Soon','Coming Soon'];
-const price=['','₹ 00.00'];
+const price=['', 99];
 const show =[true, false, true, true, true];
 const path=['/category/juices','/products/60aaafc02e79914b043dc0ca'];
 

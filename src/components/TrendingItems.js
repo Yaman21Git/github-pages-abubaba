@@ -68,9 +68,8 @@ function TrendingItem(props) {
           </figure>
           <div className='trending_item_info'>
                 <h2> {props.text} </h2>
-                <h3> ₹ {props.price}.00 </h3>
-              { !props.show &&
-              <Link onClick={event => addToCart(event)} style={{textDecoration:"none", cursor: "pointer"}} ><h5 className='trending_item_text'>Add to cart +</h5></Link>}
+              { !props.show && <h3> ₹ {props.price}.00 </h3> } 
+              { !props.show && <Link onClick={event => addToCart(event)} style={{textDecoration:"none", cursor: "pointer"}} ><h5 className='trending_item_text'>Add to cart +</h5></Link>}
           </div>
         </Link>
       </li>
