@@ -153,13 +153,18 @@ class Cart extends Component {
    }
    
    incrementValue = (i, price) => {
-      const { cart, total } = this.state;
+      var { cart, total, delivery } = this.state;
       const {quantity} = cart[i]
-   
+      
+      total = parseInt(total) + parseInt(price);
+      if(total >= 499)
+         delivery = 0;
+
       if(quantity < 10){
          cart[i].quantity += 1;
          this.setState({
-            total: total + parseInt(price),
+            total: total,
+            delivery: delivery,
             cart: cart
          })
          localStorage.setItem("cart", JSON.stringify(cart));
@@ -167,18 +172,31 @@ class Cart extends Component {
    }
 
    decrementValue = (i, price) => {
-      const { cart, total } = this.state;
-      const {quantity} = cart[i]
-   
+      var { cart, total, products, delivery } = this.state;
+      var { quantity } = cart[i]
+      console.log(total)
+      total = parseInt(total) - parseInt(price);
+      if(total < 499)
+         delivery = 85;
+
+      console.log(total)
       if(quantity > 1){
          cart[i].quantity -= 1;
-         this.setState({
-            total: total - price,
-            cart: cart
-         })
-         localStorage.setItem("cart", JSON.stringify(cart));
       }
+      else if(quantity == 1){
+         cart.splice(i, 1);
+         products.splice(i, 1);
+      }
+
+      this.setState({
+         total: total,
+         delivery: delivery,
+         cart: cart,
+         products: products
+      })
+      localStorage.setItem("cart", JSON.stringify(cart));
    }
+
    
    handleInput = (event) => {
       const {quantity} = this.state;
@@ -186,7 +204,7 @@ class Cart extends Component {
   
    render() {
       const {cart, products, name, email, phone, address, redirectToVerify, error, orderId, total, delivery} = this.state
-      
+
       if(redirectToVerify)
          return <Verify orderId={orderId} amount={total} cart={cart}/>
       
