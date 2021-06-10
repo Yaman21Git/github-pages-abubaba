@@ -316,19 +316,21 @@ h2{
     }
 
     .quantity-btn{
-        width:4vw;
-        height:4vw; 
+        min-width:4vw;
+        min-height:4vw;
+        font-size: 3vw;
         margin-left: -10%;
     }
     
     .number{
-        height:4vw;
+        height:4.2vw;
         width:4vw;
     }
     
     .quantity-btn2{
-        width:4vw;
-        height:4vw;
+        min-width:4vw;
+        min-height:4vw;
+        font-size: 3vw;
         margin-left:1%;
     }
 
@@ -340,7 +342,7 @@ h2{
 
     .spnbtn1{
         border-radius:0;
-        padding: 1% 5% 1% 5%;
+        padding: 1% 6% 1% 6%;
         font-size:4vw;
         margin-top: 1.5%;
         margin-left: 3%;
@@ -348,33 +350,33 @@ h2{
     }
     
     .wishlist{
-        padding: 2% 3.8% 2% 3.8%;
+        padding: 2% 2% 2% 2%;
         font-size:3vw;
         margin-top: 5%;
-        margin-left: 1%;
+        margin-left: 3%;
     }
 
     .productDes{
         width:100%;
-        height:70vw;
+        height:90vw;
         padding-top: 7%;
         padding-left: 8%;
         padding-right: 6%;
     }
 
     .productDes >h2{
-        font-size: 3vw;
+        font-size: 4vw;
     }
 
     .productDes >p{
         margin-bottom: 3%;
-        font-size: 1.8vw;
+        font-size: 2.3vw;
     }
     
     .productDes >h3{
         margin-bottom:1%;
         margin-top: -3%;
-        font-size: 2vw;
+        font-size: 2.6vw;
         font-weight: 800;
     }
 
@@ -383,11 +385,11 @@ h2{
     }
      
     .productDes >ul >li{
-        font-size: 1.8vw;
+        font-size: 2.2vw;
     }
 
     .reviews .review-container >h2{
-        font-size: 2vw;
+        font-size: 3vw;
     }
 
     .span1 >img{
@@ -400,12 +402,13 @@ h2{
     }
 
     .span2{
-        font-size: 1.4vw;
+        font-size: 2.4vw;
         margin-left:25%;
     }
 
     .peopleAlso >h2{
         font-size: 3vw;
+        margin-bottom: 10%;
     }
 
     .spnbtn{

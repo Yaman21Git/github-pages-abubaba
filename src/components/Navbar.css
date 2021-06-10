@@ -259,10 +259,10 @@
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 7vw;
-    width: 80%;
-    background-position-y:56%;
-    margin-left: -20%;
+    height: 10vw;
+    width: 90%;
+    background-position-y:58%;
+    margin-left: -27%;
     margin-right: 10%;
   }
 
@@ -296,16 +296,17 @@
   }
 
   .icons .cart-icon{
-    min-height: 5vw;
-    min-width:5vw;
+    min-height: 5.4vw;
+    min-width:5.6vw;
     position:relative;
     margin-left: 40%;
     margin-top: 7%;
   }
 
   .search-icon{
-    min-width:4vw;
-    max-height: 5vw;
+    min-width:5vw;
+    max-height: 5.4vw;
     margin-top: 1%;
+    margin-left: -1%;
   }
 }

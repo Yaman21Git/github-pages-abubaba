@@ -341,20 +341,20 @@
 @media screen and (max-width:680px) {
   .homeFact-container{
     width: 100%;
-    height: 52vh;
+    height: 55vh;
     background-size: 100% auto;
     margin-top: -1%;
   }
   
   .a{
     font-size:1.6vw;
-    width:130%;
-    margin-left: -30%;
+    width:125%;
+    margin-left: -27%;
   }
 
   .b{
     font-size:1.6vw;
-    width:140%;
+    width:130%;
     margin-left: 0;
   }
 
@@ -1246,7 +1246,7 @@
 
 @media screen and (max-width:680px) {
    .signin-container{
-     height: 70vw;
+     height: 80vw;
    }
 
   .signin-container >h1{
@@ -1495,7 +1495,7 @@
 
 @media screen and (max-width:680px) {
   .signup-container{
-    height:94vw;
+    height:100vw;
   }
 
   .signup-container >h1{
@@ -2517,7 +2517,25 @@
   .yourCart .table {
     width: 90%;
     margin-left: 3%;
-    margin-top: 65%;
+    margin-top: 75%;
+  }
+
+  .quantity-btn{
+    max-height: 3vw;
+    max-width: 3vw;
+    font-size: 2vw;
+  }
+
+  .quantity-btn2{
+    max-height: 3vw;
+    max-width: 3vw;
+    font-size: 2vw;
+  }
+
+  .table .number{
+    min-height: 3vw;
+    min-width: 3vw;
+    font-size: 2vw;
   }
 
   .user-info{

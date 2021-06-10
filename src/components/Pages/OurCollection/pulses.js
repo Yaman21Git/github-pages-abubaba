@@ -29,11 +29,19 @@ export default function Pulses(){
                     return <TrendingItem src={imgSrc[i]} text={text[i]} path={path[i]} price={price[i]} show={show[i]}/>
                     })}
                 </ul>
-                <ul className='trends_items' style={{width:"67%"}}>
+                {window.innerWidth>680&&<ul className='trends_items' style={{width:"67%"}}>
                 {index1.map(i => {
                     return <TrendingItem src={imgSrc[i]} text={text[i]} path={path[i]} price={price[i]} show={show[i]}/>
                     })}
                 </ul>
+                }
+
+                {window.innerWidth<=680&&<ul className='trends_items' style={{width:"100%"}}>
+                {index1.map(i => {
+                    return <TrendingItem src={imgSrc[i]} text={text[i]} path={path[i]} price={price[i]} show={show[i]}/>
+                    })}
+                </ul>
+                }
                 </div>
             </div>
            </div> 
