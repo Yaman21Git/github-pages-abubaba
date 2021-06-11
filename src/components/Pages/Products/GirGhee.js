@@ -35,7 +35,7 @@ class GirGhee extends Component{
             img: [img0, img1, img2],
             text: ['Choco Nutty Granola', 'Mango Pickle', 'Blueberries'],
             path: ['/products/60aa9f242e79914b043dc0b4','/products/60aa6cbe3f3ca14f407dc624','/products/60aaa2852e79914b043dc0b9'],
-            price: [170, 100, 170],
+            price: [380, 320, 380],
             url: String(window.location),
             open: false
         }
