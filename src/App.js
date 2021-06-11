@@ -42,7 +42,7 @@ class App extends React.Component{
            <Navbar/>
            <ScrollToTop />
            <Switch>
-             <Route exact path='/' exact component={Home}/>
+             <Route exact path='/' component={Home}/>
              <Route exact path='/blogs' component={Blogs}/>
              <Route exact path='/Blog_read/Blog1' component={Blog1}/>
              <Route exact path='/about-us' component={AboutUs}/>

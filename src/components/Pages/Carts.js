@@ -37,17 +37,11 @@ class Cart extends Component {
       array.map((item,i) => {
          load(item.id)
          .then(result => {
+            console.log(i, result);
             products[i] = result;
             total += item.quantity * result.price;
-            if(i == sz-1){
-               if(total >= 499){
-                  delivery = 0;
-               }
-               else{
-                  delivery = 85;
-                  total = total + delivery;
-               }
-            }
+            if(total < 499)
+               delivery = 85;
             this.setState({
                products: products,
                total: total,
@@ -59,13 +53,11 @@ class Cart extends Component {
          cart: array
       })
    }
-   
 
    handleClick = () => {
       signout( () => this.setState({ redirect: true}))
       .then(result => alert("You are successfully logged out."))
    }
-
 
    isValid = () => {
       const { name, phone, email, address, cart } = this.state
@@ -168,18 +160,17 @@ class Cart extends Component {
             cart: cart
          })
          localStorage.setItem("cart", JSON.stringify(cart));
-      } 
+      }
    }
 
    decrementValue = (i, price) => {
       var { cart, total, products, delivery } = this.state;
       var { quantity } = cart[i]
-      console.log(total)
+      
       total = parseInt(total) - parseInt(price);
       if(total < 499)
          delivery = 85;
 
-      console.log(total)
       if(quantity > 1){
          cart[i].quantity -= 1;
       }
@@ -197,6 +188,25 @@ class Cart extends Component {
       localStorage.setItem("cart", JSON.stringify(cart));
    }
 
+   removeItem = (i, price) => {
+      var { cart, total, products, delivery } = this.state;
+      var { quantity } = cart[i]
+      
+      total = parseInt(total) - quantity * parseInt(price);
+      if(total < 499)
+         delivery = 85;
+
+      cart.splice(i, 1);
+      products.splice(i, 1);
+
+      this.setState({
+         total: total,
+         delivery: delivery,
+         cart: cart,
+         products: products
+      })
+      localStorage.setItem("cart", JSON.stringify(cart));
+   }
    
    handleInput = (event) => {
       const {quantity} = this.state;
@@ -225,7 +235,7 @@ class Cart extends Component {
                      <tbody>
                         { products && products.map((item, i) => (
                               <tr key={i} >
-                                 <th className="product1"><img className="smallImg" src={item.photos[0]}/> <p>{item.name}</p> </th>
+                                 <th className="product1"><img className="smallImg" src={item.photos[0]}/> <p>{item.name}</p> <button onClick={() => this.removeItem(i, item.price)}>Remove</button> </th>
                                  <td className="price1">₹ {item.price}.00</td>
                                  <td className="price1">
                                     <button onClick={() => this.decrementValue(i, item.price)} className="quantity-btn" > - </button>
@@ -248,7 +258,7 @@ class Cart extends Component {
                      <input className="info" type="number" name="phone" value={phone} placeholder="Contact Number*" onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>
                      <textarea className="info-address" name="address" value={address} placeholder="Address*" onChange = { e => this.setState({[e.target.name] : e.target.value}) }></textarea>
                      <p className="total-amount">
-                        {cart.length > 0 && <p>Total Amount: ₹ {total}.00</p>} 
+                        {cart.length > 0 && <p>Total Amount: ₹ {total + delivery}.00</p>} 
                         {cart.length > 0 && <p>Delivery Charges: ₹ {delivery}.00 </p>} <br/> 
                         <button className="checkoutbtn"  onClick={ event => this.checkoutHandle(event)}> Check Out -{'>'} </button>
                      </p>
