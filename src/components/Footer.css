@@ -134,7 +134,7 @@
   @media screen and (max-width:680px) {
     .footer-container {
       background-size:100% 100%;
-      height:90vw;
+      height:120vw;
     }
 
     .footer-container .footerWrapper >hr{
@@ -145,14 +145,15 @@
     .footer-container .socialMedia{
       width:100%;
       height:15%;
+      margin-bottom: 1%;
       text-align: center;
     }
 
     .footer-container .socialMedia >h2{
       font-size:4vw;
       font-family: 'Montserrat',sans-serif;
-      margin-left:-8%;
-      margin-top:3%;
+      margin-left:-3%;
+      margin-top:5%;
       margin-bottom: 3%;
     }
 
@@ -162,7 +163,7 @@
     }
     
     .social-media {
-      margin-left: 29%;
+      margin-left: 31%;
       margin-top: -2%;
     }
 
@@ -178,40 +179,41 @@
       width:100%;
       height: 30%;
       padding-top: 0;
-      margin-top: 2%;
+      margin-top: 3%;
       padding-left:0;
       text-align: center;
     }
   
     .footer-input{
-      margin-bottom:1%;
+      margin-bottom:2%;
       padding:1%;
-      margin-left: -5%;
+      margin-left: -3%;
       width:60%;
       font-size: 2.4vw;
     }
   
     .btnsubmit{
-      margin-left: -6%;
-      padding:0.4% 0.2% 0.3% 0.1%;
+      margin-left: -4%;
+      padding:0.8% 0.4% 0.8% 0.2%;
       width:15%;
       color:cornsilk;
       background-color: black;
-      font-size: 2.6vw;
+      border: none;
+      font-size: 2.8vw;
     }
 
     .contactInfo >h2{
       font-size:4vw;
       font-family: 'Montserrat';
       font-weight: 800;
-      margin-bottom:0;
-      margin-left:-8%;
+      margin-bottom:2%;
+      margin-left:-4%;
     }
 
     .footer-container .footerInfo2{
       width:100%;
       height:42%;
-      margin-top: 6%;
+      margin-top: 5%;
       text-align: center;
     }
 
@@ -219,14 +221,14 @@
       font-family: 'Monserrat',sans-serif;
       font-size:4vw;
       font-weight: 600;
-      margin-top: 6%;
-      margin-left: -5%;
+      margin-top: 4%;
+      margin-left: -4%;
       margin-bottom:1%;
     }
 
     .footer-container .footerInfo2 >p{
-      margin-left: -5%;
+      margin-left: -4%;
       margin-bottom: 0.8%;
-      font-size: 2.2vw;
+      font-size: 2.6vw;
     }
   }

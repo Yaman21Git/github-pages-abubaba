@@ -40,6 +40,7 @@ function Navbar() {
 </svg> */}
             <i className={click ? 'fas fa-times' : 'fas fa-bars'}/>
           </div>
+          <div style={{position:"absolute", left:"27%",height:"100%",width:"5%",backgroundColor:"black"}}></div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
               <Link to='/' className='nav-links' onClick={closeMobileMenu}>

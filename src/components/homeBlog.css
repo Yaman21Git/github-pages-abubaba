@@ -135,16 +135,17 @@
 
 @media screen and (max-width:680px) {
     .blogs{
-        height: 70vw;
+        height: 85vw;
     }
     
     .blog_item{
         width:48%;
-        margin-top: 3.3%;
+        height: 72%;
+        margin-top: 11%;
     }
 
     .expmorebtn{
-        padding-top: 33%;
+        padding-top: 45%;
     }
 
     .blogs >h1{

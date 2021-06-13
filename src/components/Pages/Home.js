@@ -29,7 +29,7 @@ class Home extends Component{
         name:['Sharon Grover', 'Shubham Verma'],
         name1:['Shalini Kaur'],
         // stars:['<i class="fas fa-star"></i>','<i class="fas fa-star"></i>','<i class="fas fa-star"></i>'],
-        description:['Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa eget in congue a odio diam tortor feugiat massa. Fringilla tempor eu arcu in ullamcorper aliquam.','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa eget in congue a odio diam tortor feugiat massa. Fringilla tempor eu arcu in ullamcorper aliquam.','Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa eget in congue a odio diam tortor feugiat massa. Fringilla tempor eu arcu in ullamcorper aliquam.'],
+        description:['Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Lorem ipsum dolor sit amet, consectetur adipiscing elit.','Lorem ipsum dolor sit amet, consectetur adipiscing elit.'],
         showMessage0:false,
         showMessage1:false,
         showMessage2:false,
@@ -60,25 +60,29 @@ class Home extends Component{
         <h1 className="it-matters">It Matters</h1>
          <div className="fact1">
            <h2>ORIGIN OF THE PRODUCT</h2>
-             <button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler0}>Read More ˅</button>
+             {window.innerWidth>680&&<button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler0}>Read More ˅</button>}
              {this.state.showMessage0 && <p className="onclickinfo a">Our focus is not to choose the product but to let the product choose us. We believe in mother nature and it’s idea of deciding the optimal origin of the product which leads us to the best quality.</p>}
         </div>
+        {window.innerWidth<=680&&<div style={{width:"0.2%",height:"16%",backgroundColor:"black",position:"absolute",marginLeft:"39%"}}></div>}
          <div className="fact2">
            <h2>CERTIFIED ORGANIC</h2>
-           <button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler1}>Read More ˅</button>
+           {window.innerWidth>680&&<button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler1}>Read More ˅</button>}
              {this.state.showMessage1 && <p className="onclickinfo b">We are a certified organic brand and our philosophy is to work and produce the optimal quality and high standard products for our customer. Our products are all natural and free from any artificial ingredients.</p>}
         </div>
          <div className="fact3">
            <h2>ARTISANAL PROCESS</h2>
-           <button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler2}>Read More ˅</button>
+           {window.innerWidth>680&&<button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler2}>Read More ˅</button>}
              {this.state.showMessage2 && <p className="onclickinfo a">All our products are handmade and handcrafted with love by our food artisans. With close attention to personal touch, we strive to retain the traditional methods of production to achieve the best quality.</p>}
          </div>
+         {window.innerWidth<=680&&<div style={{width:"0.2%",height:"16%",backgroundColor:"black",position:"absolute",marginLeft:"39%", marginTop:"43%"}}></div>}
          <div className="fact4">
            <h2>RESULT MATTERS</h2>
-           <button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler3}>Read More ˅</button>
+           {window.innerWidth>680&&<button style={{borderColor:"white", cursor:"pointer"}} onClick={this.onButtonClickHandler3}>Read More ˅</button>}
              {this.state.showMessage3 && <p className="onclickinfo b">The benefits that the organic food provides are conclusive and we love to see the satisfaction reflecting in the smiles of our customers when they see the difference. In the end, you matter to us.</p>}
          </div>
-      </div></div>
+      </div>
+      {window.innerWidth<=680&&<Link to="/contactus"><button type="button" className="readmore_last">Read More → </button></Link>}
+      </div>
       <Cards />
       <AbubabaOrg/>
       <Trending/>
@@ -93,6 +97,8 @@ class Home extends Component{
                 return <ClientsItem src={this.state.src1[i]} name={this.state.name1[i]} description={this.state.description[i]}/>
                 })}
       </div>
+      {window.innerWidth<=680&&<div style={{backgroundColor:"#F6EFE5",height:"8vw"}}></div>}
+      {window.innerWidth<=680&&<div style={{backgroundColor:"black",height:"6vw"}}></div>}
       <div className="home-certification">
         <h1>Certification</h1>
         <div class="img1"></div>
@@ -101,6 +107,8 @@ class Home extends Component{
         <div class="img4"></div>
         <div class="img5"></div>
       </div>
+      <div className="just-a-black"></div>
+      {window.innerWidth<=680&&<div style={{backgroundColor:"#F6EFE5",height:"6vw"}}></div>}
       <div className="home-subscribe">
        <div className="pickles"><img src={pickles} alt="pickles" style={{maxWidth:"90%", maxHeight:"80%",marginTop:"10%",marginLeft:"10%"}}/></div>
        <div className="subscribe">
@@ -113,6 +121,7 @@ class Home extends Component{
          </form>
        </div>
       </div>
+      {window.innerWidth<=680&&<div style={{backgroundColor:"#F6EFE5",height:"5vw"}}></div>}
     </>
   );
   }

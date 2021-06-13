@@ -39,6 +39,37 @@
     top:3.8vw;
 }
 
+.free-order{
+  background-color: #F6EFE5;
+  position: sticky;
+  text-align: center;
+  top:0;
+  height: 3vw;
+  padding-top:0.3%;
+  width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.simple-line{
+  font-family: 'Monserrat',sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+}
+
+@media screen and (max-width:680px){
+  .free-order{
+    height: 10vw;
+    padding-top:0;
+  }
+  
+  .simple-line{
+    font-size: 3.4vw;
+  }
+}
+
 .search-item-container .navbar-hidden .search-btn{
   width: 40%;
   margin-right:0;
@@ -345,21 +376,12 @@
     background-size: 100% auto;
     margin-top: -1%;
   }
-  
-  .a{
-    font-size:1.6vw;
-    width:125%;
-    margin-left: -27%;
-  }
-
-  .b{
-    font-size:1.6vw;
-    width:130%;
-    margin-left: 0;
-  }
 
   .clientTest{
-    height: 60vw;
+    height: 70vw;
+    background-size:100% 240%;
+    padding-top: 6%;
+    background-position: 100% 80%;
   }
 
   .clientTest >h1{
@@ -368,7 +390,7 @@
 
   .clientTest >p{
     margin-top: -4%;
-    font-size: 2vw;
+    font-size: 2.4vw;
     margin-bottom:0;
   }
 
@@ -391,8 +413,9 @@
     min-width:46%;
     max-height:46%;
     background-size: 86% 60%;
+    border-right: none;
     margin-left: 3%;
-    margin-bottom: 4%;
+    margin-bottom: 1%;
     float:left;
   }
 
@@ -401,7 +424,7 @@
     max-height:46%;
     background-size: 88% 70%;
     margin-left: 0;
-    margin-bottom: 4%;
+    margin-bottom: 1%;
     float:left;
     border-right:none;
   }
@@ -410,6 +433,7 @@
     min-width:48%;
     max-height:50%;
     background-size: 94% 70%;
+    border-right: none;
     margin-left: 1%;
     margin-top: 2%;
     float:left;
@@ -425,7 +449,7 @@
   }
 
   .homeFacts .fact1 >h2{
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin-top: 75%;
     width:50%;
     margin-left: 20%;
@@ -437,8 +461,8 @@
   }
 
   .homeFacts .fact2 >h2{
-    font-size: 2vw;
-    margin-top: 70%;
+    font-size: 2.5vw;
+    margin-top: 71.5%;
     width:50%;
     margin-left: 25%;
     margin-bottom: -4%;
@@ -449,7 +473,7 @@
   }
 
   .homeFacts .fact3 >h2{
-    font-size: 2vw;
+    font-size: 2.5vw;
     margin-top: 75%;
     width:50%;
     margin-left: 25%;
@@ -461,8 +485,8 @@
   }
 
   .homeFacts .fact4 >h2{
-    font-size: 2vw;
-    margin-top: 78%;
+    font-size: 2.5vw;
+    margin-top: 79.6%;
     margin-left: 27%;
     width:45%;
     margin-bottom: -4%;
@@ -472,9 +496,29 @@
     font-size:1.8vw;
   }
 
+  .readmore_last{
+    font-family: 'Montserrat',sans-serif;
+    position: absolute;
+    margin-left:-48%;
+    margin-top: 8%;
+    font-size: 2.6vw;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 1.6% 3% 1.6% 4%;
+    cursor: pointer;
+    border-radius: 15px;
+  }
+  
   .home-certification >h1{
     font-size: 9vw;
     margin-bottom: 0;
+  }
+
+  .just-a-black{
+    height: 7vw;
+    background-color: black;
   }
 }
 
@@ -617,6 +661,10 @@
 }
 
 @media screen and (max-width:680px) {
+   .home-certification{
+    padding-top:3%;
+  }
+
   .home-subscribe .subscribe .logo{
     margin-top:0;
     height:40%;
@@ -630,18 +678,21 @@
   }
   
   .home-subscribe .subscribe >p{
+    margin-top: -3%;
     font-size: 2vw;
   }
   
   .home-subscribe .subscribe .email{
     padding: 2% 0 2% 2%;
-    width:60%;
-    font-size: 1.4vw;
+    width:70%;
+    font-size: 2vw;
   }
   
   .home-subscribe .subscribe .submit{
     padding: 2% 0 2% 0;
-    font-size: 1.4vw;
+    font-size: 2vw;
+    margin-left: -5%;
+    width: 24%;
   }
 }
 .about-container{
@@ -755,7 +806,7 @@
   }
 
   .matter{
-    width:44%;
+    width:45%;
     margin-right: 2%;
   }
 
@@ -768,13 +819,13 @@
   }
 
   .matter >p{
-    font-size: 1.8vw;
+    font-size:1.8vw;
   }
 
   .shopNowbtn1{
-    font-size: 1.2vw;
-    margin-left: 20%;
-    margin-top: 0;
+    font-size: 2vw;
+    margin-left: 18%;
+    margin-top: -4%;
     border:1px solid black;
   }
 }
@@ -1040,57 +1091,57 @@
 
  @media screen and (max-width:680px) {
   .blogContainer{
-    height: 130vw;
+    height: 160vw;
     /* height: 90vw; */
   }
   
   .heads{
-    font-size: 2vw;
+    font-size: 2.4vw;
   }
 
   .blogContainer .blogtop .blogsheading{
-    font-size:10vw;
+    font-size:12vw;
   }
 
   .blogtop .subBlog{
-    margin-left: 5%;
-    width: 90%;
+    margin-left: -1%;
+    width: 100%;
     margin-bottom: -3%;
   }
 
   .blogtop ul{
-    height: 2.8vw;
+    height: 3.4vw;
     width:94%;
   }
 
   .dateCalender{
     width:100%;
     margin-left:0; 
-    margin-top:4.5%; 
+    margin-top:5%; 
     text-align: center;
   }
 
   .dateCalender >h2{
-    font-size: 2.4vw;
+    font-size: 3.4vw;
   }
    
   .dateCalender >h3{
-    font-size: 1.5vw;
+    font-size: 2vw;
   }
   
   .searchTerm {
     border: 1.4px solid black;
     border-right: none;
-    font-size: 1.4vw;
+    font-size: 3vw;
     padding: 3%;
-    height: 5.1vw;
+    height: 6vw;
   }
   
   .searchButton {
     width: 10%;
-    height: 5.1vw;
+    height: 6vw;
     border: 1.4px solid black;
-    font-size: 3vw;
+    font-size: 4vw;
     border-left: 1.4px solid #F6EFE5;
   }
   
@@ -1098,12 +1149,12 @@
   .wrap{
     width: 70%;
     position: absolute;
-    margin-top: 16%;
+    margin-top: 20%;
     margin-left: 50%;
   }
 
   .blogContainer .recent-post >a{
-    font-size: 1.4vw;
+    font-size: 2vw;
     position: absolute;
     margin-top: -14%;
     margin-left: 2%;
@@ -1116,7 +1167,7 @@
   .blogPost{
     margin-top:-14%;
     width:100%;
-    height:80vw;
+    height:95vw;
   }
   
   .Fblog{
@@ -1153,29 +1204,29 @@
    }
 
    .Blogmatter >h1{
-    font-size:4.6vw;
+    font-size:6vw;
     font-weight: lighter;
    }
 
    .Blogmatter .likes-para{
-     margin-left: 10%;
-     font-size: 1.5vw;
+     margin-left: 5%;
+     font-size: 2vw;
    }
 
    .Blogmatter .material{
-     font-size: 1.6vw;
+     font-size: 2.2vw;
      margin-bottom: -12%;
    }
   
    .Blogmatter .shopNowbtn{
      background-color: black;
      color:white;
-     margin-top: 20%;
+     margin-top: 17%;
      margin-left: 25%;
-     height: 4vw;
+     height: 5vw;
      width:20vw;
-     padding:0 2% 0 2%;
-     font-size: 1.6vw;
+     padding:0 3% 0 3%;
+     font-size: 2.6vw;
      font-weight: 300;
    }
 
@@ -1186,8 +1237,9 @@
   }
   
   .blogContainer .tags >h2{
-    font-size: 1.5vw;
+    font-size: 2.4vw;
     margin-left: 1%;
+    margin-top: 5%;
   }
 
   .blogContainer .tags .first-link{
@@ -1247,6 +1299,7 @@
 @media screen and (max-width:680px) {
    .signin-container{
      height: 80vw;
+     padding-top: 6%;
    }
 
   .signin-container >h1{
@@ -1259,13 +1312,28 @@
     text-align: left;
   }
 
+  .signin-container .mainForm .checkSignin >input{
+    position:absolute;
+  }
+
   .signin-container .mainForm .checkSignin >label{
-    font-size: 1.6vw;
+    font-size: 2.4vw;
+    margin-left: 8%;
   }
 
   .signin-container .mainForm .createAcc{
-    font-size: 1.6vw;
+    font-size: 2.2vw;
     margin-top: 1%;
+  }
+
+  .signin-container .mainForm .loading-message{
+    font-family: 'Monserrat',sans-serif;
+    font-size: 3vw;
+  }
+
+  .signin-container .mainForm .error-message{
+    font-family: 'Monserrat',sans-serif;
+    font-size: 3vw;
   }
 }
 
@@ -1388,6 +1456,91 @@
 }
 
 @media screen and (max-width:680px) {
+  .signup-container{
+    height:100vw;
+    padding-top: 7%;
+  }
+
+  .signup-container >h1{
+    font-size: 10vw;
+  }
+
+  .mainForm{
+    margin-top: 14%;
+  }
+
+  .signup{
+    margin-top: 3%;
+  }
+
+  .sRight{
+    width:70%;
+    font-size:3vw;
+    padding-top: 3%;
+    height: 8vw;
+  }
+
+  .sLeft{
+    width:70%;
+    padding-top: 3%;
+    font-size:3vw;
+    height: 8vw;
+  }
+  
+  .signin{
+    margin-top: 3%;
+  }
+
+  .mainForm .p1 >input{
+    padding: 1.6% 1.8% 1.6% 1.8%;
+    width:70%;
+    border:1.4px solid black;
+    font-size: 2.6vw;
+    margin-bottom: 1%;
+  }
+  
+  .SIGNUP .signup-container .mainForm .p2 >input{
+    margin-right: 0;
+    margin-left: 0;
+    position:absolute;
+    max-width: 3vw;
+    max-height: 3vw;
+  }
+  
+  .SIGNUP .signup-container .mainForm .p2 >label{
+      font-size: 2.4vw;
+      margin-left:4%;
+  }
+
+  .mainForm .signupBtn{
+    width:14%;
+    height:7%;
+    font-size:2.4vw;
+    margin-top: 2%;
+  }
+
+  .signup-container .mainForm .haveAcc{
+    font-size: 2.2vw;
+    margin-top: 1%;
+  }
+
+  .SIGNUP .signup-container .mainForm .success-message{
+    font-family: 'Monserrat',sans-serif;
+    font-size: 3vw;
+  }
+
+  .SIGNUP .signup-container .mainForm .error-message{
+    font-family: 'Monserrat',sans-serif;
+    font-size: 3vw;
+  }
+
+  .SIGNUP .signup-container .mainForm .loading-message{
+    font-family: 'Monserrat',sans-serif;
+    font-size: 3vw;
+  }
+}
+
+@media screen and (max-width:680px) {
   .about-container{
     height: 70vw;
   }
@@ -1410,7 +1563,7 @@
 
   .contactus-shrink .signup-container{
     border-radius: 10px 10px 0 0;
-    height: 90vw;
+    height: 110vw;
   }
 
   .contactus-shrink .signup-container .contactForm{
@@ -1434,29 +1587,31 @@
     margin-top:1%;
     margin-bottom: 5%;
     margin-left: 5%;
-    font-size:2.4vw;
+    font-size:2.6vw;
   }
   
   .contactus-shrink .signup-container .contactForm .mainForm .p1 .input-form{
     width:100%;
     margin-left: 5%;
     margin-bottom: 3%;
-    font-size: 2.4vw;
+    font-size: 3.4vw;
   }
 
   .contactus-shrink .signup-container .contactForm .mainForm .p2{
     text-align: left;
-    margin-left: -3%;
-    width:90%;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    font-size: 2vw;
+    width:110%;
   }
 
   .contactus-shrink .signup-container .contactForm .mainForm .p1 .message-text{
     border-radius:10px;
-    height:13vw;
+    height:15vw;
     margin-left: 5%;
     width:100%;
-    border:1.5px solid black;
-    font-size: 2.6vw;
+    border:1.4px solid black;
+    font-size: 3.6vw;
   }
 
   .contactDetails{
@@ -1467,14 +1622,14 @@
   }
   
   .contactDetails >h1{
-    font-size: 2.8vw;
+    font-size: 3.4vw;
     margin-bottom: 2%;
     font-family: 'Montserrat', sans-serif;
   }
   
   .contactDetails >p{
-    font-size: 1.6vw;
-    width:70%;
+    font-size: 2.4vw;
+    width:100%;
     text-align: left;
     margin-left: 30%;
     margin-bottom: 0;
@@ -1491,76 +1646,6 @@
   .map{
     height:50vw;
   }
-}
-
-@media screen and (max-width:680px) {
-  .signup-container{
-    height:100vw;
-  }
-
-  .signup-container >h1{
-    font-size: 10vw;
-  }
-
-  .mainForm{
-    margin-top: 14%;
-  }
-
-  .signup{
-    margin-top: 3%;
-  }
-
-  .sRight{
-    width:70%;
-    font-size:2.4vw;
-    padding-top: 2%;
-    height: 6vw;
-  }
-
-  .sLeft{
-    width:70%;
-    padding-top: 2%;
-    font-size:2.4vw;
-    height: 6vw;
-  }
-  
-  .signin{
-    margin-top: 3%;
-  }
-
-  .mainForm .p1 >input{
-    padding: 1.6% 1.8% 1.6% 1.8%;
-    width:70%;
-    border:1.4px solid black;
-    font-size: 2vw;
-    margin-bottom: 1%;
-  }
-
-  .signup-container .mainForm .p2{
-    min-width: 110%;
-  }
-  
-  .signup-container .mainForm .p2 >input{
-    margin-right: 1%;
-    margin-left: 10%;
-  }
-  
-  .signup-container .mainForm .p2 >label{
-      font-size: 1.6vw;
-  }
-
-  .mainForm .signupBtn{
-    width:14%;
-    height:7%;
-    font-size:2.4vw;
-    margin-top: 2%;
-  }
-
-  .signup-container .mainForm .haveAcc{
-    font-size: 1.6vw;
-    margin-top: 1%;
-  }
-
 }
 
 @media screen and (max-width:1500px){
@@ -1785,7 +1870,7 @@
   }
 
   .aboutus-header >h1{
-    font-size:11vw;
+    font-size:12vw;
   }
 
   .aboutus-container .mobileView{
@@ -1805,12 +1890,12 @@
   }
 
   .aboutus-container .weRbest >h1{
-    font-size: 8vw;
+    font-size: 10vw;
     margin-bottom: 4%;
   }
   
   .aboutus-container .weRbest >p{
-    font-size: 2vw;
+    font-size: 2.8vw;
     font-weight: 500;
   }
 
@@ -1820,35 +1905,39 @@
   }
 
   .aboutusFacts{
-    height: 100vw;
+    height: 110vw;
     width:94%;
     margin-top: 8%;
   }
 
   .aboutusFacts .Row1 .row1 .indiaImg{
       width:60%;
+      height:40%;
     }
 
   .aboutusFacts .Row1 .row2 .indiaImg{
-      width:60%;
+      width:64%;
+      height:39%;
     }
 
     .aboutusFacts .Row2 .row1 .indiaImg{
-      width:70%;
+      width:74%;
+      height: 45%;
     }
 
   .aboutusFacts .Row2 .row2 .indiaImg{
-      width:60%;
+      width:62%;
+      height: 37%;
     }
 
     .h2{
-      font-size: 2.4vw;
+      font-size: 2.8vw;
       font-weight: 800;
     }
 
     .aboutusFacts .pClass{
-      font-size: 1.6vw;
-      width:80%;
+      font-size: 2vw;
+      width:90%;
     }
 
     .aboutusFacts .hrclass{
@@ -1857,20 +1946,20 @@
     }
 
     .healthhead{
-      font-size:8vw;
+      font-size:10vw;
       margin-top:10%;
     }
 
     .aboutus-container .healthFacts-container{
       width:100%;
-      height:120vw;
+      height:130vw;
       border-radius: 20px;
     }
 
 
     .aboutus-container .healthFacts-container .pureNatural{
       width:100%;
-      height:48%;
+      height:44%;
       background-position: 50% 45%;
       background-size: 70% 130%;
       background-color:#DFF2D4;
@@ -1879,21 +1968,21 @@
 
     .aboutus-container .healthFacts-container .health{
       width:100%;
-      height:52%;
+      height:56%;
       border-radius: 0 0 20px 20px;
     }
 
     .aboutus-container .healthFacts-container .health >h1{
-      font-size: 2vw;
+      font-size: 2.6vw;
       font-weight: 800;
       margin-left: 10%;
     }
     
     .aboutus-container .healthFacts-container .health >p{
-      width:80%;
+      width:81%;
       margin-left: 10%;
       margin-bottom: 1.4%;
-      font-size: 1.8vw;
+      font-size: 2.1vw;
     }
 
     .aboutus-container .healthFacts-container .health >hr{
@@ -2209,7 +2298,7 @@
   .service-container .jugaadComplete{
     width:90%;
     margin-top: -7.7%;
-    height: 226vw;
+    height: 230vw;
     margin-bottom: -2%;
   }
 
@@ -2231,51 +2320,57 @@
   }
 
   .service-container .jugaadComplete .Row1{
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     height: 56vw;
     width:90%;
   }
 
   .service-container .jugaadComplete .Row2{
-    margin-bottom: 5%;
+    margin-bottom: 10%;
     height: 56vw;
     width:90%;
   }
 
   .service-container .jugaadComplete .Row3{
-    margin-bottom: 5%;
     height: 56vw;
     width:90%;
   }
 
   .service-container .jugaadComplete .Row1 .r2c1{
-    height: 25%;
+    height: 30%;
   }
 
   .service-container .jugaadComplete .Row1 .r2c2{
-    height: 25%;
+    height: 30%;
   }
 
   .service-container .jugaadComplete .Row2 .r2c1{
-    height: 25%;
+    height: 30%;
   }
 
   .service-container .jugaadComplete .Row2 .r2c2{
-    height: 25%;
+    height: 30%;
   }
 
   .service-container .jugaadComplete .Row3 .r2c1{
-    height: 25%;
+    height: 30%;
   }
 
   .service-container .jugaadComplete .Row3 .r2c2{
-    height: 25%;
+    height: 30%;
   }
 
   .classh2{
-    font-size: 2vw;
+    font-size: 3vw;
+    font-weight: 500;
     margin-bottom: 2%;
-    margin-top: -2%;
+    margin-top: 10%;
+  }
+
+  .priceh2{
+    margin-top: 10%;
+    font-size: 2.6vw;
+    margin-bottom: -10%;
   }
 
   .service-container .jugaadComplete .addtocart-btn{
@@ -2285,10 +2380,11 @@
   }
 
   .service-container .jugaadComplete .addtocart-btn .cartlink{
-    font-size:2.8vw;
+    font-size:3.2vw;
+    font-family: 'Monserrat',sans-serif;
     position: absolute;
-    margin-left:-8%;
-    margin-top:-1.2%;
+    margin-left:-8.5%;
+    margin-top:-1%;
   }
 
   .service-container .jugaadComplete .luxury-items{

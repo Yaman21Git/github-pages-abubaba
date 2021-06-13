@@ -33,12 +33,14 @@ import subCategories from './components/Pages/OurCollection/subCategories';
 import Verify from './components/Pages/Verify'
 import terms from './components/Pages/terms&con'
 import Privacy from './components/Pages/PrivacyPolicy'
+import Free from './components/pageno'
 
 class App extends React.Component{
   render(){
       return (
         <>
          <Router>
+           <Free/>
            <Navbar/>
            <ScrollToTop />
            <Switch>

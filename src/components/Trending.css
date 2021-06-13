@@ -178,9 +178,11 @@ h1 {
       font-size: 3.2vw;
       font-weight: 500;
       width: 84%;
+      height: 5vw;
       margin-left:auto;
       margin-right: auto;
-      line-height: 20px;
+      line-height: 17px;
+      border-radius:15px;
     }
 
     .trending_item_link {
