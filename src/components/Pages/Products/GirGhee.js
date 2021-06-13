@@ -35,7 +35,7 @@ class GirGhee extends Component{
             img: [img0, img1, img2],
             text: ['Choco Nutty Granola', 'Mango Pickle', 'Blueberries'],
             path: ['/products/60aa9f242e79914b043dc0b4','/products/60aa6cbe3f3ca14f407dc624','/products/60aaa2852e79914b043dc0b9'],
-            price: ['₹ 00.00','₹ 00.00','₹ 00.00'],
+            price: [380, 320, 380],
             url: String(window.location),
             open: false
         }
@@ -61,6 +61,13 @@ class GirGhee extends Component{
                 });
             }
         });
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if(nextProps.match.params.productId === this.state.productId)
+            return;
+        else
+            window.location.reload()
     }
 
     addToCart = (str) => {
@@ -159,6 +166,7 @@ class GirGhee extends Component{
         const {quantity} = this.state;
     }
 
+    
     render() {
         const {product, redirect, productId, quantity, redirectToCart, suggested, index, img, path, price, text, open, url} = this.state
         const { hovered1, hovered2, hovered3 } = this.state;
@@ -264,7 +272,7 @@ class GirGhee extends Component{
                         {index.map( (array, i) => (
                             <ul className='trends_items' style={{width: "100%" }}>
                             { array.map( (val, j) => (
-                                (suggested[val] ? (<TrendingItem src={suggested[val].photos[0]} text={suggested[val].name} path={`/products/${suggested[val]._id}`} price={suggested[i].price}/>) : (<TrendingItem src={img[val]} path={path[val]} price={price[val]} text={text[val]}/>))
+                                (suggested[val] ? (<TrendingItem src={suggested[val].photos[0]} text={suggested[val].name} path={`/products/${suggested[val]._id}`} price={suggested[val].price}/>) : (<TrendingItem src={img[val]} path={path[val]} price={price[val]} text={text[val]}/>))
                             ))}
                             </ul>
                         ))}   
