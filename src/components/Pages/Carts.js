@@ -218,19 +218,19 @@ class Cart extends Component {
                         <tr>
                            <th className="product">Product</th>
                            <th className="price">Price</th>
-                           <th className="price">Quantity</th>
+                           <th className="price">Qty</th>
                            <th className="total">Subtotal</th>
                         </tr>
                      </thead>
                      <tbody>
                         { products && products.map((item, i) => (
                               <tr key={i} >
-                                 <th className="product1"><img className="smallImg" src={item.photos[0]}/> <p>{item.name}</p> <button onClick={() => this.removeItem(i, item.price)}>Remove</button> </th>
+                                 <th className="product1"><img className="smallImg" src={item.photos[0]}/> <p>{item.name}</p> <button className="remove-btn" onClick={() => this.removeItem(i, item.price)}>Remove</button> </th>
                                  <td className="price1">₹ {item.price}.00</td>
                                  <td className="price1">
-                                    <button onClick={() => this.decrementValue(i, item.price)} className="quantity-btn" > - </button>
+                                    <button onClick={() => this.decrementValue(i, item.price)} className="abc" > - </button>
                                     <input type="text" value={cart[i].quantity} onChange={this.handleInput} size="2" className="number"/>
-                                    <button onClick= {() => this.incrementValue(i, item.price)} className="quantity-btn2" > + </button>
+                                    <button onClick= {() => this.incrementValue(i, item.price)} className="abc1" > + </button>
                                  </td>
                                  <td className="total1">₹ {item.price * cart[i].quantity}.00</td>
                               </tr>
@@ -242,7 +242,7 @@ class Cart extends Component {
                   <p className="username"><i class="fa fa-user" aria-hidden="true"></i> Signed in as: {isAuthenticated().user.name}</p> </> )}
                   <form className="checkout-form">
                      <h3>This order belongs to</h3>
-                     { error && <div><h3>***{error}***</h3> <br/> </div>}
+                     { error && <div className="error-message"><h3>***{error}***</h3> </div>}
                      <input className="info" type="text" name="name" value={name} placeholder="Your Name*"  onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>
                      <input className="info" type="email" name="email" value={email} placeholder="Email Address*" onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>
                      <input className="info" type="number" name="phone" value={phone} placeholder="Contact Number*" onChange = { e => this.setState({[e.target.name] : e.target.value}) }></input>

@@ -58,19 +58,22 @@ export default function Services2(){
             </div>
         </div>
         </div> 
-        <span class="pageno" style={{marginLeft:"10%",marginRight:"3%"}}>Page 2 of 7</span>
-        <span class="shopnow_dot1" style={{marginRight:"-13%",textAlign:"right"}}><Link to="/services" style={{textDecoration:"none",color:"black"}}><p>←</p></Link></span>
-        <span class="nextpage">——— Previous</span>
-        <span class="shopdot_first"><Link to="/services" style={{textDecoration:"none",color:"black"}}>1</Link></span>
-        <span class="shopnow_dot show"><Link to="/services2" style={{textDecoration:"none",color:"black"}}>2</Link></span>
-        <span class="show"><Link to="/services3" style={{textDecoration:"none",color:"black"}}>3</Link></span>
-        <span class="show"><Link to="/services4" style={{textDecoration:"none",color:"black"}}>4</Link></span>
-        <span class="show"><Link to="/services5" style={{textDecoration:"none",color:"black"}}>5</Link></span>
-        <span class="show"><Link to="/services6" style={{textDecoration:"none",color:"black"}}>6</Link></span>
-        <span class="show"><Link to="/services7" style={{textDecoration:"none",color:"black"}}>7</Link></span>
-        {/* <span class="show"><Link to="/services8" style={{textDecoration:"none",color:"black"}}>8</Link></span> */}
-        <span class="nextpage">Next ———</span>
-        <span class="shopnow_dot1"><Link to="/services3" style={{textDecoration:"none",color:"black"}}><p>→</p></Link></span>
+        {/* {window.innerWidth>680&&<div> */}
+            <span class="pageno" style={{marginLeft:"10%",marginRight:"3%"}}>Page 2 of 7</span>
+            <span class="shopnow_dot1" style={{marginRight:"-13%",textAlign:"right"}}><Link to="/services" style={{textDecoration:"none",color:"black"}}><p>←</p></Link></span>
+            <span class="nextpage">——— Previous</span>
+            <span class="shopdot_first"><Link to="/services" style={{textDecoration:"none",color:"black"}}>1</Link></span>
+            <span class="shopnow_dot show"><Link to="/services2" style={{textDecoration:"none",color:"black"}}>2</Link></span>
+            <span class="show"><Link to="/services3" style={{textDecoration:"none",color:"black"}}>3</Link></span>
+            <span class="show"><Link to="/services4" style={{textDecoration:"none",color:"black"}}>4</Link></span>
+            <span class="show"><Link to="/services5" style={{textDecoration:"none",color:"black"}}>5</Link></span>
+            <span class="show"><Link to="/services6" style={{textDecoration:"none",color:"black"}}>6</Link></span>
+            <span class="show"><Link to="/services7" style={{textDecoration:"none",color:"black"}}>7</Link></span>
+            {/* <span class="show"><Link to="/services8" style={{textDecoration:"none",color:"black"}}>8</Link></span> */}
+            <span class="nextpage">Next ———</span>
+            <span class="shopnow_dot1"><Link to="/services3" style={{textDecoration:"none",color:"black"}}><p>→</p></Link></span>
+       {/* </div>} */}
+
        </div>
        </>
     );

@@ -73,7 +73,7 @@ class SignUp extends Component {
             return <Redirect to="/"></Redirect>
         return(
             <>
-            <div>
+            <div className="SIGNUP">
                 <div className="signup-container">
                     <h1 style={{marginBottom:"0%"}}>My Account</h1>
                     <div className="signup"><div className="sRight"><Link to="/signup" style={{textDecoration:"none", color:"white"}}><a href="/signup" style={{textDecoration:"none", color:"white"}}>SIGN UP</a></Link></div></div>
@@ -82,10 +82,10 @@ class SignUp extends Component {
                     <form className="mainForm">
 
                         { redirectToRefer && <div>
-                            <p>Signup Successful. Please <Link to="/signin">Sign In</Link></p> <br/>
+                            <p className="success-message">Signup Successful. Please <Link to="/signin">Sign In</Link></p> <br/>
                         </div>}
-                        { error && <div><h3>***{error}***</h3> <br/> </div>}
-                        { loading && <h2>Loading...</h2>}
+                        { error && <div><p className="error-message">***{error}***</p> <br/> </div>}
+                        { loading && <h2 className="loading-message">Loading...</h2>}
                         
                         <p className="p1"><input className="input-form" type="text" placeholder="Full Name" onChange={this.handleChange("name")}  value={this.state.name}></input></p>
                         <p className="p1"><input className="input-form" type="email" placeholder="Email-Address" onChange={this.handleChange("email")} value={this.state.email}></input></p>

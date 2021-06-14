@@ -157,16 +157,17 @@ ul >li{
     }
 
     .blogBack >img{
-        height:74%;
+        height:80%;
     }
 
     .centered {
         color: wheat;
-        top: 66%;
+        top: 64%;
         width:80%;
-        height: 13vw;
+        height: 18vw;
         padding-top: 4%;
         background-color: black;
+        font-size: 12vw;
     }
 
     .blogBack .blackhead{
@@ -174,66 +175,68 @@ ul >li{
         height: 27%;
         top:87%;
         color: wheat;
-        font-size: 4vw;
+        font-size: 6vw;
         font-weight: lighter;
         padding-top: 8%;
     }
 
     .content{
         width: 90%;
+        padding-top: 8%;
     }
 
     .firstp{
-        width: 87%;
-        font-size: 2vw;
-        margin-left: auto;
+        width: 90%;
+        font-size: 3.4vw;
+        margin-left: 6%;
         margin-right: auto;
         text-align: left;
     }
 
     .greenery{
         height: 48vw;
+        margin-left: 2%;
     }
 
     .centerhead{
-        font-size: 3.6vw;
+        font-size: 4.6vw;
     }
 
     .secondp{
         width:87%;
         margin-left: auto;
         margin-right: auto;
-        font-size: 2vw;
+        font-size: 3.4vw;
     }
 
     .otherhead{
-        font-size: 3.2vw;
+        font-size: 4vw;
         margin-left: 6%;
     }
 
     ul >li{
-        font-size: 2vw;
+        font-size: 3.4vw;
         width: 87%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .lastp{
-        font-size: 1.8vw;
+        font-size: 2.6vw;
         width:87%;
         margin-left: auto;
         margin-right: auto;
     }
 
     .share{
-        font-size: 1.6vw;
-        margin-left:39%;
+        font-size: 3.6vw;
+        margin-left:43%;
     }
 
     .comment-Blog .req{
-        font-size: 1.2vw;
-        width: 45%;
-        margin-left: 24%;
+        font-size: 2vw;
+        width: 76%;
+        margin-left: 12%;
     }
 
     .comment-Blog .leaveus-reply{
@@ -242,17 +245,30 @@ ul >li{
     }
 
     .comment-Blog >h2{
-        margin-right:5%;
+        margin-right:-5%;
         padding-right: 8%;
+        font-size: 3.6vw;
     }
 
     .comment-Blog .leaveus-reply >p >input{
-        width:45%;
+        width:65%;
+        margin-left: 6%;
+        font-size: 3vw;
     }
 
     .comment-Blog .leaveus-reply >button{
         padding:0.7% 2% 0.7% 2%;
-        font-size: 1vw;
-        margin-left: 34%;
+        font-size: 2.4vw;
+        margin-left: 50%;
+    }
+
+    .content .nextpage{
+        font-size: 2.4vw;
+    }
+
+    .content .shopdot_first{
+        font-size: 3vw;
+        margin-left: 4%;
+        margin-right: -10%;
     }
 }

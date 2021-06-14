@@ -56,8 +56,8 @@ class SignIn extends Component {
                     <div className="signin"><div className="sLeft" style={{background:"black"}}><Link to="/signin" style={{textDecoration:"none", color:"white"}}><a href="/signin" style={{textDecoration:"none", color:"white"}}>SIGN IN</a></Link></div></div>
                     <form className="mainForm">
                         
-                        { error && <div><h3>***{error}***</h3> <br/> </div>}
-                        { loading && <h2>Loading...</h2>}
+                        { error && <div><h3 className="error-message">***{error}***</h3> <br/> </div>}
+                        { loading && <h2 className="loading-message">Loading...</h2>}
                         <p className="p1"><input className="input-form" type="email" placeholder="Email-Address" onChange={this.handleChange("email")} value={this.state.email}></input></p>
                         <p className="p1"><input className="input-form" type="password" placeholder="Password"  onChange={this.handleChange("password")}  value={this.state.password}></input></p>
                         
