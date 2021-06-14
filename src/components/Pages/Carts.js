@@ -6,14 +6,18 @@ import { load } from './product';
 import { isAuthenticated, signout, userDetails } from './auth';
 import { checkOut } from './paymentApi';
 import Verify from './Verify.js'
+import ThreeDotsLoader from '../ThreeDotsLoader'
+
+var total =  0;
+var delivery = 0;
+var products =  [];
+var temp = [];
+var cart = [];
 
 class Cart extends Component {
    constructor(){
       super()
       this.state = {
-         cart: [],
-         products: [],
-         total: 0,
          orderId: "",
          name: userDetails() ? userDetails().name : "",
          phone: userDetails() ? userDetails().phone : "",
@@ -21,36 +25,42 @@ class Cart extends Component {
          email: userDetails() ? userDetails().email : "",
          redirectToVerify: false,
          error: "",
-         delivery: 0
+         show: false,
+         version: 0
       }
    }
 
    componentDidMount = () => {
-      var {products} = this.state
+
       var array = JSON.parse(localStorage.getItem("cart"));
-      if(!array)
+      cart = array;
+      total = delivery = 0;
+      
+      if(!array || array.length == 0){
+         this.setState({
+            show: true,
+         })
+         cart = [];
          return;
-      var delivery = 0;
-      var total = 0;
+      }
+      
       var sz = array.length
       products = new Array(sz)
+      
       array.map((item,i) => {
          load(item.id)
          .then(result => {
-            console.log(i, result);
+            
             products[i] = result;
+            temp.push(result);
             total += item.quantity * result.price;
-            if(total < 499)
-               delivery = 85;
-            this.setState({
-               products: products,
-               total: total,
-               delivery: delivery
-            })
+            delivery = (total <= 499 ? 85 : 0);
+            if(temp.length == sz){
+               this.setState({
+                  show: true
+               })
+            }
          })
-      })
-      this.setState({
-         cart: array
       })
    }
 
@@ -60,7 +70,7 @@ class Cart extends Component {
    }
 
    isValid = () => {
-      const { name, phone, email, address, cart } = this.state
+      const { name, phone, email, address } = this.state
       if (name === "" ) {
           this.setState({
               error: "Name is required"
@@ -118,9 +128,9 @@ class Cart extends Component {
       if(!this.isValid()){
          return
       }
-      const {total, phone, name, address, email} = this.state
+      const {phone, name, address, email} = this.state
       const params = {
-         amount: total * 100,
+         amount: (total + delivery) * 100,
          currency: "INR",
          receipt: "abubaba#1",
          payment_capture: "1" 
@@ -136,7 +146,7 @@ class Cart extends Component {
             phone: phone,
             address: address
          }
-         console.log(user);
+         
          localStorage.setItem("user", JSON.stringify(user));
          this.setState({
             redirectToVerify: true
@@ -145,67 +155,47 @@ class Cart extends Component {
    }
    
    incrementValue = (i, price) => {
-      var { cart, total, delivery } = this.state;
       const {quantity} = cart[i]
       
-      total = parseInt(total) + parseInt(price);
-      if(total >= 499)
-         delivery = 0;
-
       if(quantity < 10){
          cart[i].quantity += 1;
-         this.setState({
-            total: total,
-            delivery: delivery,
-            cart: cart
-         })
+         total = parseInt(total) + parseInt(price);
+         delivery = (total <= 499 ? 85 : 0);
          localStorage.setItem("cart", JSON.stringify(cart));
       }
+
+      this.setState({
+         version: this.state.version + 1
+      })
    }
 
    decrementValue = (i, price) => {
-      var { cart, total, products, delivery } = this.state;
       var { quantity } = cart[i]
       
-      total = parseInt(total) - parseInt(price);
-      if(total < 499)
-         delivery = 85;
-
       if(quantity > 1){
-         cart[i].quantity -= 1;
-      }
-      else if(quantity == 1){
-         cart.splice(i, 1);
-         products.splice(i, 1);
+         cart[i].quantity = quantity - 1;
+         total = parseInt(total) - parseInt(price);
+         delivery = (total <= 499 ? 85 : 0);
+         localStorage.setItem("cart", JSON.stringify(cart));
       }
 
       this.setState({
-         total: total,
-         delivery: delivery,
-         cart: cart,
-         products: products
+         version: this.state.version + 1
       })
-      localStorage.setItem("cart", JSON.stringify(cart));
    }
 
    removeItem = (i, price) => {
-      var { cart, total, products, delivery } = this.state;
       var { quantity } = cart[i]
       
       total = parseInt(total) - quantity * parseInt(price);
-      if(total < 499)
-         delivery = 85;
-
+      delivery = (total <= 499 ? 85 : 0);
       cart.splice(i, 1);
       products.splice(i, 1);
 
-      this.setState({
-         total: total,
-         delivery: delivery,
-         cart: cart,
-         products: products
-      })
       localStorage.setItem("cart", JSON.stringify(cart));
+      this.setState({
+         version: this.state.version + 1
+      })
    }
    
    handleInput = (event) => {
@@ -213,16 +203,16 @@ class Cart extends Component {
    }
   
    render() {
-      const {cart, products, name, email, phone, address, redirectToVerify, error, orderId, total, delivery} = this.state
+      const {show, name, email, phone, address, redirectToVerify, error, orderId} = this.state
 
       if(redirectToVerify)
-         return <Verify orderId={orderId} amount={total} cart={cart}/>
+         return <Verify orderId={orderId} amount={total + delivery} cart={cart}/>
       
       return (
          <>
           <div className="yourCart">
                <h1>Your Cart</h1>
-               {cart.length > 0 ? (
+               { show ? ( cart.length ? (
                <table className="table">
                      <thead>
                         <tr>
@@ -246,7 +236,7 @@ class Cart extends Component {
                               </tr>
                         ))}
                      </tbody>
-               </table>) : (<div  style={{textAlign: "center",fontFamily:"'Monserrat',sans-serif",fontSize:"3vw"}}>No items added to cart yet.</div>) }
+               </table>) : (<div  style={{textAlign: "center",fontFamily:"'Monserrat',sans-serif",fontSize:"3vw"}}>No items added to cart yet.</div>) )  : (<ThreeDotsLoader/>) }               
                <div className="user-info">
                   { isAuthenticated().user && ( <> <button className="signout" onClick={this.handleClick}>Sign Out</button>
                   <p className="username"><i class="fa fa-user" aria-hidden="true"></i> Signed in as: {isAuthenticated().user.name}</p> </> )}

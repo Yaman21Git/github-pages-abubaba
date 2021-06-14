@@ -77,7 +77,7 @@ All our products are of high quality with unique uses of being grown, cultivated
                    <h2 className="classh2"><Link to="products/60acbd4e444bd63a3835cf4b" style={{textDecoration:"none",color:"white"}}>Premium Mustard Oil</Link></h2>
                    <h2 className="classh2">₹ 510.00</h2>
                    {/* <Button buttonStyle="btn--outline">Add to Cart +</Button> */}
-                   <div className="addtocart-btn"><Link onClick={addToCart("60acbbae444bd63a3835cf48", "Mustard Oil")} className="cartlink">Add to Cart +</Link></div>
+                   <div className="addtocart-btn"><Link onClick={addToCart("60acbd4e444bd63a3835cf4b", "Mustard Oil")} className="cartlink">Add to Cart +</Link></div>
                </div>
             </div>
             <h1 class="luxury-items"><u>Hand Churned Organic Spices</u></h1>
