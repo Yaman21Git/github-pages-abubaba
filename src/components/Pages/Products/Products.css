@@ -365,7 +365,7 @@ h2{
 
     .productDes{
         width:100%;
-        height:150vw;
+        height:210vw;
         padding-top: 25%;
         padding-left: 8%;
         padding-right: 6%;
@@ -377,13 +377,13 @@ h2{
 
     .productDes >p{
         margin-bottom: 3%;
-        font-size: 3vw;
+        font-size: 4vw;
     }
     
     .productDes >h3{
-        margin-bottom:1%;
+        margin-bottom:2%;
         margin-top: -3%;
-        font-size: 3.2vw;
+        font-size: 4.2vw;
         font-weight: 800;
     }
 
@@ -392,7 +392,7 @@ h2{
     }
      
     .productDes >ul >li{
-        font-size: 3vw;
+        font-size: 4vw;
     }
     
     .reviews .review-container{

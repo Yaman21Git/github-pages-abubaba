@@ -59,7 +59,7 @@ class Footer extends Component {
                       target='_blank'
                       aria-label='Facebook'
                 >
-                <i class='fab fa-facebook-f' />
+                 <a href="https://m.facebook.com/Abubaba-Organic-109151944728233/?ref=page_internal" style={{color:"black"}}><i class='fab fa-facebook-f' /></a>
                 </Link>
                           <Link
                           class='social-icon-link instagram'
@@ -67,7 +67,7 @@ class Footer extends Component {
                           target='_blank'
                           aria-label='Instagram'
                           >
-                          <i class='fab fa-instagram' />
+                          <a href="https://instagram.com/abubabaorganic?utm_medium=copy_link" style={{color:"black"}}><i class='fab fa-instagram' /></a>
                           </Link>
                           <Link
                           class='social-icon-link youtube'
@@ -83,16 +83,17 @@ class Footer extends Component {
                           target='_blank'
                           aria-label='Twitter'
                           >
-                          <i class='fab fa-twitter' />
+                          <a href="https://twitter.com/SbmEnterprise" style={{color:"black"}}><i class='fab fa-twitter' /></a>
                           </Link>
-                          <Link
+                          {/* <Link
                           class='social-icon-link twitter'
                           to='/'
                           target='_blank'
                           aria-label='LinkedIn'
                           >
                           <i class='fab fa-linkedin' />
-                          </Link></div>
+                          </Link> */}
+                          </div>
                   </div>
                   <div className="footerInfo">
                     <h2>Information</h2>

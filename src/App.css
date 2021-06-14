@@ -125,10 +125,11 @@
   }
 
   .search-item-container .navbar-hidden{
-    height:6vw;
-    width:50%;
+    height:8vw;
+    width:80%;
     float: center;
-    margin-left: 25%;
+    margin-left: 10%;
+    margin-top: 3%;
 }
 
 .search-item-container .navbar-hidden .search-btn{
@@ -140,16 +141,15 @@
 }
 
 .search-item-container .navbar-hidden .search-btn >input{
-  font-size: 2vw;
+  font-size: 3vw;
   padding: 1% 0 1% 2%;
   border:1px solid black;
-  margin-top: 0;
 }
 
 .search-item-container .navbar-hidden .search-btn .redbtn{
-    font-size: 1.4vw;
+    font-size: 3.4vw;
     border:1px solid black;
-    padding:4% 6.4% 3% 6.4%;
+    padding:2% 3% 2.5% 3%;
 }
 
 .search-item-container .search-heading{
@@ -159,7 +159,7 @@
 .search-item-container .search-heading >h1{
   margin-left:0;
   text-align:center;
-  font-size:6vw;
+  font-size:8.6vw;
 }
 }
 
@@ -1104,20 +1104,20 @@
   }
 
   .blogtop .subBlog{
-    margin-left: -1%;
+    margin-left: -4%;
     width: 100%;
     margin-bottom: -3%;
   }
 
   .blogtop ul{
-    height: 3.4vw;
+    height: 5vw;
     width:94%;
   }
 
   .dateCalender{
     width:100%;
     margin-left:0; 
-    margin-top:5%; 
+    margin-top:6%; 
     text-align: center;
   }
 
@@ -1224,7 +1224,7 @@
      margin-top: 17%;
      margin-left: 25%;
      height: 5vw;
-     width:20vw;
+     width:22vw;
      padding:0 3% 0 3%;
      font-size: 2.6vw;
      font-weight: 300;
@@ -2505,11 +2505,21 @@
   font-size: 1.6vw;
 }
 
+.remove-btn{
+  background-color: black;
+  margin-bottom: 10%;
+  color: white;
+  font-size: 1vw;
+  padding: 1% 3% 1% 3%;
+  border-radius: 15px;
+  border: none;
+}
+
 .user-info{
   width:28%;
   position:absolute;
   margin-left:70%; 
-  top:5vw;
+  top:8vw;
 }
 
 .user-info .signout{
@@ -2528,7 +2538,7 @@
 }
 
 .user-info .checkout-form{
-  margin-top: 7vw;
+  margin-top: 7.5vw;
   text-align: center;
   width:100%;
 }
@@ -2597,12 +2607,36 @@
 .verify-info .details >button{
   background-color: black;
   color: white;
-  font-size: 1vw;
-  margin-top: 2%;
+  font-size: 1.4vw;
+  margin-top: 5%;
   margin-bottom: 2%;
   border: none;
-  padding: 1% 2% 1% 2%;
+  padding: 2% 4% 2% 4%;
   cursor: pointer;
+  border-radius: 20px;
+}
+
+.table .abc{
+  font-size: 3vw;
+  max-height: 3vw;
+  width: 2vw;
+  margin-left: -1.9%;
+  position: absolute;
+  
+}
+
+.table .abc1{
+  font-size: 3vw;
+  width: 2vw;
+  max-height: 3vw;
+  margin-left: -0.09%;
+  position: absolute;
+}
+
+.table .number{
+  min-height: 3vw;
+  max-width: 3vw;
+  font-size: 2vw;
 }
 
 @media screen and (max-width:680px) {
@@ -2613,98 +2647,127 @@
   .yourCart .table {
     width: 90%;
     margin-left: 3%;
-    margin-top: 75%;
+    margin-top: 84%;
   }
 
-  .quantity-btn{
-    max-height: 3vw;
-    max-width: 3vw;
-    font-size: 2vw;
+  .user-info .signout{
+    margin-top: 10%;
+    font-size: 2.4vw;
+    padding: 1% 2% 1% 2%;
   }
 
-  .quantity-btn2{
-    max-height: 3vw;
-    max-width: 3vw;
-    font-size: 2vw;
+  .table .abc{
+    font-size: 5vw;
+    min-width: 5vw;
+    max-height: 5vw;
+    position: absolute;
+    margin-left: -5.2%;
+  }
+
+  .table .abc1{
+    font-size: 5vw;
+    min-width: 5vw;
+    max-height: 5vw;
+    margin-left: -0.13%;
+    position: absolute;
   }
 
   .table .number{
-    min-height: 3vw;
-    min-width: 3vw;
-    font-size: 2vw;
+    min-height: 4vw;
+    min-width: 5vw;
+    font-size: 5vw;
   }
 
   .user-info{
     width:86%;
     margin-left:10%; 
     height: auto;
-    top:12vw;
+    top:18vw;
   }
 
   .user-info .checkout-form{
-    margin-top: 18vw;
+    margin-top: 20vw;
   }
 
   .user-info .checkout-form .info{
     margin-left: -15%;
-    font-size: 2vw;
+    font-size: 3vw;
   }
 
   .user-info .checkout-form .info-address{
-    font-size: 1.4vw;
-    font-size: 2vw;
+    font-size: 3.4vw;
     margin-right: 15%;
   }
 
   .user-info .checkout-form >h3{
-    font-size: 2.8vw;
+    font-size: 3vw;
     margin-bottom: 1%;
     margin-right: 14%;
   }
   
   .user-info .checkout-form .checkoutbtn{
-    font-size: 2vw;
+    font-size: 3vw;
+    padding: 1.5% 2.5% 1.5% 2.5%;
     margin-right: 15%;
+    border-radius: 15px;
   }
   
   .user-info .checkout-form .total-amount >p{
     margin-left:-15%;
     margin-bottom: 0;
-    font-size: 2.2vw;
+    font-size: 3.2vw;
+  }
+
+  .user-info .checkout-form .error-message{
+    font-family: 'Monserrat',sans-serif;
+    font-size: 3vw;
+    margin-right: 15%;
+    margin-bottom: 3%;
+    margin-top: 1%;
   }
   
   .yourCart >h1{
-    font-size: 10vw;
+    font-size: 12vw;
     margin-bottom: 0;
+  }
+
+  .remove-btn{
+    font-size: 2.4vw;
   }
   
   .yourCart .table .product {
-      font-size: 3vw;
+      font-size: 4vw;
+      border: 1px solid black;
+      width:30%;
   }
   
   .yourCart .table .price {
-      font-size: 3vw;
+      font-size: 4vw;
+      border: 1px solid black;
+      width:20%;
   }
   
   .yourCart .table .total {
-      font-size: 3vw;
+      font-size: 4vw;
+      border: 1px solid black;
   }
   
   .yourCart .table >tbody >tr .product1 .smallImg{
-    border-radius: 10px;
-    max-height: 20vw;
+    border-radius: 15px;
+    min-height: 36vw;
+    min-width: 90%;
   }
   
   .yourCart .table >tbody >tr .product1 >p{
-    font-size: 2vw;
+    font-size: 3vw;
   }
   
   .yourCart .table >tbody >tr .price1{
-    font-size: 2.4vw;
+    font-size: 3.4vw;
   }
   
   .yourCart .table >tbody >tr .total1{
-    font-size: 2.4vw;
+    font-size: 3.4vw;
   }
 
   .user-info .signout{
@@ -2712,25 +2775,28 @@
   }
 
   .user-info .username{
-    font-size: 1.6vw;
-    margin-left: 65%;
-    margin-bottom: -5%;
+    font-size: 2.2vw;
+    margin-left: 75%;
+    margin-bottom: -15%;
   }
 
   .verify-info >h1{
-    font-size: 9vw;
+    font-size: 12vw;
+    margin-top: 3%;
   }
 
   .verify-info .details{
-    width:60%;
+    width:70%;
   }
   
   .verify-info .details >p{
-    font-size: 2.2vw;
+    font-size: 4vw;
   }
   
   .verify-info .details >button{
-    font-size: 2vw;
+    margin-top: 10%;
+    font-size: 4vw;
+    border-radius: 20px;
   }
 }
 
@@ -2760,14 +2826,16 @@
 
 @media screen and (max-width:680px) {
   .t-and-c >h1{
-   font-size: 10vw;
+   font-size: 12vw;
  }
  
  .tc-info{
    border: 1.5px solid black;
+   width:90%;
+   margin-bottom: 10%;
  }
  
  .tc-info >p{
-   font-size: 2.4vw;
+   font-size: 3.4vw;
  }
 }
