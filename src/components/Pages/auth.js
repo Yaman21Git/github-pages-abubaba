@@ -1,5 +1,5 @@
 export const signup = user => {
-    return fetch(`https://yamanbackend.herokuapp.com/signup`, {
+    return fetch(`https://backend-abubaba.herokuapp.com/signup`, {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -14,7 +14,7 @@ export const signup = user => {
 };
 
 export const signin = user => {
-    return fetch(`https://yamanbackend.herokuapp.com/signin`, {
+    return fetch(`https://backend-abubaba.herokuapp.com/signin`, {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -39,7 +39,7 @@ export const authenticate=(jwt, next)=> {
 export const signout = (next) => {
     if (typeof window !== "undefined") localStorage.removeItem("jwt")
     next()
-    return fetch(`https://yamanbackend.herokuapp.com/signout`, {
+    return fetch(`https://backend-abubaba.herokuapp.com/signout`, {
         method: "GET"
     })
         .then(response => {
@@ -70,7 +70,7 @@ export const userDetails = () => {
 
 
 export const updateUser = (user, userId) => {
-    return fetch(`https://yamanbackend.herokuapp.com/updateUser/${userId}`, {
+    return fetch(`https://backend-abubaba.herokuapp.com/updateUser/${userId}`, {
         method: "PUT",
         headers: {
             Accept: "application/json",

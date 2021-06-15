@@ -1,5 +1,5 @@
 export const load = (productId) => {
-    return fetch(`https://yamanbackend.herokuapp.com/product/${productId}` , {
+    return fetch(`https://backend-abubaba.herokuapp.com/product/${productId}` , {
         method: "GET"
     })
     .then(response => {
@@ -9,7 +9,7 @@ export const load = (productId) => {
 }
 
 export const addToCart = (productId, user) => {
-    return fetch(`https://yamanbackend.herokuapp.com/addToCart/${productId}` , {
+    return fetch(`https://backend-abubaba.herokuapp.com/addToCart/${productId}` , {
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -24,7 +24,7 @@ export const addToCart = (productId, user) => {
 }
 
 export const addToWishlist = (productId, user) => {
-    return fetch(`https://yamanbackend.herokuapp.com/addToWishlist/${productId}` , {
+    return fetch(`https://backend-abubaba.herokuapp.com/addToWishlist/${productId}` , {
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -39,7 +39,7 @@ export const addToWishlist = (productId, user) => {
 }
 
 export const getProducts = () => {
-    return fetch(`https://yamanbackend.herokuapp.com/getProducts` , {
+    return fetch(`https://backend-abubaba.herokuapp.com/getProducts` , {
         method: "GET"
     })
     .then(response => {
@@ -49,7 +49,7 @@ export const getProducts = () => {
 }
 
 export const getProductsByCategoty = (name) => {
-    return fetch(`https://yamanbackend.herokuapp.com/getProductsByCategoty` , {
+    return fetch(`https://backend-abubaba.herokuapp.com/getProductsByCategoty` , {
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -64,7 +64,7 @@ export const getProductsByCategoty = (name) => {
 }
 
 export const searchByWord = (word) => {
-    return fetch(`https://yamanbackend.herokuapp.com/search` , {
+    return fetch(`https://backend-abubaba.herokuapp.com/search` , {
         method: "PUT",
         headers: {
             Accept: "application/json",
@@ -79,7 +79,7 @@ export const searchByWord = (word) => {
 }
 
 export const getUser = (userId) => {
-    return fetch(`https://yamanbackend.herokuapp.com/user/${userId}` , {
+    return fetch(`https://backend-abubaba.herokuapp.com/user/${userId}` , {
         method: "GET"
     })
     .then(response => {
@@ -89,7 +89,7 @@ export const getUser = (userId) => {
 }
 
 export const sendQuery = (query) => {
-    return fetch(`https://yamanbackend.herokuapp.com/query` , {
+    return fetch(`https://backend-abubaba.herokuapp.com/query` , {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -104,7 +104,7 @@ export const sendQuery = (query) => {
 }
 
 export const newsletter = (email) => {
-    return fetch(`https://yamanbackend.herokuapp.com/newsletter` , {
+    return fetch(`https://backend-abubaba.herokuapp.com/newsletter` , {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -121,7 +121,7 @@ export const newsletter = (email) => {
 
 
 export const addOrder = (cart) => {
-    return fetch(`https://yamanbackend.herokuapp.com/addOrder` , {
+    return fetch(`https://backend-abubaba.herokuapp.com/addOrder` , {
         method: "PUT",
         headers: {
             Accept: "application/json",

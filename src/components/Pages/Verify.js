@@ -1,33 +1,50 @@
 import React, { Component } from 'react'
 import '../../App.css'
-import { Redirect } from 'react-router-dom'
+import { withRouter, Redirect } from 'react-router-dom'
 import {userDetails, isAuthenticated} from './auth'
 import {addOrder} from './product'
 import {verifyPayment} from './paymentApi'
 import Razorpay from 'razorpay'
+import CryptoJS from 'crypto-js';
+const kftss = "AHDGHGUDIGUIEJBDYFVYSVFUyUGAIUGWUIGH27GBAHG87YW-SDIYW5E7TFIG8671892109UEY89QU2"
+
 
 class Verify extends Component{
    constructor(){
       super()
       this.state = {
          orderId: "",
-         amount: "",
-         cart: "",
+         a:  "",
+         c: "",
+         version: 0,
+         redirectToCart: false,
          redirectToAccount: false
       }
    }
 
    componentDidMount = () => {
       this.setState({
-         orderId: this.props.orderId,
-         amount: this.props.amount,
-         cart: this.props.cart
+         orderId: this.props.location.state.orderId,
+         a: this.props.location.state.amount,
+         c: this.props.location.state.cart
       })
+      
+      if(this.state.orderId){
+         this.setState({
+            redirectToCart: true
+         })
+         return;
+      }
    }
 
-
    confirmPayment = (response) => {
-      const {cart, amount} = this.state;
+      const {a, c} = this.state;
+      
+      var byt = CryptoJS.AES.decrypt(a, kftss);
+      var byc  = CryptoJS.AES.decrypt(c, kftss);
+
+      var amount = parseInt(byt.toString(CryptoJS.enc.Utf8));
+      var cart = JSON.parse(byc.toString(CryptoJS.enc.Utf8));
 
       const deatils = {
          razorpay_payment_id: response.razorpay_payment_id,
@@ -44,7 +61,10 @@ class Verify extends Component{
                paymentId: response.razorpay_payment_id,
                products: cart,
                amount: amount,
-               email: userDetails().email
+               name: userDetails().name,
+               email: userDetails().email,
+               phone: userDetails().phone,
+               address: userDetails().address
             }
 
             addOrder(order)
@@ -77,9 +97,18 @@ class Verify extends Component{
    }
 
    render(){
-      const {amount, redirectToAccount} = this.state;
+      const { a, redirectToCart, redirectToAccount } = this.state;
+
+      var byt, amount;
+      byt = CryptoJS.AES.decrypt(a, kftss);
+      amount = parseInt(byt.toString(CryptoJS.enc.Utf8));
+         
       if(redirectToAccount)
          return <Redirect to='/services'></Redirect>
+
+      if(redirectToCart)
+         return <Redirect to='/cart'> </Redirect>
+
       return(
          <div className="verify-info">
             <h1>Verify your details</h1>
@@ -97,4 +126,4 @@ class Verify extends Component{
    }
 }
 
-export default Verify;
+export default withRouter(Verify);

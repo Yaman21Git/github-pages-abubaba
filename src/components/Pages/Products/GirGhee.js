@@ -45,21 +45,23 @@ class GirGhee extends Component{
         const productId = this.props.match.params.productId;
         load(productId)
         .then(data => {
-            if(data.error)
-                console.log(data.error)
-            else{
-                this.setState({
-                    product: data,
-                    productId: productId
-                })
-                const val = {name: data.id}
-                getProductsByCategoty(val)
-                .then(result => {
-                    this.setState({
-                        suggested: result
-                    })
-                });
+
+            if(data.Error){
+                this.setState({ product: null})
+                return;
             }
+
+            this.setState({
+                product: data,
+                productId: productId
+            })
+            const val = {name: data.id}
+            getProductsByCategoty(val)
+            .then(result => {
+                this.setState({
+                    suggested: result
+                })
+            });
         });
     }
 

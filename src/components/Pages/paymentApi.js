@@ -1,5 +1,5 @@
 export const checkOut = (params) => {
-    return fetch(`https://yamanbackend.herokuapp.com/api/payment/order` , {
+    return fetch(`https://backend-abubaba.herokuapp.com/api/payment/order` , {
         method: "POST",
         headers: {
             Accept: "application/json",
@@ -14,7 +14,7 @@ export const checkOut = (params) => {
 }
 
 export const verifyPayment = (details) => {
-    return fetch(`https://yamanbackend.herokuapp.com/api/payment/verify` , {
+    return fetch(`https://backend-abubaba.herokuapp.com/api/payment/verify` , {
         method: "POST",
         headers: {
             Accept: "application/json",
