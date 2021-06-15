@@ -167,23 +167,24 @@ h1 {
     }
 
     .trending_item_info >h2{
-       margin-top: 0;
-       font-size: 2.6vw;
+       margin-top: -2%;
+       font-size: 3vw;
     }
   
     .trending_item_info >h3{
-      font-size: 2.6vw;
+      font-size: 3.2vw;
+      margin-top: -2%;
    }
     
     .trending_item_text {
-      font-size: 3.2vw;
+      font-size: 3.8vw;
       font-weight: 500;
       width: 84%;
       height: 5vw;
       margin-left:auto;
       margin-right: auto;
       line-height: 17px;
-      border-radius:15px;
+      border-radius:20px;
     }
 
     .trending_item_link {
