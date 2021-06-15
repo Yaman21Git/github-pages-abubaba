@@ -7,18 +7,20 @@ import { isAuthenticated, signout, userDetails } from './auth';
 import { checkOut } from './paymentApi';
 import Verify from './Verify.js'
 import ThreeDotsLoader from '../ThreeDotsLoader'
+import { Redirect } from 'react-router-dom';
+import CryptoJS from 'crypto-js';
+const kftss = "AHDGHGUDIGUIEJBDYFVYSVFUyUGAIUGWUIGH27GBAHG87YW-SDIYW5E7TFIG8671892109UEY89QU2"
 
-var total =  0;
-var delivery = 0;
-var products =  [];
-var temp = [];
-var cart = [];
 
 class Cart extends Component {
    constructor(){
       super()
       this.state = {
          orderId: "",
+         t: "",
+         d: "",
+         c: "",
+         p:  "",
          name: userDetails() ? userDetails().name : "",
          phone: userDetails() ? userDetails().phone : "",
          address: userDetails() ? userDetails().address : "",
@@ -32,32 +34,51 @@ class Cart extends Component {
 
    componentDidMount = () => {
 
+      var cnt = 0;
+      var total = 0;
+      var delivery = 0;
       var array = JSON.parse(localStorage.getItem("cart"));
-      cart = array;
-      total = delivery = 0;
       
       if(!array || array.length == 0){
+         var temp  = [];
+         var cipherTotal = CryptoJS.AES.encrypt(total.toString(), kftss).toString();
+         var cipherDelivery = CryptoJS.AES.encrypt(delivery.toString(), kftss).toString();      
+         var cipherCart = CryptoJS.AES.encrypt(JSON.stringify(temp), kftss).toString();
          this.setState({
             show: true,
+            t: cipherTotal,
+            d: cipherDelivery,
+            c: cipherCart,
+            p: cipherCart
          })
-         cart = [];
          return;
       }
       
+      
       var sz = array.length
-      products = new Array(sz)
+      var products = new Array(sz)
       
       array.map((item,i) => {
          load(item.id)
          .then(result => {
             
+            cnt++;
             products[i] = result;
-            temp.push(result);
             total += item.quantity * result.price;
             delivery = (total <= 499 ? 85 : 0);
-            if(temp.length == sz){
+            
+            if(cnt == sz){
+               var cipherTotal = CryptoJS.AES.encrypt(total.toString(), kftss).toString();
+               var cipherDelivery = CryptoJS.AES.encrypt(delivery.toString(), kftss).toString();
+               var cipherCart = CryptoJS.AES.encrypt(JSON.stringify(array), kftss).toString();
+               var cipherProduct = CryptoJS.AES.encrypt(JSON.stringify(products), kftss).toString();
+               
                this.setState({
-                  show: true
+                  show: true,
+                  t: cipherTotal,
+                  d: cipherDelivery,
+                  c: cipherCart,
+                  p: cipherProduct
                })
             }
          })
@@ -70,7 +91,10 @@ class Cart extends Component {
    }
 
    isValid = () => {
-      const { name, phone, email, address } = this.state
+      const { name, phone, email, address, c } = this.state
+      var bytes  = CryptoJS.AES.decrypt(c, kftss);
+      var cart = JSON.parse(bytes.toString(CryptoJS.enc.Utf8));
+
       if (name === "" ) {
           this.setState({
               error: "Name is required"
@@ -128,7 +152,13 @@ class Cart extends Component {
       if(!this.isValid()){
          return
       }
-      const {phone, name, address, email} = this.state
+      const {phone, name, address, email, t, d} = this.state
+      var byt = CryptoJS.AES.decrypt(t, kftss);
+      var byd = CryptoJS.AES.decrypt(d, kftss);
+
+      var total = parseInt(byt.toString(CryptoJS.enc.Utf8));
+      var delivery = parseInt(byd.toString(CryptoJS.enc.Utf8));
+
       const params = {
          amount: (total + delivery) * 100,
          currency: "INR",
@@ -155,8 +185,17 @@ class Cart extends Component {
    }
    
    incrementValue = (i, price) => {
-      const {quantity} = cart[i]
+      const {t, d, c} = this.state
       
+      var byt = CryptoJS.AES.decrypt(t, kftss);
+      var byd = CryptoJS.AES.decrypt(d, kftss);
+      var byc  = CryptoJS.AES.decrypt(c, kftss);
+      
+      var total = parseInt(byt.toString(CryptoJS.enc.Utf8));
+      var delivery = parseInt(byd.toString(CryptoJS.enc.Utf8));
+      var cart = JSON.parse(byc.toString(CryptoJS.enc.Utf8));
+
+      const { quantity } = cart[i];
       if(quantity < 10){
          cart[i].quantity += 1;
          total = parseInt(total) + parseInt(price);
@@ -164,14 +203,30 @@ class Cart extends Component {
          localStorage.setItem("cart", JSON.stringify(cart));
       }
 
+      var cipherTotal = CryptoJS.AES.encrypt(total.toString(), kftss).toString();
+      var cipherDelivery = CryptoJS.AES.encrypt(delivery.toString(), kftss).toString();
+      var cipherCart = CryptoJS.AES.encrypt(JSON.stringify(cart), kftss).toString();
+               
       this.setState({
-         version: this.state.version + 1
+         t: cipherTotal,
+         d: cipherDelivery,
+         c: cipherCart
       })
    }
 
    decrementValue = (i, price) => {
-      var { quantity } = cart[i]
+      const {t, d, c} = this.state
       
+      var byt = CryptoJS.AES.decrypt(t, kftss);
+      var byd = CryptoJS.AES.decrypt(d, kftss);
+      var byc  = CryptoJS.AES.decrypt(c, kftss);
+      
+      var total = parseInt(byt.toString(CryptoJS.enc.Utf8));
+      var delivery = parseInt(byd.toString(CryptoJS.enc.Utf8));
+      var cart = JSON.parse(byc.toString(CryptoJS.enc.Utf8));
+
+      const { quantity } = cart[i];
+
       if(quantity > 1){
          cart[i].quantity = quantity - 1;
          total = parseInt(total) - parseInt(price);
@@ -179,22 +234,48 @@ class Cart extends Component {
          localStorage.setItem("cart", JSON.stringify(cart));
       }
 
+      var cipherTotal = CryptoJS.AES.encrypt(total.toString(), kftss).toString();
+      var cipherDelivery = CryptoJS.AES.encrypt(delivery.toString(), kftss).toString();
+      var cipherCart = CryptoJS.AES.encrypt(JSON.stringify(cart), kftss).toString();
+               
       this.setState({
-         version: this.state.version + 1
+         t: cipherTotal,
+         d: cipherDelivery,
+         c: cipherCart
       })
    }
 
    removeItem = (i, price) => {
-      var { quantity } = cart[i]
+      const {t, d, c, p} = this.state
       
+      var byt = CryptoJS.AES.decrypt(t, kftss);
+      var byd = CryptoJS.AES.decrypt(d, kftss);
+      var byc  = CryptoJS.AES.decrypt(c, kftss);
+      var byp  = CryptoJS.AES.decrypt(p, kftss);
+
+      var total = parseInt(byt.toString(CryptoJS.enc.Utf8));
+      var delivery = parseInt(byd.toString(CryptoJS.enc.Utf8));
+      var cart = JSON.parse(byc.toString(CryptoJS.enc.Utf8));
+      var products = JSON.parse(byp.toString(CryptoJS.enc.Utf8));
+
+      const { quantity } = cart[i];
+
       total = parseInt(total) - quantity * parseInt(price);
       delivery = (total <= 499 ? 85 : 0);
       cart.splice(i, 1);
       products.splice(i, 1);
-
       localStorage.setItem("cart", JSON.stringify(cart));
+
+      var cipherTotal = CryptoJS.AES.encrypt(total.toString(), kftss).toString();
+      var cipherDelivery = CryptoJS.AES.encrypt(delivery.toString(), kftss).toString();
+      var cipherCart = CryptoJS.AES.encrypt(JSON.stringify(cart), kftss).toString();
+      var cipherProduct = CryptoJS.AES.encrypt(JSON.stringify(products), kftss).toString();
+      
       this.setState({
-         version: this.state.version + 1
+         t: cipherTotal,
+         d: cipherDelivery,
+         c: cipherCart,
+         p: cipherProduct
       })
    }
    
@@ -203,10 +284,30 @@ class Cart extends Component {
    }
   
    render() {
-      const {show, name, email, phone, address, redirectToVerify, error, orderId} = this.state
+      const {t, d, c, p, show, name, email, phone, address, redirectToVerify, error, orderId} = this.state
+
+      var byt, byd, byc, byp;
+      var total, delivery, cart, products;
+      if(show){
+         byt = CryptoJS.AES.decrypt(t, kftss);
+         byd = CryptoJS.AES.decrypt(d, kftss);
+         byc  = CryptoJS.AES.decrypt(c, kftss);
+         byp  = CryptoJS.AES.decrypt(p, kftss);
+
+         total = parseInt(byt.toString(CryptoJS.enc.Utf8));
+         delivery = parseInt(byd.toString(CryptoJS.enc.Utf8));
+         cart = JSON.parse(byc.toString(CryptoJS.enc.Utf8));
+         products = JSON.parse(byp.toString(CryptoJS.enc.Utf8));
+      }
 
       if(redirectToVerify)
-         return <Verify orderId={orderId} amount={total + delivery} cart={cart}/>
+         return <Redirect to={{
+            pathname: "/cart/verify",
+            state: { orderId: orderId,
+                     amount:  CryptoJS.AES.encrypt((total+delivery).toString(), kftss).toString(), 
+                     cart: CryptoJS.AES.encrypt(JSON.stringify(cart), kftss).toString()
+                  }
+            }} />
       
       return (
          <>
@@ -237,7 +338,7 @@ class Cart extends Component {
                         ))}
                      </tbody>
                </table>) : (<div  style={{textAlign: "center",fontFamily:"'Monserrat',sans-serif",fontSize:"3vw"}}>No items added to cart yet.</div>) )  : (<ThreeDotsLoader/>) }               
-               <div className="user-info">
+               { show && <div className="user-info">
                   { isAuthenticated().user && ( <> <button className="signout" onClick={this.handleClick}>Sign Out</button>
                   <p className="username"><i class="fa fa-user" aria-hidden="true"></i> Signed in as: {isAuthenticated().user.name}</p> </> )}
                   <form className="checkout-form">
@@ -254,6 +355,7 @@ class Cart extends Component {
                      </p>
                   </form>
                </div>
+               }
           </div>
 
           {/* <Modal show={this.state.isOpen} onHide={this.closeModal}>
