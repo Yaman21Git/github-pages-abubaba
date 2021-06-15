@@ -207,7 +207,7 @@ class GirGhee extends Component{
                         <button className="spnbtn1" onClick={() => this.addToCart(true)}>Buy Now</button>
                         <p><span><button className="wishlist" onClick={() => this.addToCart(false)}>Add To Cart</button></span>
                         <span><button className="wishlist" onClick={() => this.shareButton()}><i class="fas fa-share-alt" ></i> Share</button></span>
-                        {open && <span style={{padding: "5%"}}>
+                        {open && <span className="sharebtns">
                                 <FacebookShareButton url={url} quote={"I loved this and would recommend everyone to try this out"} hashtag="AbubabaOrganic">
                                     <FacebookIcon localFillColor="white" round={true} size={"2.5rem"}></FacebookIcon>
                                 </FacebookShareButton>

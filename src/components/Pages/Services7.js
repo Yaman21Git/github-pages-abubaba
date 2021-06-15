@@ -49,7 +49,7 @@ export default function Services7(){
         <span class="show"><Link to="/services4" style={{textDecoration:"none",color:"black"}}>4</Link></span>
         <span class="show"><Link to="/services5" style={{textDecoration:"none",color:"black"}}>5</Link></span>
         <span class="show"><Link to="/services6" style={{textDecoration:"none",color:"black"}}>6</Link></span>
-        <span class="shopnow_dot show"><Link to="/services7" style={{textDecoration:"none",color:"black"}}>7</Link></span>
+        <span class="shopnow_dot show last"><Link to="/services7" style={{textDecoration:"none",color:"black"}}>7</Link></span>
         {/* <span class="show"><Link to="/services8" style={{textDecoration:"none",color:"black"}}>8</Link></span> */}
         {/* <span class="nextpage">Next ———</span> */}
         {/* <span class="shopnow_dot1"><Link to="/services8" style={{textDecoration:"none",color:"black"}}><p>→</p></Link></span> */}

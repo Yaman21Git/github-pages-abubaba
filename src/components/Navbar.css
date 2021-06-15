@@ -90,9 +90,9 @@
   background-repeat: no-repeat;
   background-color: black;
   height: 3.4vw;
-  width: 40%;
-  background-position-y:58%;
-  margin-left: 0;
+  width: 50%;
+  background-position-y:56%;
+  margin-left: -5%;
   margin-right: 10%;
 }
 
@@ -260,10 +260,10 @@
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 10vw;
-    width: 90%;
+    height: 12vw;
+    width: 100%;
     background-position-y:58%;
-    margin-left: -27%;
+    margin-left: -30%;
     margin-right: 10%;
   }
 

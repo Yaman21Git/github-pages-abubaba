@@ -697,18 +697,19 @@
 }
 .about-container{
     /* background-image: url("./images2/pexels-karolina-grabowska-4199098-min-min.jpg"); */
-    background-image: url("./images2/79\ Honey-revised-a.jpg");
-    background-position: bottom;
-    background-size: cover;
+    background-image: url("./images2/78\ Ghee02.jpg");
+    background-position:-50% 10%;
+    background-size: 100% 110%;
     background-repeat: no-repeat;
     color: #fff;
-    height:36vw;
+    height:38vw;
 }
 
 .about-container >h1{
     color:black;
     font-size:8vw; 
-    padding-top:27%;
+    padding-top:25%;
+    margin-left: 53%;
 }
 
 .abubaba_org-container {
@@ -877,7 +878,7 @@
 }
 
 .blogContainer{
-  height: 62vw;
+  height: 220vw;
   background-color: #F6EFE5;
   padding-bottom: 5%;
 }
@@ -885,6 +886,7 @@
 .blogContainer .tags{
   font-family: 'Montserrat', sans-serif;
   padding-top: 1.2%;
+  margin-bottom: 5%;
 }
 
 .blogContainer .tags >h2{
@@ -918,7 +920,7 @@
 }
 
 .blogContainer .blogtop{
-  height:38%;
+  height:10%;
   padding-top:2.7%;
 }
 
@@ -1091,12 +1093,13 @@
 
  @media screen and (max-width:680px) {
   .blogContainer{
-    height: 160vw;
+    height: 630vw;
     /* height: 90vw; */
   }
   
   .heads{
     font-size: 2.4vw;
+    margin-right: 8%;
   }
 
   .blogContainer .blogtop .blogsheading{
@@ -1104,7 +1107,7 @@
   }
 
   .blogtop .subBlog{
-    margin-left: -4%;
+    margin-left: 1%;
     width: 100%;
     margin-bottom: -3%;
   }
@@ -1161,11 +1164,11 @@
   }
 
   .blogContainer .recent-post{
-    margin-bottom: 4%;
+    margin-bottom: -10%;
   }
   
   .blogPost{
-    margin-top:-14%;
+    margin-top:0;
     width:100%;
     height:95vw;
   }
@@ -1206,6 +1209,8 @@
    .Blogmatter >h1{
     font-size:6vw;
     font-weight: lighter;
+    width:120%;
+    margin-left: -10%;
    }
 
    .Blogmatter .likes-para{
@@ -1216,6 +1221,8 @@
    .Blogmatter .material{
      font-size: 2.2vw;
      margin-bottom: -12%;
+     margin-left: -10%;
+     width:120%;
    }
   
    .Blogmatter .shopNowbtn{
@@ -1541,14 +1548,32 @@
 }
 
 @media screen and (max-width:680px) {
-  .about-container{
+  /* .about-container{
     height: 70vw;
+    background-size: 150% 100%;
+    background-position:100%;
   }
 
   .about-container >h1{
     font-size:12vw; 
-    padding-top:5%;
-    font-weight: lighter;
+    padding-top:25%;
+    margin-left: 2%;
+    color: white;
+    font-weight: 600;
+  } */
+
+  .about-container{
+    height: 70vw;
+    background-size: 140% 100%;
+    background-position:50%;
+  }
+
+  .about-container >h1{
+    font-size:12vw; 
+    padding-top:25%;
+    margin-left: 50%;
+    color: white;
+    font-weight: 600;
   }
 
   .contactus-shrink{
@@ -1664,7 +1689,7 @@
   background-repeat: no-repeat;
   color: #fff;
   text-align: center;
-  padding-top: 15%;
+  padding-top: 18%;
 }
 
 .aboutus-header >h1{
@@ -1866,7 +1891,8 @@
 @media screen and (max-width:680px) {
   .aboutus-header{
     height: 70vw;
-    background-position: 90% 0;
+    padding-top: 23%;
+    background-position: 100% 0;
   }
 
   .aboutus-header >h1{
@@ -1952,14 +1978,14 @@
 
     .aboutus-container .healthFacts-container{
       width:100%;
-      height:130vw;
+      height:135vw;
       border-radius: 20px;
     }
 
 
     .aboutus-container .healthFacts-container .pureNatural{
       width:100%;
-      height:44%;
+      height:42%;
       background-position: 50% 45%;
       background-size: 70% 130%;
       background-color:#DFF2D4;
@@ -1968,7 +1994,7 @@
 
     .aboutus-container .healthFacts-container .health{
       width:100%;
-      height:56%;
+      height:58%;
       border-radius: 0 0 20px 20px;
     }
 
@@ -2093,7 +2119,7 @@
 .service-container .jugaadComplete{
   margin-left:auto;
   margin-right: auto;
-  height: 154vw;
+  height: 170vw;
   background-color:#FFFBF4;
   width:65%;
   border-radius: 0 0 30px 30px;
@@ -2107,11 +2133,11 @@
 
 .service-container .jugaadComplete >p{
   margin:auto;
-  width:40%;
+  width:60%;
   text-align: left;
   margin-bottom: 3vw;
   font-family: 'Montserrat';
-  font-size: 0.9vw;
+  font-size: 1.4vw;
   font-weight: 400;
 }
 
@@ -2121,7 +2147,7 @@
 
 .service-container .jugaadComplete .Row1{
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
   height: 36vw;
   width:90%;
   margin-left:auto;
@@ -2155,34 +2181,39 @@
 
 .service-container .jugaadComplete .Row1 .r2c1{
   background-color: black;
-  height: 23%;
+  height: 16%;
   width:46.1%;
   float: left;
 }
 
 .service-container .jugaadComplete .addtocart-btn{
-  padding-top:1%;
+  padding-top:2%;
   padding-bottom:1%;
-  width:50%;
-  margin-left:25%;
+  margin-top: 5%;
+  height: 3.4vw;
+  width:90%;
+  margin-left: 5%;
+  font-family: 'Monserrat',sans-serif;
+  background-color: black;
+  border-radius: 30px;
 }
 
 .service-container .jugaadComplete .addtocart-btn .cartlink{
-  font-size:1.6vw;
+  font-size:2vw;
   text-decoration:none;
   color:white;
 }
 
 .service-container .jugaadComplete .Row1 .r2c2{
   background-color: black;
-  height: 23%;
+  height: 16%;
   width:46.1%;
   float: right;
 }
 
 .service-container .jugaadComplete .Row2{
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
   height: 36vw;
   width:90%;
   margin-left:auto;
@@ -2216,14 +2247,14 @@
 
 .service-container .jugaadComplete .Row2 .r2c1{
   background-color: black;
-  height: 23%;
+  height: 16%;
   width:46.1%;
   float: left;
 }
 
 .service-container .jugaadComplete .Row2 .r2c2{
   background-color: black;
-  height: 23%;
+  height: 16%;
   width:46.1%;
   float: right;
 }
@@ -2264,14 +2295,14 @@
 
 .service-container .jugaadComplete .Row3 .r2c1{
   background-color: black;
-  height: 23%;
+  height: 16%;
   width:46.1%;
   float: left;
 }
 
 .service-container .jugaadComplete .Row3 .r2c2{
   background-color: black;
-  height: 23%;
+  height: 16%;
   width:46.1%;
   float: right;
 }
@@ -2292,25 +2323,30 @@
 
   .service-container .shopNow .jugaad{
     width:90%;
-    margin-top: 12%;
+    margin-top: 7%;
+  }
+
+  .h1shopnow{
+    margin-top: 5%;
   }
 
   .service-container .jugaadComplete{
     width:90%;
     margin-top: -7.7%;
-    height: 230vw;
+    height: 300vw;
     margin-bottom: -2%;
   }
 
   .service-container .jugaadComplete >h1{
-    font-size: 9vw;
+    font-size: 10vw;
   }
 
   .service-container .jugaadComplete >p{
-    width:60%;
-    margin-top: -7%;
+    width:70%;
+    margin-top: -5%;
+    margin-bottom:8%;
     text-align: center;
-    font-size: 2vw;
+    font-size: 2.4vw;
     font-weight: 600;
   }
 
@@ -2320,44 +2356,74 @@
   }
 
   .service-container .jugaadComplete .Row1{
-    margin-bottom: 10%;
-    height: 56vw;
-    width:90%;
+    margin-bottom: 15%;
+    height: 70vw;
+    width:94%;
   }
 
   .service-container .jugaadComplete .Row2{
-    margin-bottom: 10%;
-    height: 56vw;
-    width:90%;
+    margin-bottom: 15%;
+    height: 70vw;
+    width:94%;
   }
 
   .service-container .jugaadComplete .Row3{
-    height: 56vw;
-    width:90%;
+    height: 70vw;
+    width:94%;
+  }
+
+  .service-container .jugaadComplete .Row1 .r1c1{
+    width:48%;
+  }
+
+  .service-container .jugaadComplete .Row1 .r1c2{
+    width:48%;
+  }
+
+  .service-container .jugaadComplete .Row2 .r1c1{
+    width:48%;
+  }
+
+  .service-container .jugaadComplete .Row2 .r1c2{
+    width:48%;
+  }
+
+  .service-container .jugaadComplete .Row3 .r1c1{
+    width:48%;
+  }
+
+  .service-container .jugaadComplete .Row3 .r1c2{
+    width:48%;
   }
 
   .service-container .jugaadComplete .Row1 .r2c1{
-    height: 30%;
+    height: 20%;
+    width: 48%;
   }
 
   .service-container .jugaadComplete .Row1 .r2c2{
-    height: 30%;
+    height: 20%;
+    width: 48%;
   }
 
   .service-container .jugaadComplete .Row2 .r2c1{
-    height: 30%;
+    height: 20%;
+    width: 48%;
   }
 
   .service-container .jugaadComplete .Row2 .r2c2{
-    height: 30%;
+    height: 20%;
+    width: 48%;
   }
 
   .service-container .jugaadComplete .Row3 .r2c1{
-    height: 30%;
+    height: 20%;
+    width: 48%;
   }
 
   .service-container .jugaadComplete .Row3 .r2c2{
-    height: 30%;
+    height: 20%;
+    width: 48%;
   }
 
   .classh2{
@@ -2374,47 +2440,61 @@
   }
 
   .service-container .jugaadComplete .addtocart-btn{
-    height:0;
+    height:5vw;
+    padding-top: 5%;
+    border-radius: 0;
+    width:110%;
+    margin-left: -5%;
     text-align: center;
-    border: 1px solid black;
+    border: 1px solid white;
+    background-color: white;
   }
 
   .service-container .jugaadComplete .addtocart-btn .cartlink{
-    font-size:3.2vw;
+    font-size:3.6vw;
+    height:5vw;
     font-family: 'Monserrat',sans-serif;
     position: absolute;
-    margin-left:-8.5%;
-    margin-top:-1%;
+    width:34.6%;
+    margin-left:-17%;
+    padding-top:0.6%;
+    background-color: black;
+    border-radius: 15px;
   }
 
   .service-container .jugaadComplete .luxury-items{
-    font-size:2.6vw;
-    margin-bottom: -4%;
+    font-size:3.6vw;
+    margin-bottom: -2%;
     font-family: 'Montserrat', sans-serif;
-    margin-left:5%;
+    margin-left:3%;
     text-align: left;
   }
 
   .pageno{
-    font-size: 1.8vw;
+    font-size: 2.8vw;
   }
   
   .shopnow_dot {
     height: 20px;
     width: 20px;
+    vertical-align: 10%;
   }
   
   .shopdot_first{
-    margin-left: 6%;
-    font-size: 2vw;
+    margin-left: 3%;
+    font-family: 'Monserrat',sans-serif;
   }
   
   .show{
-    font-size: 2vw; 
+    font-size: 3vw; 
+  }
+
+  .last{
+    margin-right: -10%;
   }
   
   .nextpage{
-    font-size: 1.6vw;
+    font-size: 2.2vw;
     margin-left: 13%;
   }
   
@@ -2641,7 +2721,7 @@
 
 @media screen and (max-width:680px) {
   .yourCart{
-    min-height: 80vw;
+    min-height: 85vw;
   }
 
   .yourCart .table {
@@ -2686,7 +2766,7 @@
   }
 
   .user-info .checkout-form{
-    margin-top: 20vw;
+    margin-top: 24vw;
   }
 
   .user-info .checkout-form .info{
@@ -2777,7 +2857,7 @@
   .user-info .username{
     font-size: 2.2vw;
     margin-left: 75%;
-    margin-bottom: -15%;
+    margin-bottom: -20%;
   }
 
   .verify-info >h1{
