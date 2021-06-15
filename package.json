@@ -15,7 +15,8 @@
     "react-scripts": "4.0.3",
     "react-share": "^4.4.0",
     "react-toastify": "^7.0.4",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "yarn": "^1.22.10"
   },
   "scripts": {
     "start": "react-scripts start",

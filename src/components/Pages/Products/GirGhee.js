@@ -37,7 +37,8 @@ class GirGhee extends Component{
             path: ['/products/60aa9f242e79914b043dc0b4','/products/60aa6cbe3f3ca14f407dc624','/products/60aaa2852e79914b043dc0b9'],
             price: [380, 320, 380],
             url: String(window.location),
-            open: false
+            open: false,
+            message: ""
         }
     }
 
@@ -140,6 +141,30 @@ class GirGhee extends Component{
         this.setState({ hovered3: false });
     };
 
+    handleChange = (event) => {
+        const name = event.target.name;
+        const value = event.target.value
+        this.setState({
+            [name]: value
+        })
+    }
+    
+    handleReview = e => {
+        e.preventDefault();
+        if(!isAuthenticated()){
+            toast.error(<div style={{ position: 'relative' }}>
+            <h5>Please SignIn to add your review</h5>
+            </div>, {
+            position: "top-right",
+            autoClose: 2000,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+        });
+            return;
+        }
+    }
+
     incrementValue = () => {
         const { quantity } = this.state;
         if(quantity < 10)
@@ -170,7 +195,7 @@ class GirGhee extends Component{
 
     
     render() {
-        const {product, redirect, productId, quantity, redirectToCart, suggested, index, img, path, price, text, open, url} = this.state
+        const {message, product, redirect, productId, quantity, redirectToCart, suggested, index, img, path, price, text, open, url} = this.state
         const { hovered1, hovered2, hovered3 } = this.state;
         const style1 = window.innerWidth>680 ? (hovered1 ? { height:"25vw", marginTop:"-25%"} : {display:"none"}) : (hovered1 ? {position:"absolute",marginTop:"-144%",height:"108vw"} : {display:"none"});
         const style2 = window.innerWidth>680 ? (hovered2 ? { height:"25vw", marginTop:"-25%"} : {display:"none"}) : (hovered2 ? {position:"absolute",marginTop:"-144%",height:"108vw"} : {display:"none"});
@@ -253,7 +278,8 @@ class GirGhee extends Component{
                 <div className="review-container">
                   <h2>Customers Reviews</h2>
                   <span className="span1"><img src={imgstar}/></span><span className="span2">Based on {product.rating.total / 5} reviews.</span>
-                  <Link to={`/products/${productId}`}><span className="btn"><button className="spnbtn">Write a Review.</button></span></Link>
+                  <p><textarea rows="" cols="" name="comment" placeholder=" Review" name="message" value={message} onChange={this.handleChange}></textarea></p>
+                  <span className="btn"><button className="spnbtn" onClick={this.handleReview}>Write a Review.</button></span>
                   <ul>
                   { product.reviews.map((review, i) => (
                       <li className="remBullet" key={i}>
