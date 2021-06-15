@@ -3,10 +3,10 @@ import '../../App.css'
 import {Button} from '../button'
 import {Link} from 'react-router-dom';
 
-import img2 from '../../images2/treating-cold-hot-tea-with-lemon-berries-stands-white-wooden-table.jpg'
+import img2 from '../../images2/turmeric-powder.jpg'
 import img3 from '../../images2/turmeric-powder.jpg'
 import img4 from '../../images2/mohammad-amiri-4v_fCBw_kqg-unsplash.jpg'
-import img5 from '../../images2/ginger-tea-ingredients-healthy-comforting-heating-tea-simple-recipe-ginger-tea-ingredients-lemon-honey-top-view-flat-lay-freshly-from-home-growth-organic-garden-food-concept.jpg'
+import img5 from '../../images2/turmeric-powder.jpg'
 
 export default function Blogs(){
     return (
