@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { addToCart, load, getProductsByCategoty } from '../product'
+import { addToCart, load, getProductsByCategoty, postReviews } from '../product'
 import { isAuthenticated } from '../auth'
 import '../../../App.css'
 import './Products.css'
@@ -151,18 +151,59 @@ class GirGhee extends Component{
     
     handleReview = e => {
         e.preventDefault();
+        const {productId, message} = this.state; 
         if(!isAuthenticated()){
             toast.error(<div style={{ position: 'relative' }}>
-            <h5>Please SignIn to add your review</h5>
-            </div>, {
-            position: "top-right",
-            autoClose: 2000,
-            closeOnClick: true,
-            pauseOnHover: false,
-            draggable: true,
-        });
+                <h5>Please SignIn to add your review</h5>
+                </div>, {
+                position: "top-right",
+                autoClose: 2000,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: true,
+                });
             return;
         }
+        if(!message || message.length == 0){
+            toast.error(<div style={{ position: 'relative' }}>
+                <h5>Message can't be empty</h5>
+                </div>, {
+                position: "top-right",
+                autoClose: 2000,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: true,
+            });
+            return;
+        }
+        var date = new Date;
+        const month = date.toLocaleString('default', { month: 'long' });
+        const year = date.getFullYear().toString();
+        date = month + " " + year;
+        const details = {
+            id: productId, 
+            userId:  isAuthenticated().user._id, 
+            name: isAuthenticated().user.name, 
+            details: message, 
+            date: date,
+            stars: 5
+        }
+
+        postReviews(productId, details)
+        .then( result => {
+            toast.success(<div style={{ position: 'relative' }}>
+                <h5>Review successfully added!</h5>
+                </div>, {
+                position: "top-right",
+                autoClose: 2000,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: true,
+            });
+            this.setState({product: result});
+        })
+    
+
     }
 
     incrementValue = () => {
@@ -278,7 +319,7 @@ class GirGhee extends Component{
                 <div className="review-container">
                   <h2>Customers Reviews</h2>
                   <span className="span1"><img src={imgstar}/></span><span className="span2">Based on {product.rating.total / 5} reviews.</span>
-                  <p><textarea rows="" cols="" name="comment" placeholder=" Review" name="message" value={message} onChange={this.handleChange}></textarea></p>
+                  <p><textarea rows="4" cols="50" name="comment" placeholder=" Review" name="message" value={message} onChange={this.handleChange}></textarea></p>
                   <span className="btn"><button className="spnbtn" onClick={this.handleReview}>Write a Review.</button></span>
                   <ul>
                   { product.reviews.map((review, i) => (

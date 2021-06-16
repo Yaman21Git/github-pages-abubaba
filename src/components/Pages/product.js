@@ -23,14 +23,14 @@ export const addToCart = (productId, user) => {
     .catch(err => console.log(err));
 }
 
-export const addToWishlist = (productId, user) => {
-    return fetch(`https://backend-abubaba.herokuapp.com/addToWishlist/${productId}` , {
-        method: "PUT",
+export const postReviews = (productId, details) => {
+    return fetch(`https://l/postReviews/${productId}` , {
+        method: "POST",
         headers: {
             Accept: "application/json",
             "Content-type": "application/json"
         },
-        body: JSON.stringify(user)
+        body: JSON.stringify(details)
     })
     .then(response => {
         return response.json();

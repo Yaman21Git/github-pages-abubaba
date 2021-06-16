@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import TrendingItem from '../../TrendingItems'
 import '../../Trending.css'
 
-import img0 from '../../../images2/pexels-tirachard-kumtanom-347140 1.jpg'
+import img0 from '../../../images2/DSC02735.jpg'
 import img1 from '../../../images2/Royal-Saffron-white-honey.jpg'
 import img2 from '../../../images2/199-Kesar.jpg'
 import img3 from '../../../images2/187-ghee-Badri.jpg'
